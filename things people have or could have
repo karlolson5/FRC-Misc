@@ -1,0 +1,21 @@
+Anti-tip (now in WPILib)
+
+Slip detection (1690 video, recent CD implementation)
+
+Full per-wheel allowed torque (req. slip torque for each wheel, knowledge of mass state (infinitesimal pos + accel) in robot)
+
+TRIGONLib:
+* commands
+  * Camera position calculation command (TODO: interesting - what does this do?)
+  * Gear ratio calculation command (TODO: interesting - what does this do?)
+  * Wheel Radius characterization command
+  * NetworkTablesCommand
+* hardware
+  * SignalThreadBase (we have our own version?)
+  * some hardware I/O, most of which we don't use
+* utilities
+  * LocalADStarAK AdvKit-compatible ADStar
+  * BoundingBOx
+  * zone restricted drive
+  * generic flippable (should also add rotatable)
+  * complex generic `Mechanism2d`s (for viz)
