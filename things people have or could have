@@ -19,3 +19,10 @@ TRIGONLib:
   * zone restricted drive
   * generic flippable (should also add rotatable)
   * complex generic `Mechanism2d`s (for viz)
+
+RobotzGarage/frc4451:
+* org/spectrum3847/ShiftHelpers (shift timing - make a generic timer like this for the future?)
+* org/robotzgarage/frc2026
+  * math (math utils, including some SOTM, generic VARC)
+  * subsystems (some generic subsystems, nothing obviously special)
+  * util: some stuff that points towards PID autotuning auto routines
