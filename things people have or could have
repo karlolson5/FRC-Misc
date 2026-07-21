@@ -19,6 +19,18 @@ TRIGONLib:
   * zone restricted drive
   * generic flippable (should also add rotatable)
   * complex generic `Mechanism2d`s (for viz)
+Programming-TRIGON/frc5990:
+* RobotCode2025
+  * src/main/python/keyboard_to_nt.py (keyboard to NT)
+  * src/main/python/t265_manager.py (realsense to NT)
+  * src/main/java/frc/trigon/robot/misc/simulatedfield (fully simulated field)
+  * src/main/java/frc/trigon/robot/misc/objectdetectioncamera/ObjectPoseEstimator.java
+  * src/main/java/frc/trigon/robot/commands/commandclasses/IntakeAssistCommand.java
+  * src/main/java/frc/trigon/robot/commands/commandclasses/CoralAutoDriveCommand.java
+* RobotCode2026
+  * src/main/java/frc/trigon/robot/misc/simulatedfield (fully simulated field)
+  * src/main/java/frc/trigon/robot/misc/objectdetection/ObjectPoseEstimator.java
+  
 
 RobotzGarage/frc4451:
 * org/spectrum3847/ShiftHelpers (shift timing - make a generic timer like this for the future?)
