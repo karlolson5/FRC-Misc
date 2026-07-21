@@ -40,4 +40,16 @@ RobotzGarage/frc4451:
   * util: some stuff that points towards PID autotuning auto routines
 * Riptide2025
   * Quest (QuestNav stuff)
-  * climber/servo (Servo stuff) 
+  * climber/servo (Servo stuff)
+
+hammerheads5000/frc5000:
+* src/main/java/frc/robot/util/FuelSim.java (full game piece simulation)
+* src/main/java/frc/robot/util/VirtualPD.java (virtual power distribution board for logging energy)
+
+Team254/frc254:
+* FRC-2025-Public
+  * src/main/java/com/team254/lib/pathplanner (custom pathplanner fork, many changes described in a CD post)
+  * src/main/java/com/team254/lib/util (a bunch of cool utils, probably should look at some of these)
+  * src/main/java/com/team254/lib/commands (fixes for some command v2s wasting loops, probably doesn matter with systemcore)
+  * src/main/java/com/team254/lib/subsystems (we largely have all of this, and some more, nowadays)
+
