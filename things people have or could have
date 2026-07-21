@@ -26,3 +26,6 @@ RobotzGarage/frc4451:
   * math (math utils, including some SOTM, generic VARC)
   * subsystems (some generic subsystems, nothing obviously special)
   * util: some stuff that points towards PID autotuning auto routines
+* Riptide2025
+  * Quest (QuestNav stuff)
+  * climber/servo (Servo stuff) 
