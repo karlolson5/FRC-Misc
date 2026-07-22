@@ -52,4 +52,10 @@ Team254/frc254:
   * src/main/java/com/team254/lib/util (a bunch of cool utils, probably should look at some of these)
   * src/main/java/com/team254/lib/commands (fixes for some command v2s wasting loops, probably doesn matter with systemcore)
   * src/main/java/com/team254/lib/subsystems (we largely have all of this, and some more, nowadays)
+  * some wild vision/localization stuff that really seems like slop
 
+frc1678:
+* C2026-Public
+  * src/main/java/frc/robot/controlboard/ControlBoard.jav (a cool way to setup the controllers, points at an interesting ControllerUtil.bindJog)
+  * https://github.com/frc1678/C2026-Public/blob/main/src/main/java/frc/robot/BatteryCheckerConstants.java (elastic battery display)
+  * src/main/java/frc/lib/mechviz (visualization tools - the non-library code is super super concise!)
