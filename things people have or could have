@@ -63,3 +63,14 @@ Very simple code, but obviously effective
 very state heavy
 * 2026CompetitionRobot-Public
   * src/main/java/org/frc2910/robot/util/OperatorDashboard.java (good example of how things may need to be adjustable)
+
+team581/frc581:
+* frc-2026
+  * .agents/skills/analyze-wpilog (wpilog analysis skill)
+  * .roboRIOTeamNumberSetter (hmm)
+  * docs (good idea)
+  * comp-bot/src/main/deploy (elastic-layout in deploy?)
+  * comp-bot/src/main/java/frc/robot/cluster_map (Ball cluster map)
+  * comp-bot/src/main/java/frc/robot/config/DSOptions.java (a good way of doing optional funcitonality)
+  * shared/src/main/java/com/team581 (TODO: there is so much here)
+  * shared/src/main/java/com/team581/util/state_machines (state machines!)
