@@ -74,3 +74,35 @@ team581/frc581:
   * comp-bot/src/main/java/frc/robot/config/DSOptions.java (a good way of doing optional funcitonality)
   * shared/src/main/java/com/team581 (TODO: there is so much here)
   * shared/src/main/java/com/team581/util/state_machines (state machines!)
+  * TODO (this repo is massive)
+* frc-2025
+  * TODO
+
+Mechanical-Advantage/frc6328:
+* RobotCode2026Public
+  * idun (really cool but no longer necessary)
+  * src/test/java/org/littletonrobotics/frc2026/RobotContainerTest.java (minimal test that is useful for some reason?)
+  * src/main/java/org/littletonrobotics/frc2026/ObjectDetection.java (fuel tracking)
+  * src/main/java/org/littletonrobotics/frc2026/AutoSelector.java (cool auto selector)
+  * src/main/java/org/littletonrobotics/frc2026/util/controllers/RazerWolverineController.java (this controller has a ton of buttons and allows you to set custom ones to impossible dpad combos!)
+  * src/main/java/org/littletonrobotics/frc2026/util/controllers/TriggerUtil.java (useful triggers for controllers)
+  * src/main/java/org/littletonrobotics/frc2026/util/logging (WPILOG tools - useful for automated log analysis?)
+  * src/main/java/org/littletonrobotics/frc2026/util/BeachedUtil.java (Beach detection - like slip detection?)
+  * src/main/java/org/littletonrobotics/frc2026/util/FullSubsystem.java (subsystem with a periodic after commands for better output updating)
+  * src/main/java/org/littletonrobotics/frc2026/salesman (traveling salesman solver!)
+  * src/main/java/org/littletonrobotics/frc2026/energy (battery management!)
+* RobotCode2025Public
+  * camera_angle_analysis (python script to suggest camera angles given a trajectory)
+  * northstar (6328 custom camera system)
+  * https://github.com/Mechanical-Advantage/RobotCode2025Public/tree/offseason-rebuild/src/main/java/org/littletonrobotics/frc2025/util/gslam (generic mechanism that has hard stops?)
+  * src/main/java/org/littletonrobotics/frc2025/util/CanivoreReader.java (canivore status reader)
+  * src/main/java/org/littletonrobotics/frc2025/util/DoublePressTracker.java (double press button)
+  * src/main/java/org/littletonrobotics/frc2025/subsystems/objectivetracker/ObjectiveTracker.java (an extremely cool objective tracker)
+* RobotCode2023
+  * kairos (motion planning solver for complex mechanisms)
+
+6238/frc6238
+* 2026-Robot
+  * src/test/java (actual code tests?)
+  * src/main/java/frc/robot/testmode (physical tests?)
+  * src/main/java/frc/robot/util/ThreadedBeamBreak.java (fun)
