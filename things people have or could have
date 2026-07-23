@@ -1,8 +1,7 @@
-Anti-tip (now in WPILib)
-
-Slip detection (1690 video, recent CD implementation)
-
-Full per-wheel allowed torque (req. slip torque for each wheel, knowledge of mass state (infinitesimal pos + accel) in robot)
+Driving:
+* Anti-tip (now in WPILib)
+* Slip detection (1690 video, recent CD implementation)
+* Full per-wheel allowed torque (req. slip torque for each wheel, knowledge of mass state (infinitesimal pos + accel) in robot)
 
 TRIGONLib:
 * commands
@@ -31,7 +30,6 @@ Programming-TRIGON/frc5990:
   * src/main/java/frc/trigon/robot/misc/simulatedfield (fully simulated field)
   * src/main/java/frc/trigon/robot/misc/objectdetection/ObjectPoseEstimator.java
   
-
 RobotzGarage/frc4451:
 * org/spectrum3847/ShiftHelpers (shift timing - make a generic timer like this for the future?)
 * org/robotzgarage/frc2026
@@ -54,8 +52,14 @@ Team254/frc254:
   * src/main/java/com/team254/lib/subsystems (we largely have all of this, and some more, nowadays)
   * some wild vision/localization stuff that really seems like slop
 
-frc1678:
+frc1678/frc1678:
 * C2026-Public
   * src/main/java/frc/robot/controlboard/ControlBoard.jav (a cool way to setup the controllers, points at an interesting ControllerUtil.bindJog)
   * https://github.com/frc1678/C2026-Public/blob/main/src/main/java/frc/robot/BatteryCheckerConstants.java (elastic battery display)
   * src/main/java/frc/lib/mechviz (visualization tools - the non-library code is super super concise!)
+
+FRCTeam2910/frc2910:
+Very simple code, but obviously effective
+very state heavy
+* 2026CompetitionRobot-Public
+  * src/main/java/org/frc2910/robot/util/OperatorDashboard.java (good example of how things may need to be adjustable)
