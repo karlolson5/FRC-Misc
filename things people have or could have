@@ -1,6 +1,6 @@
 Driving:
-* Anti-tip (now in WPILib)
-* Slip detection (1690 video, recent CD implementation)
+* Anti-tip (now in WPILib) https://github.wpilib.org/allwpilib/docs/development/java/org/wpilib/math/controller/AntiTipping.html
+* Slip detection (1690 video, recent CD implementation) https://www.chiefdelphi.com/t/writeup-on-swerve-kinematics-and-basic-skid-detection/522622?u=olsonkarlp
 * Full per-wheel allowed torque (req. slip torque for each wheel, knowledge of mass state (infinitesimal pos + accel) in robot)
 
 TRIGONLib:
