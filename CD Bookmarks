@@ -1,0 +1,91 @@
+Programming
+claude log stuff - https://www.chiefdelphi.com/t/topic/519547/1, https://www.chiefdelphi.com/t/topic/518058/1
+maplesim - https://www.chiefdelphi.com/t/topic/473238/127
+sleipnir - https://www.chiefdelphi.com/t/topic/511533/1
+BLine - https://www.chiefdelphi.com/t/topic/509778/1
+PractiCal - https://www.chiefdelphi.com/t/topic/509776/1
+Autoalign - https://www.chiefdelphi.com/t/topic/509513/1, https://www.chiefdelphi.com/t/topic/504244/1
+team libraries - https://www.chiefdelphi.com/t/topic/508558/1, https://www.chiefdelphi.com/t/topic/507116/1
+camera calib - https://www.chiefdelphi.com/t/topic/508051/11
+object detection - https://www.chiefdelphi.com/t/topic/507183/1, https://www.chiefdelphi.com/t/topic/506640/1
+advanced control concepts - https://www.chiefdelphi.com/t/topic/166417/1, https://www.chiefdelphi.com/t/topic/500782/1
+april tag json script for kickoff - https://www.chiefdelphi.com/t/topic/500529/73
+dashboard - https://www.chiefdelphi.com/t/topic/505545/1
+pi pico W to NT - https://www.chiefdelphi.com/t/topic/505311/1
+inverse kinematics double arm - https://www.chiefdelphi.com/t/topic/420691/58
+controller layout site - https://www.chiefdelphi.com/t/topic/501157/71
+oak-d / quest - https://www.chiefdelphi.com/t/topic/503691/1, https://www.chiefdelphi.com/t/topic/500390/1
+orbit sessions - https://www.chiefdelphi.com/t/topic/467221/18
+gtsam - https://www.chiefdelphi.com/t/topic/477303/1
+skid detection - https://www.chiefdelphi.com/t/topic/492064/140
+motion profiling / sys-id - https://www.chiefdelphi.com/t/topic/443468/1, https://www.chiefdelphi.com/t/topic/491767/3
+global vs local vision - https://www.chiefdelphi.com/t/topic/477314/85
+
+Mechanical
+realistic motor curves - https://www.chiefdelphi.com/t/topic/477010/1
+cerakote - https://www.chiefdelphi.com/t/topic/517956/10
+belts - https://www.chiefdelphi.com/t/topic/504530/443, https://www.chiefdelphi.com/t/topic/503327/10
+balance flywheel - https://www.chiefdelphi.com/t/topic/515130/2
+flywheel calcs - https://www.chiefdelphi.com/t/topic/439111/7
+sotm calcs - https://www.chiefdelphi.com/t/topic/513819/9, https://www.chiefdelphi.com/t/topic/512979/1, https://www.chiefdelphi.com/t/topic/511205/1
+turrets - https://www.chiefdelphi.com/t/topic/507502/213, https://www.chiefdelphi.com/t/topic/512876/1, https://www.chiefdelphi.com/t/topic/507942/1, https://www.chiefdelphi.com/t/topic/506138/8
+mid-air collisions - https://www.chiefdelphi.com/t/topic/512598/21
+triple coax turret - https://www.chiefdelphi.com/t/topic/508460/12
+cam - https://www.chiefdelphi.com/t/topic/509613/1
+anti-backlash tech - https://www.chiefdelphi.com/t/topic/504530/193, https://www.chiefdelphi.com/t/topic/505971/184, https://www.chiefdelphi.com/t/topic/465867/62
+manual max planetary brake drive - https://www.chiefdelphi.com/t/topic/506380/162
+foam rollers - https://www.chiefdelphi.com/t/topic/495497/72
+polycarb + loctite - https://www.chiefdelphi.com/t/topic/474706/19
+elevators - https://www.chiefdelphi.com/t/topic/503835/1, https://www.chiefdelphi.com/t/topic/478210/1
+ball trajectory calc - https://www.chiefdelphi.com/t/topic/505438/1
+powdercoating / anodizing weight - https://www.chiefdelphi.com/t/topic/414112/13
+tapping arms - https://www.chiefdelphi.com/t/topic/503639/8
+odd wheels - https://www.chiefdelphi.com/t/topic/503403/13
+differential wrist/claw - https://www.chiefdelphi.com/t/topic/503916/1
+CNC brake - https://www.chiefdelphi.com/t/topic/502383/5
+herringbone bevel gear - https://www.chiefdelphi.com/t/topic/502343/1
+intakes - https://www.chiefdelphi.com/t/topic/501428/1
+carbon fiber - https://www.chiefdelphi.com/t/topic/500459/35
+vacuum - https://www.chiefdelphi.com/t/topic/500415/39
+capstan drive - https://www.chiefdelphi.com/t/topic/473608/11
+spacers - https://www.chiefdelphi.com/t/topic/500310/179
+
+Electrical
+battery testing - https://www.chiefdelphi.com/t/topic/484456/1, https://www.chiefdelphi.com/t/topic/508376/8, https://www.chiefdelphi.com/t/topic/507745/1
+cable management - https://www.chiefdelphi.com/t/topic/500123/16
+status light poster - https://www.chiefdelphi.com/t/topic/508453/1
+custom can sensors - https://www.chiefdelphi.com/t/topic/505422/5, https://www.chiefdelphi.com/t/topic/501764/20
+wire stripping - https://www.chiefdelphi.com/t/topic/505269/2
+flat wire - https://www.chiefdelphi.com/t/topic/490964/50
+grasshopper nuts - https://www.chiefdelphi.com/t/topic/419845/163
+battery warming - https://www.chiefdelphi.com/t/topic/504798/16
+power delivery - https://www.chiefdelphi.com/t/topic/499634/1, https://www.chiefdelphi.com/t/topic/419618/1
+training - https://www.chiefdelphi.com/t/topic/477314/601
+
+Bumpers
+cutting foam: cnc - https://www.chiefdelphi.com/t/topic/509726/9
+
+Pit
+pit dislay - https://www.chiefdelphi.com/t/topic/517920/1, https://www.chiefdelphi.com/t/topic/517885/1, https://www.chiefdelphi.com/t/topic/472312/5
+
+Good build threads / general resource threads
+https://www.chiefdelphi.com/t/topic/507502/527
+https://www.chiefdelphi.com/t/topic/506361/1
+https://www.chiefdelphi.com/t/topic/447601/1
+https://www.chiefdelphi.com/t/topic/505675/1
+https://www.chiefdelphi.com/t/topic/505274/1
+https://www.chiefdelphi.com/t/topic/420691/75
+https://www.chiefdelphi.com/t/topic/503670/1
+https://www.chiefdelphi.com/t/topic/483265/1
+https://www.chiefdelphi.com/t/topic/501460/1
+https://www.chiefdelphi.com/t/topic/500739/1
+https://www.chiefdelphi.com/t/topic/481015/11
+https://www.chiefdelphi.com/t/topic/500310/200
+https://www.chiefdelphi.com/t/topic/477314/1
+
+Field
+network in a box - https://www.chiefdelphi.com/t/topic/477314/722
+
+Misc Team
+webhosting - https://www.chiefdelphi.com/t/topic/520360/21
+
