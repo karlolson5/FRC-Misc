@@ -13,7 +13,7 @@
 
 **Gravity:**
 $$
-\vec g = -g\hat z
+\vec g = -g \hat z
 $$
 
 **Wheel contact forces:**
