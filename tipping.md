@@ -221,31 +221,6 @@ A small QP. Feasible only when $r_{zmp} \in \mathcal P$ — solving this and che
 
 ## 7. Summary of Variable Definitions
 
-| Symbol | Meaning |
-|---|---|
-| $N_w$ | number of wheels |
-| $r_j^w$ | position of wheel $j$ contact point (ground plane) |
-| $\mathcal P$ | convex support polygon formed by wheel contacts |
-| $N$ | number of point masses |
-| $m_i$ | mass of point $i$ |
-| $r_i$ | position of mass $i$ |
-| $a_i$ | acceleration of mass $i$ |
-| $\vec g$ | gravity vector, $-g\hat z$ |
-| $F_j^N$ | normal (vertical) force at wheel $j$, $\ge 0$ |
-| $f_j$ | friction (horizontal) force at wheel $j$ |
-| $\vec N_i$ | effective force per mass, $m_i(\vec g - a_i)$ |
-| $P$ | reference point for moment balance |
-| $\tau_P$ | tipping moment (gravity + inertia only) about $P$, projected to x-y |
-| $\hat e_e, \hat n_e$ | edge direction / outward normal for edge $e$ |
-| $r_{zmp} = (x_{zmp}, y_{zmp})$ | zero moment point |
-| $W_{\text{eff}}$ | total effective vertical force, $\sum_i N_{iz}$ |
-| $\lambda_j$ | barycentric weight of wheel $j$ (tripod case) |
-| $k_j$ | wheel/suspension stiffness |
-| $\delta_j$ | wheel compression |
-| $\bar x, \bar y$ | wheel centroid coordinates |
-| $I_{xx}, I_{yy}, I_{xy}$ | second moments of wheel positions about centroid |
-| $\alpha, \beta$ | rigid-plane tilt fit parameters |
-
 
 # Wheel Friction / Traction Force Derivation
 
@@ -340,15 +315,6 @@ Same idea as Section (a′) for normal forces: if a compliance solution to (a) y
 ---
 
 ## 6. Summary of New Variables
-
-| Symbol | Meaning |
-|---|---|
-| $f_j$ | horizontal (friction/traction) force at wheel $j$ |
-| $\mu_j$ | friction coefficient at wheel $j$ |
-| $k_{t,j}$ | tangential (shear) stiffness at wheel $j$ |
-| $\delta_j^{\,t}$ | tangential deflection at wheel $j$ |
-| $\delta_0^{\,t}$ | common horizontal shear deflection (rigid-plane fit) |
-| $\vec\omega_\delta$ | yaw-twist rate of the rigid tangential deflection field |
 
 
 # Advanced Swerve Drive Controller Architecture
@@ -483,20 +449,6 @@ $$
 ---
 
 ## 4. Summary Table
-
-| Symbol | Meaning |
-|---|---|
-| $\vec u_{cmd} = (a_x,a_y,\alpha_{yaw})$ | commanded chassis acceleration |
-| $\omega$ | current chassis yaw rate (measured state) |
-| $a_i(\vec u)$ | resulting rigid-body acceleration field at each mass |
-| $s\in[0,1]$ | overall command scale factor |
-| $s_{tip}$ | max scale before $r_{zmp}$ exits $\mathcal P$ |
-| $F_j^N(s)$ | normal force at wheel $j$ (Section 6 compliance/active-set) |
-| $F_j^{max}(s)$ | per-wheel force cap, $\min(\mu_j F_j^N, \tau_j^{max}/R_j)$ |
-| $F_{req}, \tau_{req}$ | required net force / yaw moment for rigid-body motion |
-| $f_j$ | commanded contact force vector at wheel $j$ (magnitude + direction free, swerve) |
-| $s_{force}$ | max scale achievable given wheel force caps |
-| $\theta_j, \tau_j$ | output: module steer angle, drive torque |
 
 ---
 
@@ -650,6 +602,64 @@ $$
 
 ## 4. Summary Table (new/changed entries marked)
 
+---
+
+## 5. Physical Summary of the Change
+
+Internal mechanism motion acts like an **exogenous disturbance wrench** on the drivebase — mathematically just an offset term added to the required force/moment balance, entirely analogous to how gravity acts as a constant offset in the tipping/ZMP equations. The chassis-command scale-back $s$ can only trade off the *drive-commanded* portion of the required wrench; it has no authority over the internal-mechanism portion. This means a sufficiently aggressive arm swing or elevator stop/start can force $s_{force}=0$ or even render the wrench infeasible at *any* $s$ (Section 3.6) — a case that must be surfaced explicitly, since it represents a limit the drivebase controller cannot resolve on its own.
+
+
+
+
+| Symbol | Meaning |
+|---|---|
+| $f_j$ | horizontal (friction/traction) force at wheel $j$ |
+| $\mu_j$ | friction coefficient at wheel $j$ |
+| $k_{t,j}$ | tangential (shear) stiffness at wheel $j$ |
+| $\delta_j^{\,t}$ | tangential deflection at wheel $j$ |
+| $\delta_0^{\,t}$ | common horizontal shear deflection (rigid-plane fit) |
+| $\vec\omega_\delta$ | yaw-twist rate of the rigid tangential deflection field |
+
+
+| Symbol | Meaning |
+|---|---|
+| $N_w$ | number of wheels |
+| $r_j^w$ | position of wheel $j$ contact point (ground plane) |
+| $\mathcal P$ | convex support polygon formed by wheel contacts |
+| $N$ | number of point masses |
+| $m_i$ | mass of point $i$ |
+| $r_i$ | position of mass $i$ |
+| $a_i$ | acceleration of mass $i$ |
+| $\vec g$ | gravity vector, $-g\hat z$ |
+| $F_j^N$ | normal (vertical) force at wheel $j$, $\ge 0$ |
+| $f_j$ | friction (horizontal) force at wheel $j$ |
+| $\vec N_i$ | effective force per mass, $m_i(\vec g - a_i)$ |
+| $P$ | reference point for moment balance |
+| $\tau_P$ | tipping moment (gravity + inertia only) about $P$, projected to x-y |
+| $\hat e_e, \hat n_e$ | edge direction / outward normal for edge $e$ |
+| $r_{zmp} = (x_{zmp}, y_{zmp})$ | zero moment point |
+| $W_{\text{eff}}$ | total effective vertical force, $\sum_i N_{iz}$ |
+| $\lambda_j$ | barycentric weight of wheel $j$ (tripod case) |
+| $k_j$ | wheel/suspension stiffness |
+| $\delta_j$ | wheel compression |
+| $\bar x, \bar y$ | wheel centroid coordinates |
+| $I_{xx}, I_{yy}, I_{xy}$ | second moments of wheel positions about centroid |
+| $\alpha, \beta$ | rigid-plane tilt fit parameters |
+
+| Symbol | Meaning |
+|---|---|
+| $\vec u_{cmd} = (a_x,a_y,\alpha_{yaw})$ | commanded chassis acceleration |
+| $\omega$ | current chassis yaw rate (measured state) |
+| $a_i(\vec u)$ | resulting rigid-body acceleration field at each mass |
+| $s\in[0,1]$ | overall command scale factor |
+| $s_{tip}$ | max scale before $r_{zmp}$ exits $\mathcal P$ |
+| $F_j^N(s)$ | normal force at wheel $j$ (Section 6 compliance/active-set) |
+| $F_j^{max}(s)$ | per-wheel force cap, $\min(\mu_j F_j^N, \tau_j^{max}/R_j)$ |
+| $F_{req}, \tau_{req}$ | required net force / yaw moment for rigid-body motion |
+| $f_j$ | commanded contact force vector at wheel $j$ (magnitude + direction free, swerve) |
+| $s_{force}$ | max scale achievable given wheel force caps |
+| $\theta_j, \tau_j$ | output: module steer angle, drive torque |
+
 | Symbol | Meaning |
 |---|---|
 | $\vec u_{cmd}=(a_x,a_y,\alpha_{yaw})$ | commanded **chassis** acceleration |
@@ -664,9 +674,3 @@ $$
 | $F_j^N(s), F_j^{max}(s)$ | per-wheel normal force / force cap (Sections 6, 3.3) |
 | $s_{force}$ | max scale achievable given wheel force caps |
 | $\theta_j,\tau_j$ | output steer angle / drive torque |
-
----
-
-## 5. Physical Summary of the Change
-
-Internal mechanism motion acts like an **exogenous disturbance wrench** on the drivebase — mathematically just an offset term added to the required force/moment balance, entirely analogous to how gravity acts as a constant offset in the tipping/ZMP equations. The chassis-command scale-back $s$ can only trade off the *drive-commanded* portion of the required wrench; it has no authority over the internal-mechanism portion. This means a sufficiently aggressive arm swing or elevator stop/start can force $s_{force}=0$ or even render the wrench infeasible at *any* $s$ (Section 3.6) — a case that must be surfaced explicitly, since it represents a limit the drivebase controller cannot resolve on its own.
