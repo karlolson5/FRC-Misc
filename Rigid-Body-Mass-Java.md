@@ -13,7 +13,7 @@ Goal: two classes.
   COM in the body's own body frame, inertia tensor about that COM. Doesn't
   know about the current joint angle.
 - **`RigidBodyState`** (or similar) — the *current* kinematic state of a `RigidBody`
-  at this control cycle (world pose, pivot acceleration, angular
+  at this control cycle (world pose, base acceleration, angular
   velocity/acceleration), which is what the swerve controller actually needs.
 
 Everything downstream just sums `RigidBodyState`s to get `M_tot`, `r_cm`, `I_zz`,
@@ -92,15 +92,15 @@ this class just turns that into world-frame quantities.
 public class RigidBodyState {
     public final RigidBody body;
     public final Pose3d worldPose;        // body frame -> world/chassis frame
-    public final Translation3d pivotAccel; // a_Q: acceleration of the joint pivot
+    public final Translation3d baseAccel; // a_Q: acceleration of the joint base
     public final Vector<N3> omega;         // joint angular velocity (world frame), rad/s
     public final Vector<N3> alpha;         // joint angular accel (world frame), rad/s^2
 
     public RigidBodyState(RigidBody body, Pose3d worldPose,
-                      Translation3d pivotAccel, Vector<N3> omega, Vector<N3> alpha) {
+                      Translation3d baseAccel, Vector<N3> omega, Vector<N3> alpha) {
         this.body = body;
         this.worldPose = worldPose;
-        this.pivotAccel = pivotAccel;
+        this.baseAccel = baseAccel;
         this.omega = omega;
         this.alpha = alpha;
     }
@@ -122,7 +122,7 @@ public class RigidBodyState {
         Translation3d alphaCrossR = cross(alpha, rppWorld);
         Translation3d omegaCrossR = cross(omega, rppWorld);
         Translation3d centripetal = cross(omega, omegaCrossR);
-        return pivotAccel.plus(alphaCrossR).plus(centripetal);
+        return baseAccel.plus(alphaCrossR).plus(centripetal);
     }
 
     // WPILib's Translation3d has no built-in cross product; small helper using plain Math.
@@ -138,7 +138,7 @@ public class RigidBodyState {
 
 `worldPose` for a given mechanism is exactly what forward kinematics already
 gives you — e.g. for an elevator stage: `chassisToBase.plus(new Transform3d(0,
-0, heightMeters, Rotation3d.kZero))`; for an arm segment: `pivotPose.plus(new
+0, heightMeters, Rotation3d.kZero))`; for an arm segment: `basePose.plus(new
 Transform3d(new Translation3d(armLength, 0, 0), new Rotation3d(0, -armAngle,
 0)))`. Since joint axes and mounting geometry are already known/measured,
 this is just `Pose3d`/`Transform3d` composition, no new math.
