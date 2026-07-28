@@ -253,7 +253,8 @@ for (int j = 0; j < modulesToApply.length; j++) {
         .withWheelForceFeedforwardY(fy)
         .withDriveRequestType(SwerveModule.DriveRequestType.Velocity)
         .withSteerRequestType(SwerveModule.SteerRequestType.MotionMagicExpo)
-        .withUpdatePeriod(parameters.updatePeriod);
+        .withUpdatePeriod(parameters.updatePeriod)
+        .withEnableFOC(true);
 
     modulesToApply[j].apply(moduleRequest);
 }
