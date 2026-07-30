@@ -106,3 +106,8 @@ Mechanical-Advantage/frc6328:
   * src/test/java (actual code tests?)
   * src/main/java/frc/robot/testmode (physical tests?)
   * src/main/java/frc/robot/util/ThreadedBeamBreak.java (fun)
+
+Slip Detection
+  * https://www.pramit.gg/post/is-my-robot-skidding
+  * https://github.com/lasarobotics/PurpleLib/blob/master/src%2Fmain%2Fjava%2Forg%2Flasarobotics%2Fdrive%2FTractionControlController.java#L119
+  * https://www.chiefdelphi.com/t/writeup-on-swerve-kinematics-and-basic-skid-detection/522622
