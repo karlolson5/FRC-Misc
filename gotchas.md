@@ -10,21 +10,7 @@ itself.
 
 ---
 
-## 1. A real bug: chassis `omega`/`alpha` swapped in `Swerve-Controller-Implementation.md` §3.1
 
-```java
-bodies.add(new RigidBodyState(chassisBody, new Pose3d(parameters.currentPose), Translation3d.kZero,
-        VecBuilder.fill(0,0,0), VecBuilder.fill(0,0, parameters.currentChassisSpeed.omegaRadiansPerSecond)));
-```
-
-`RigidBodyState`'s constructor order is `(body, worldPose, baseAccel, omega,
-alpha)`. This line passes `fill(0,0,0)` as `omega` and stuffs the chassis's
-*current yaw rate* into the `alpha` (angular acceleration) slot. That's
-backwards on both counts: the actual yaw rate never reaches `omega` (so the
-chassis's own centripetal/gyroscopic contribution silently evaluates as
-zero), and a velocity value gets fed into a slot that's supposed to hold
-`rad/s²`, not `rad/s`. Needs to be `omega = fill(0,0,currentOmega)`, `alpha =
-fill(0,0, <actual measured or estimated yaw accel>)`.
 
 ## 2. A real gap: the ZMP calc never sees the commanded chassis acceleration
 

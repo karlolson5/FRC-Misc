@@ -82,8 +82,14 @@ at construction rather than re-deriving it every cycle.
 
 ```java
 List<RigidBodyState> bodies = new ArrayList<>();
-bodies.add(new RigidBodyState(chassisBody, new Pose3d(parameters.currentPose), Translation3d.kZero,
-        VecBuilder.fill(0,0,0), VecBuilder.fill(0,0, parameters.currentChassisSpeed.omegaRadiansPerSecond)));
+bodies.add(new RigidBodyState(
+    chassisBody,
+    new Pose3d(parameters.currentPose),
+    Translation3d.kZero,
+    VecBuilder.fill(0,0, parameters.currentChassisSpeedomegaRadiansPerSecond),
+    VecBuilder.fill(0,0,
+        estimatedChassisAlphaRadiansPerSecondPerSecond)
+));
 bodies.addAll(mechanismBodies.get());
 
 double mTot   = massModel.totalMass(bodies);
