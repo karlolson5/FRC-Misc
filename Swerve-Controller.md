@@ -112,7 +112,14 @@ double wEff   = massModel.effectiveWeight(bodies, 9.81);           // W_eff, tip
 tipping.md §5. Small addition alongside `MassModel`:
 
 ```java
-Translation2d zeroMomentPoint(List<RigidBodyState> bodies, double g,
+/**
+ * tipping.md §5. Returns empty when sum_i N_iz <= epsilon (all wheels
+ * effectively unloaded — free-fall, being launched, or a commanded
+ * acceleration that would drive net vertical reaction to zero/negative).
+ * tipping.md §5 explicitly calls this case ill-defined for r_zmp, not an
+ * edge case to silently push through the division.
+ */
+Optional<Translation2d> zeroMomentPoint(List<RigidBodyState> bodies, double g,
         double s, double ax, double ay, double alphaYawChassis,
         double omegaYawChassis, Translation3d pivot) {
     double sumXNiz = 0, sumYNiz = 0, sumNiz = 0;
@@ -124,7 +131,13 @@ Translation2d zeroMomentPoint(List<RigidBodyState> bodies, double g,
         sumYNiz += com.getY()*niz - com.getZ()*b.body.massKg*a.getY();
         sumNiz  += niz;
     }
-    return new Translation2d(sumXNiz / sumNiz, sumYNiz / sumNiz);
+
+    final double EPS = 1e-3; // ~newtons; small compared to any real robot's weight
+    if (sumNiz <= EPS) {
+        return Optional.empty();
+    }
+    return Optional.of(new Translation2d(sumXNiz / sumNiz, sumYNiz / sumNiz));
+}
 }
 ```
 
@@ -375,10 +388,20 @@ double ax = DesiredAccel.vxMetersPerSecond, ay = DesiredAccel.vyMetersPerSecond;
 double alphaYawChassis = DesiredAccel.omegaRadiansPerSecond; // feedforward angular accel
 double omegaYawChassis = parameters.currentChassisSpeeds.omegaRadiansPerSecond; // actual, not commanded
 
-Translation2d zmpAtRest  = zeroMomentPoint(bodies, 9.81, 0.0, ax, ay, alphaYawChassis, omegaYawChassis, rcm);
-Translation2d zmpAtFull  = zeroMomentPoint(bodies, 9.81, 1.0, ax, ay, alphaYawChassis, omegaYawChassis, rcm);
+Optional<Translation2d> zmpAtRest = zeroMomentPoint(bodies, 9.81, 0.0, ax, ay, alphaYawChassis, omegaYawChassis, rcm);
+Optional<Translation2d> zmpAtFull = zeroMomentPoint(bodies, 9.81, 1.0, ax, ay, alphaYawChassis, omegaYawChassis, rcm);
 
-double sTip = rayPolygonIntersect(zmpAtRest, zmpAtFull, shrunkSupportPolygon(wheels.positions()));
+double sTip;
+if (zmpAtRest.isEmpty() || zmpAtFull.isEmpty()) {
+    // Fail safe: either the robot's current/internal-motion state alone is
+    // already in the degenerate regime (zmpAtRest empty — this is serious,
+    // independent of any chassis command), or the *commanded* acceleration
+    // would drive it there (zmpAtFull empty). Either way, don't trust a
+    // ray-polygon test built from an ill-defined endpoint.
+    sTip = 0.0;
+} else {
+    sTip = rayPolygonIntersect(zmpAtRest.get(), zmpAtFull.get(), shrunkSupportPolygon(wheels.positions()));
+}
 
 double s = MathUtil.clamp(Math.min(sTip, bisectSForce(rcm)), 0.0, 1.0);
 Optimisation.Result result = solveAllocation(s, rcm);   // final allocation at the chosen scale
