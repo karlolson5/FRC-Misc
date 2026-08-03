@@ -64,7 +64,14 @@ every cycle.
 public record WheelGeometry(
     Translation2d[] positions,  // r_j^w, chassis frame — same order as modulesToApply
     double[] mu,                // per-wheel friction coefficient
-    double[] stiffnessK,        // per-wheel suspension stiffness, tipping.md §6(a)
+    double[] stiffnessK,        // per-wheel suspension stiffness, tipping.md §6(a) —
+                                 // NOT currently used: normalForceComplianceOnce(...) implements
+                                 // only the equal-stiffness fit (tipping.md §6(a) assumes k_j = k
+                                 // for all j and cancels k out of the plane-fit solve entirely).
+                                 // A general per-wheel-stiffness compliance model is a different,
+                                 // undreived formula — tipping.md doesn't give it. If your wheels
+                                 // have meaningfully different suspension stiffness, that
+                                 // asymmetry is silently ignored right now, not approximated.
     double[] tauMaxNm,          // per-wheel max drive torque
     double wheelRadiusM
 ) {}
@@ -131,9 +138,138 @@ the polygon inward by a safety margin before testing.
 ### 3.3 Normal-force distribution (tipping.md §6(a)/(a′))
 
 ```java
-double[] fNormal = normalForceCompliance(wheels, rcm, wEff, /* moment terms from zmp calc */);
-// active-set correction (§6a′): drop any wheel with fNormal[j] < 0, recompute centroid/I over
-// the remaining wheels, repeat — terminate at the 3-wheel tripod case (§6, barycentric) if needed.
+double[] fNormal = normalForceCompliance(bodies, wheels, 9.81, 1.0, ax, ay,
+    alphaYawChassis, omegaYawChassis, rcm, zmpAtFull);
+
+/**
+ * tipping.md §6(a): per-wheel normal force via the equal-stiffness rigid-plane
+ * compliance fit, evaluated at total acceleration a_i(s) (internal + chassis-rigid,
+ * gotcha #2's totalAcceleration(...)), NOT reusing any intermediate from zeroMomentPoint —
+ * the moments here are about the wheel centroid, not the origin/rcm.
+ *
+ * Returns raw (possibly negative) F_j^N; §3.3's active-set correction wraps this.
+ */
+double[] normalForceComplianceOnce(List<RigidBodyState> bodies, WheelGeometry wheels,
+        Translation2d[] activeWheels, double g, double s, double ax, double ay,
+        double alphaYawChassis, double omegaYawChassis, Translation3d pivot) {
+
+    int n = activeWheels.length;
+
+    // Wheel centroid (x̄, ȳ) — over the *active* wheel set only (matters once
+    // the active-set loop below starts dropping wheels).
+    double xbar = 0, ybar = 0;
+    for (Translation2d w : activeWheels) { xbar += w.getX(); ybar += w.getY(); }
+    xbar /= n; ybar /= n;
+
+    // Second moments about the centroid, tipping.md §6(a).
+    double Ixx = 0, Iyy = 0, Ixy = 0;
+    for (Translation2d w : activeWheels) {
+        double xp = w.getX() - xbar, yp = w.getY() - ybar;
+        Ixx += yp * yp;
+        Iyy += xp * xp;
+        Ixy += xp * yp;
+    }
+
+    // M_x', M_y': same construction as zeroMomentPoint's tau_x/tau_y, but about
+    // the wheel centroid instead of the origin — recomputed independently here,
+    // not pulled from zeroMomentPoint(...).
+    double Mx = 0, My = 0, wEff = 0;
+    for (RigidBodyState b : bodies) {
+        Translation3d com = b.comWorld();
+        Translation3d a = b.totalAcceleration(s, ax, ay, alphaYawChassis, omegaYawChassis, pivot);
+        double Nix = -b.body.massKg * a.getX();
+        double Niy = -b.body.massKg * a.getY();
+        double Niz =  b.body.massKg * (-g - a.getZ());
+        Mx += (com.getY() - ybar) * Niz - com.getZ() * Niy;
+        My += com.getZ() * Nix - (com.getX() - xbar) * Niz;
+        wEff += Niz;
+    }
+
+    if (wEff <= 1e-6) {
+        // tipping.md §5's degenerate case (free-fall / unloaded) — same guard
+        // gotcha #4 calls for in zeroMomentPoint, applies identically here.
+        double[] zero = new double[n];
+        Arrays.fill(zero, 0.0);
+        return zero;
+    }
+
+    // Solve [Iyy Ixy; Ixy Ixx] [alpha; beta] = [My; -Mx]  (tipping.md §6(a)).
+    double det = Iyy * Ixx - Ixy * Ixy;
+    double alpha = (My * Ixx - (-Mx) * Ixy) / det;
+    double beta  = ((-Mx) * Iyy - My * Ixy) / det;
+
+    double[] fN = new double[n];
+    for (int j = 0; j < n; j++) {
+        double xp = activeWheels[j].getX() - xbar, yp = activeWheels[j].getY() - ybar;
+        fN[j] = wEff / n + alpha * xp + beta * yp;
+    }
+    return fN;
+}
+
+/**
+ * tipping.md §6(a′): active-set iteration — drop any wheel with F_j^N < 0,
+ * recompute centroid + second moments over the remaining set, repeat.
+ * Terminates at the 3-wheel tripod/barycentric case if it gets that far.
+ */
+double[] normalForceCompliance(List<RigidBodyState> bodies, WheelGeometry wheels,
+        double g, double s, double ax, double ay, double alphaYawChassis,
+        double omegaYawChassis, Translation3d pivot, Translation2d rzmp) {
+
+    List<Integer> active = new ArrayList<>();
+    for (int j = 0; j < wheels.positions().length; j++) active.add(j);
+
+    while (true) {
+        if (active.size() == 3) {
+            return tripodBarycentric(wheels, active, g, s, ax, ay, alphaYawChassis,
+                                      omegaYawChassis, pivot, rzmp, bodies);
+        }
+
+        Translation2d[] activeWheels = active.stream()
+            .map(j -> wheels.positions()[j]).toArray(Translation2d[]::new);
+        double[] fNActive = normalForceComplianceOnce(bodies, wheels, activeWheels,
+            g, s, ax, ay, alphaYawChassis, omegaYawChassis, pivot);
+
+        int dropIdx = -1;
+        for (int k = 0; k < fNActive.length; k++) {
+            if (fNActive[k] < 0) { dropIdx = k; break; }
+        }
+        if (dropIdx == -1) {
+            // All non-negative: scatter back into full-length result, 0 for dropped wheels.
+            double[] fN = new double[wheels.positions().length];
+            for (int k = 0; k < active.size(); k++) fN[active.get(k)] = fNActive[k];
+            return fN;
+        }
+        active.remove(dropIdx); // wheel lifted off; redo the fit without it
+    }
+}
+
+/** tipping.md §6, N_w=3 case: F_j^N = lambda_j * W_eff, barycentric weights of r_zmp in the triangle. */
+double[] tripodBarycentric(WheelGeometry wheels, List<Integer> active, double g, double s,
+        double ax, double ay, double alphaYawChassis, double omegaYawChassis,
+        Translation3d pivot, Translation2d rzmp, List<RigidBodyState> bodies) {
+    Translation2d p1 = wheels.positions()[active.get(0)];
+    Translation2d p2 = wheels.positions()[active.get(1)];
+    Translation2d p3 = wheels.positions()[active.get(2)];
+
+    double detT = (p2.getY()-p3.getY())*(p1.getX()-p3.getX()) + (p3.getX()-p2.getX())*(p1.getY()-p3.getY());
+    double l1 = ((p2.getY()-p3.getY())*(rzmp.getX()-p3.getX()) + (p3.getX()-p2.getX())*(rzmp.getY()-p3.getY())) / detT;
+    double l2 = ((p3.getY()-p1.getY())*(rzmp.getX()-p3.getX()) + (p1.getX()-p3.getX())*(rzmp.getY()-p3.getY())) / detT;
+    double l3 = 1 - l1 - l2;
+
+    double wEff = 0;
+    for (RigidBodyState b : bodies) {
+        Translation3d a = b.totalAcceleration(s, ax, ay, alphaYawChassis, omegaYawChassis, pivot);
+        wEff += b.body.massKg * (-g - a.getZ());
+    }
+
+    double[] fN = new double[wheels.positions().length];
+    fN[active.get(0)] = l1 * wEff;
+    fN[active.get(1)] = l2 * wEff;
+    fN[active.get(2)] = l3 * wEff;
+    return fN; // if any lambda_j < 0 here, r_zmp is outside the reduced triangle —
+               // genuine tipping about an edge of the *original* full polygon (§6a′'s terminal caveat)
+}
+
 ```
 
 Evaluated once at `s = 1` per tipping.md §15.6's "treat `F_j^N` as fixed at

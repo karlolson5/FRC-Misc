@@ -10,19 +10,6 @@ itself.
 
 ---
 
-
-## 3. `normalForceCompliance(...)` is a stub, and its moment inputs aren't the same as the ZMP's
-
-§3.3 calls `normalForceCompliance(wheels, rcm, wEff, /* moment terms from zmp
-calc */)` without ever defining the function. Worth flagging explicitly: the
-horizontal moments that formula needs (`M_x'`, `M_y'` in `tipping.md` §6(a))
-are taken **about the wheel centroid**, not about the origin the way the ZMP
-numerator sums in §3.2 are — they're related but not the same numbers, and
-reusing the ZMP calc's intermediate values directly would be a mistake. This
-was left as an explicit exercise in the sketch; if implementing it, re-derive
-the centroid-relative moment sum separately rather than repurposing
-`zeroMomentPoint`'s internals.
-
 ## 4. No guard against the degenerate ZMP case
 
 `tipping.md` §5 calls out `sum_i N_iz <= 0` (free-fall, or a robot being
