@@ -411,8 +411,14 @@ for (int j = 0; j < 4; j++) {
     f[2*j+1] = result.get(2*j+1).doubleValue();     // fy_j
 }
 
-ChassisSpeeds scaledSpeeds = DesiredSpeeds.times(s);   // ChassisSpeeds.times(double) scales all 3 components
-SwerveModuleState[] kinematicStates = parameters.kinematics.toSwerveModuleStates(scaledSpeeds);
+// DesiredSpeeds is NOT scaled by s — tipping.md's derivation scales only the
+// commanded *acceleration* (u_cmd, via s in requiredForce(s)/requiredYawTorque(s)
+// and rigidAcceleration(s, ...)). A steady velocity produces no net d'Alembert
+// force and does not by itself cause tipping; only a *change* in velocity does,
+// and that's already what's being throttled below. Scaling velocity here would
+// mean a robot mid-tipping-risk permanently loses top speed even once it's no
+// longer accelerating — a much blunter intervention than the physics supports.
+SwerveModuleState[] kinematicStates = parameters.kinematics.toSwerveModuleStates(DesiredSpeeds);
 
 for (int j = 0; j < modulesToApply.length; j++) {
     double fx = f[2*j], fy = f[2*j+1];
@@ -432,6 +438,8 @@ for (int j = 0; j < modulesToApply.length; j++) {
         .withEnableFOC(true);
 
     modulesToApply[j].apply(moduleRequest);
+}
+return StatusCode.OK;
 }
 return StatusCode.OK;
 ```

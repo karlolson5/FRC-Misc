@@ -47,15 +47,6 @@ itself.
 
 ## 6. Design decisions the sketches punted on
 
-- **Scaling velocity vs. scaling acceleration by `s`.** `tipping.md`'s whole
-  derivation scales the *commanded acceleration* `u_cmd`. §3.7 of the swerve
-  doc also scales `DesiredSpeeds` (the velocity setpoint) by the same `s`:
-  `DesiredSpeeds.times(s)`. That's a much blunter intervention than the
-  physics calls for — throttling velocity changes the steady-state target,
-  not just how fast the robot gets there. Worth deciding deliberately
-  whether `s` should touch the velocity setpoint at all, or only the
-  acceleration feedforward (`DesiredAccel`) and the allocated
-  `WheelForceFeedforwardX/Y`.
 - **No steer-angle optimization/hysteresis.** The force-direction-derived
   steer angle (`new Rotation2d(fx, fy)`) is sent as-is, without calling
   `SwerveModuleState.optimize()` or anything equivalent to avoid a near-180°
