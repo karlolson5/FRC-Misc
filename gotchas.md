@@ -10,16 +10,6 @@ itself.
 
 ---
 
-## 4. No guard against the degenerate ZMP case
-
-`tipping.md` §5 calls out `sum_i N_iz <= 0` (free-fall, or a robot being
-launched) as an ill-defined case requiring separate handling. The
-`zeroMomentPoint` sketch divides by `sumNiz` unconditionally — worth an
-explicit check (`sumNiz <= epsilon` → treat as "all wheels unloaded," skip
-the polygon test, and fail safe) before this goes anywhere near a real robot.
-
----
-
 ## 5. Physics caveats from the source docs that are easy to lose in translation
 
 - **A negative compliance-model `F_j^N` isn't proof of tipping**
@@ -90,14 +80,6 @@ the polygon test, and fail safe) before this goes anywhere near a real robot.
 
 ## 7. Performance/architecture concerns
 
-- **Where this runs matters.** Phoenix 6 calls a `SwerveRequest`'s `apply()`
-  from the drivetrain's odometry thread, which typically runs well above the
-  main robot loop's 50 Hz. Solving a small QCQP through ojAlgo's
-  `ExpressionsBasedModel`, 8–20 times per bisection, every single odometry
-  cycle, is a nontrivial real-time budget ask on a RoboRIO — this may need
-  to move to a slower periodic task (main loop, or its own timed thread)
-  that computes `s` and the allocated forces and hands cached results to the
-  odometry thread, rather than solving inline in `apply()`.
 - **Redundant per-body recomputation.** `MassModel`'s `effectiveWeight`,
   `internalReactionForce`, `internalReactionYawTorque`, and the swerve doc's
   `zeroMomentPoint` each independently call `comAcceleration()` (and
