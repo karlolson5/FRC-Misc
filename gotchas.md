@@ -11,32 +11,6 @@ itself.
 ---
 
 
-
-## 2. A real gap: the ZMP calc never sees the commanded chassis acceleration
-
-Related to #1, and bigger: `zeroMomentPoint(bodies, g)` (§3.2) sums over
-`bodies`, and none of those `RigidBodyState`s carry the *commanded* chassis
-acceleration contribution — `tipping.md` §12's `a_i^rigid(u)` term (the
-`s*(ax,ay,0) + alphaYaw × r_i' + ω×(ω×r_i')` piece). The chassis
-`RigidBodyState` built in §3.1 has `baseAccel` hardcoded to `Translation3d.kZero`
-and no `alphaYaw` contribution at all, and none of the mechanism-link
-`RigidBodyState`s built via `Rigid-Body-Mass-Java-Example.md` factor in the
-*chassis's* commanded motion either — they're built purely from joint state
-(`a_i^int`), which is correct for `F_req^int`/`τ_req^int` (`tipping.md` §15.4,
-by design) but is only half of what `zeroMomentPoint` needs. As shown, the
-function is also not parameterized by `s` at all, even though §3.2's prose
-says to "evaluate once at `s=0` and once at `s=1`" — there's no code path
-that actually varies the chassis's commanded acceleration when computing it.
-
-**This means the sketch's tipping check only reacts to internal mechanism
-motion (a swinging arm, an accelerating elevator), and is blind to the more
-common real-world tipping trigger: a hard chassis brake or spin-up with the
-mechanism sitting still.** Before using this, add a term to `a_i^rigid`
-(applied to *every* mass, chassis and mechanisms alike, since every mass in
-the tree accelerates with the chassis) and thread `s` through
-`zeroMomentPoint` the way `requiredForce(s)`/`requiredYawTorque(s)` already
-do in §3.5.
-
 ## 3. `normalForceCompliance(...)` is a stub, and its moment inputs aren't the same as the ZMP's
 
 §3.3 calls `normalForceCompliance(wheels, rcm, wEff, /* moment terms from zmp

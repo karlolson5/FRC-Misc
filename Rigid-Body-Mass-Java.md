@@ -124,6 +124,51 @@ public class RigidBodyState {
         Translation3d centripetal = cross(omega, omegaCrossR);
         return baseAccel.plus(alphaCrossR).plus(centripetal);
     }
+    
+    /**
+     * a_i^rigid(s): the acceleration this body's COM inherits purely from the
+     * chassis's own commanded/actual rigid motion (tipping.md §12), independent
+     * of this body's own joint state.
+     *
+     *   a_i^rigid = s*(ax, ay, 0) + s*alphaYawChassis × r_i' + omegaYawChassis × (omegaYawChassis × r_i')
+     *
+     * r_i' is this body's COM position relative to `pivot` (the chassis
+     * reference point tipping.md §12 measures r_i' from — confirm this matches
+     * that section; rcm is used elsewhere in this doc for the analogous
+     * parallel-axis sums, but tipping.md may define r_i' about a fixed chassis
+     * frame origin instead of the instantaneous rcm).
+     *
+     * Only the acceleration terms (ax, ay, alphaYawChassis) scale with s — the
+     * centripetal term omega x (omega x r') depends on the chassis's *actual*
+     * current yaw rate, which exists independent of how much of the *new*
+     * commanded acceleration we're asking for, so it is not scaled.
+     */
+    public Translation3d rigidAcceleration(double s, double ax, double ay,
+            double alphaYawChassis, double omegaYawChassis, Translation3d pivot) {
+        Translation3d rPrime = comWorld().minus(pivot);
+
+        Vector<N3> alphaVec = VecBuilder.fill(0, 0, s * alphaYawChassis);
+        Vector<N3> omegaVec = VecBuilder.fill(0, 0, omegaYawChassis);
+
+        Translation3d translational = new Translation3d(s * ax, s * ay, 0);
+        Translation3d alphaCrossR = cross(alphaVec, rPrime);
+        Translation3d omegaCrossR = cross(omegaVec, rPrime);
+        Translation3d centripetal = cross(omegaVec, omegaCrossR);
+
+        return translational.plus(alphaCrossR).plus(centripetal);
+    }
+
+    /**
+     * a_i(s) = a_i^int + a_i^rigid(s) — the *total* acceleration this body's
+     * COM experiences, combining its own joint motion with the chassis's
+     * commanded rigid motion. This is what zeroMomentPoint(...) should sum over,
+     * not comAcceleration() alone.
+     */
+    public Translation3d totalAcceleration(double s, double ax, double ay,
+            double alphaYawChassis, double omegaYawChassis, Translation3d pivot) {
+        return comAcceleration().plus(
+            rigidAcceleration(s, ax, ay, alphaYawChassis, omegaYawChassis, pivot));
+    }
 
     // WPILib's Translation3d has no built-in cross product; small helper using plain Math.
     private static Translation3d cross(Vector<N3> w, Translation3d r) {

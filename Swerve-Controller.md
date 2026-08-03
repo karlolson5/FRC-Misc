@@ -86,9 +86,8 @@ bodies.add(new RigidBodyState(
     chassisBody,
     new Pose3d(parameters.currentPose),
     Translation3d.kZero,
-    VecBuilder.fill(0,0, parameters.currentChassisSpeedomegaRadiansPerSecond),
-    VecBuilder.fill(0,0,
-        estimatedChassisAlphaRadiansPerSecondPerSecond)
+    VecBuilder.fill(0, 0, 0),
+    VecBuilder.fill(0, 0, 0)
 ));
 bodies.addAll(mechanismBodies.get());
 
@@ -106,11 +105,13 @@ double wEff   = massModel.effectiveWeight(bodies, 9.81);           // W_eff, tip
 tipping.md §5. Small addition alongside `MassModel`:
 
 ```java
-Translation2d zeroMomentPoint(List<RigidBodyState> bodies, double g) {
+Translation2d zeroMomentPoint(List<RigidBodyState> bodies, double g,
+        double s, double ax, double ay, double alphaYawChassis,
+        double omegaYawChassis, Translation3d pivot) {
     double sumXNiz = 0, sumYNiz = 0, sumNiz = 0;
     for (RigidBodyState b : bodies) {
         Translation3d com = b.comWorld();
-        Translation3d a = b.comAcceleration();
+        Translation3d a = b.totalAcceleration(s, ax, ay, alphaYawChassis, omegaYawChassis, pivot);
         double niz = b.body.massKg * (-g - a.getZ());
         sumXNiz += com.getX()*niz - com.getZ()*b.body.massKg*a.getX();
         sumYNiz += com.getY()*niz - com.getZ()*b.body.massKg*a.getY();
@@ -234,6 +235,15 @@ sketch — see §4 for the cost note on making this cheaper if it matters.
 ### 3.7 Combine, finalize, build module commands
 
 ```java
+double ax = DesiredAccel.vxMetersPerSecond, ay = DesiredAccel.vyMetersPerSecond;
+double alphaYawChassis = DesiredAccel.omegaRadiansPerSecond; // feedforward angular accel
+double omegaYawChassis = parameters.currentChassisSpeeds.omegaRadiansPerSecond; // actual, not commanded
+
+Translation2d zmpAtRest  = zeroMomentPoint(bodies, 9.81, 0.0, ax, ay, alphaYawChassis, omegaYawChassis, rcm);
+Translation2d zmpAtFull  = zeroMomentPoint(bodies, 9.81, 1.0, ax, ay, alphaYawChassis, omegaYawChassis, rcm);
+
+double sTip = rayPolygonIntersect(zmpAtRest, zmpAtFull, shrunkSupportPolygon(wheels.positions()));
+
 double s = MathUtil.clamp(Math.min(sTip, bisectSForce(rcm)), 0.0, 1.0);
 Optimisation.Result result = solveAllocation(s, rcm);   // final allocation at the chosen scale
 double[] f = new double[8];
