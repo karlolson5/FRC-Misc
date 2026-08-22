@@ -1,2 +1,3 @@
 wrap subsystems if this isn't incorporated: https://github.com/wpilibsuite/allwpilib/issues/8898
 trigger groups? if this isn't implemented: https://github.com/wpilibsuite/allwpilib/issues/7992
+self-cancel command: https://github.com/wpilibsuite/allwpilib/issues/7896
