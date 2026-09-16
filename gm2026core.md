@@ -36,13 +36,15 @@ There are no official models for the TREELIFE FIELD. This section typicall reads
 
 ## 5.2 FIELD
 
-Each FIELD for TREELIFE is an approximately 317.7in (~8.07m) by 651.2in (~16.54m) carpeted area bounded by inward facing surfaces of the ALLIANCE WALLS, TREES, SKIES, and guardrails.
+Each FIELD for TREELIFE is an approximately 317.7in (~8.07m) by 651.2in (~16.54m) carpeted area bounded by inward facing surfaces of the ALLIANCE WALLS, TREES, SKIES, SEEDING STATIONS, and guardrails.
 
 The FIELD is populated with and surrounded by the following elements:
 
 - 1 TREE per ALLIANCE,
 - 1 SKY per ALLIANCE,
-- 3 VINES per ALLIANCE, and
+- 3 VINES per ALLIANCE,
+- 1 HIGH SEEDING STATION per ALLIANCE,
+- 1 LOW SEEDING STATION per ALLIANCE, and
 - 1 CANOPY.
 
 The surface of the FIELD is low pile carpet, Shaw Floors, Philadelphia Commercial, Neyland II 20, "66561 Medallion." Neyland II carpet is not available for purchase at this time, and the closest equivalent is [Shaw, Philadelphia Brand, Profusion 20, Style 54933](https://philadelphiacommercial.com/products/carpet/details/profusion-20/54933/plethora/00520); see results from evaluation in [this blog post](https://community.firstinspires.org/2023-carpet-at-2024-events).
@@ -88,17 +90,18 @@ There are 2 versions of guardrails and DRIVER STATIONS used for competitions. On
 
 FIELD areas, zones, and markings of consequence are described below. Unless otherwise specified, the tape used to mark lines and zones throughout the FIELD is 2.0in (5.1cm) [3M™ Premium Matte Cloth (Gaffers) Tape (GT2)](http://multimedia.3m.com/mws/media/1217295O/gaffers-tape.pdf), [ProGaff® Premium Professional Grade Gaffer Tape](https://www.protapes.com/products/pro-gaff-tape-premium-professional-grade-gaffer-tape), or comparable gaffers tape.
 
-// TODO: Continue from here
+// TODO: fix distances from STARTING LINE and after
 
-- **ALLIANCE AREA**: an approximately 360in wide by 134in deep (~9.14m by 3.4m) infinitely tall volume formed by, and including the ALLIANCE WALL, OUTPOST, TOWER WALL, the edge of the carpet, and ALLIANCE colored tape perpendicular to the DRIVER STATIONS.
-- **ALLIANCE ZONE**: A 158.6in deep by 317.7in long (~4.03m by 8.07m), infinitely tall volume formed by an ALLIANCE WALL, TOWER WALL, and guardrails. It surrounds an ALLIANCE TOWER and a DEPOT. It is bounded by and includes the ROBOT STARTING LINE.
-- **CENTER LINE**: a white line that spans the width of the FIELD that bisects the NEUTRAL ZONE in half.
-- **NEUTRAL ZONE**: A 283in deep by 317.7in long (7.19m by 8.07m), infinitely tall volume formed by the BUMPS, TRENCHES, HUBS, and guardrails. It surrounds and includes the CENTER LINE.
-- **HUMAN STARTING LINE**: a white line spanning the ALLIANCE AREA up to the OUTPOST AREA that is parallel to and located 24.0in (61.0cm) from the bottom square tube of the ALLIANCE WALL to the near edge of the tape.
-- **OUTPOST AREA**: a 71.0in wide by 134in deep (1.8m by 3.4m) infinitely tall volume bounded by the OUTPOST, edge of carpet, and ALLIANCE and white colored tape.
-- **ROBOT STARTING LINE**: an ALLIANCE colored line that spans the width of the FIELD at the edge of an ALLIANCE ZONE in front of two BUMPS and an ALLIANCE HUB.
+- **ALLIANCE AREA**: an approximately 360in wide by 134in deep (~9.14m by 3.4m) infinitely tall volume formed by, and including the ALLIANCE WALL, TREE, SKY, the edge of the carpet, and ALLIANCE colored tape lines.
+- **ALLIANCE ZONE**: A 36in deep by 317.7in long (~0.91m by 8.07m), infinitely tall volume formed by an ALLIANCE WALL, TREE, SKY, guardrails, and an ALLIANCE colored tape line that spans the wedith of the FIELD.
+- **ROBOT STARTING LINE**: an ALLIANCE colored tape line that spans the width of the FIELD that is 72in away from the ALLIANCE WALL.
+- **CENTER LINE**: a white tape line that spans the width of the FIELD that bisects the FIELD in half.
+- **HUMAN STARTING LINE**: a white line spanning the ALLIANCE AREA up to the edges of the FIELD that is parallel to and located 24.0in (61.0cm) from the bottom square tube of the ALLIANCE WALL to the near edge of the tape.
+- **SEED STARTING LINE**: an white colored tape line that spans the width of the FIELD that is 108in away from the ALLIANCE WALL.
 
-## 5.4 HUB
+## 5.4 TREE
+
+// TODO
 
 A HUB is one of two 47in by 47in (~1.19m by 1.19m) rectangular prism structures with an extended opening at the top surface. Each ALLIANCE has a dedicated HUB centered between two BUMPS located 158.6in (~4.03m) away from their ALLIANCE WALL. Each HUB has a set of exits that randomly distributes FUEL into the NEUTRAL ZONE. A net structure located in the back of the HUB prevents FUEL launched from most prohibited areas from entering the opening.
 
@@ -119,39 +122,39 @@ The top angles of the HUB are lit by DMX light bars that indicate if the HUB is 
 | Green | N/A | N/A | FIELD is safe for all. |
 | Off | MATCH ready to start. | HUB is not active. | N/A |
 
-## 5.5 BUMP
+## 5.5 SKY
+
+// TODO
 
 BUMPS are 73.0in (1.854m) wide, 44.4in (1.128m) deep, and 6.513in (16.54cm) tall structures on either side of the HUB that ROBOTS drive over. The top surface of each BUMP is made up of 0.5in (1.27cm) thick, ALLIANCE colored, Orange Peel textured, HDPE ramps at a 15-degree angle with one ramp sloping down towards the NEUTRAL ZONE and the other ramp sloping down towards the ALLIANCE ZONE.
 
-## 5.6 TRENCH
+## 5.6 SEEDING STATIONS
+
+// TODO
+
+### 5.6.1 LOW SEEDING STATION
+
+// TODO
+
+### 5.6.2 HIGH SEEDING STATION
+
+// TODO
 
 TRENCHES are a 65.65in (1.668m) wide, 47.0in (1.194m) deep, and 40.25in (1.022m) tall structure that ROBOTS drive underneath. The TRENCH extends from the guardrail to the BUMP on both sides of the FIELD. The space underneath each TRENCH arm is 50.34in (1.279m) wide, 22.25in (56.52cm) tall.
 
 TRENCHES along the guardrail closest to the scoring table contain additional electronics to reach the HUB. The TRENCHES along the guardrail furthest from the scoring table have a pivot arm that allows the horizontal portion of the TRENCH to rotate into a vertical position for post-MATCH ROBOT retrieval and to let FIELD staff reset the field between matches. The pivot arm will be locked in the horizontal position during the MATCH.
 
-## 5.7 DEPOT
+## 5.7 CANOPY
+
+// TODO, includes VINES
 
 A DEPOT is a 42.0in (1.07m) wide, 27.0in (68.6cm) deep structure located along the ALLIANCE WALL. There is 1 DEPOT per ALLIANCE. DEPOTS are made up of 3.0in (7.62cm) wide, 1.0in (2.54) tall steel barriers. The DEPOT is secured to the carpet using hook fastener which increases the height to approximately 1.125in (2.86cm).
 
-## 5.8 TOWER
-
-A TOWER is a 49.25in (1.251m) wide, 45.0in (1.143m) deep, and 78.25in (1.988m) tall structure made up of the TOWER WALL, TOWER BASE, UPRIGHTS, RUNGS and supporting structures. There is 1 TOWER per ALLIANCE. A TOWER is integrated into each ALLIANCE WALL between DRIVER STATION 2 and DRIVER STATION 3.
-
-The TOWER BASE is a 39.0in (99.06cm) wide by 45.18in (1.148m) deep plate that sits on the floor and extends from the TOWER WALL. The TOWER BASE is powder-coated steel with hook fastener underneath. The edges of the TOWER BASE are approximately 0.2in (0.5cm) to 0.3in (0.8cm) tall.
-
-The UPRIGHTS are two 72.1in (1.831m) tall, 1.5in (3.81cm) thick, 3.5in (8.89cm) deep sheet metal box frames that extend vertically up from the TOWER BASE. The distance between each UPRIGHT is 32.25in (81.92cm).
-
-The UPRIGHTS hold three horizontal RUNGS made up of 1-1/4in Sch 40 (1.66in (4.216cm) OD) pipe. Each RUNG is centered between the UPRIGHT and extend 5.875in (14.92cm) from the outer face of the UPRIGHT on either side. The center of the LOW RUNG is located 27.0in (68.58cm) from the floor. The center of the MID RUNG is located 45.0in (114.3cm) from the floor. The center of the HIGH RUNG is 63.0in (1.6m) from the floor. The RUNGS are 18.0in (45.72cm) apart center to center.
-
-The UPRIGHTS and RUNGS are powder-coated red or blue.
-
-Each TOWER has additional supporting structures extending from the UPRIGHT to the TOWER WALL between approximately 28.40in (72.14cm) and 43.38in (1.102m) off the floor.
-
-## 5.9 ALLIANCE WALL
+## 5.8 ALLIANCE WALL
 
 The ALLIANCE WALL separates ROBOTS from DRIVE TEAM members in the ALLIANCE AREA. It consists of 3 DRIVER STATIONS, an OUTPOST, and a TOWER WALL.
 
-### 5.9.1 DRIVER STATIONS
+### 5.8.1 DRIVER STATIONS
 
 A DRIVER STATION is 1 of 3 assemblies within an ALLIANCE WALL behind which a DRIVE TEAM operates their ROBOT. Each DRIVER STATION is made from a 36.8in (93.5cm) tall diamond plate base topped with a 42in (1.07m) tall transparent plastic sheet and a top rail.
 
@@ -181,7 +184,7 @@ Each DRIVER STATION contains the following elements for DRIVE TEAMS:
   - A-Stop/E-stop LED: **Solid** — the ROBOT is DISABLED due to a press of the team E-stop button, the FIELD E-stop button, or by the scorekeeper via the FMS. **Blinking** — the ROBOT is DISABLED for the remainder of AUTO due to a press of the team A-Stop button. **Off** — the ROBOT is not DISABLED by the FIELD.
 - FMS hardware and wiring: mostly located below shelves in the 2 DRIVER STATIONS closer to the scoring table.
 
-### 5.9.2 OUTPOST
+### 5.8.2 OUTPOST
 
 An OUTPOST is an assembly through which HUMAN PLAYERS feed FUEL into the FIELD and ROBOTS can deliver FUEL to their HUMAN PLAYERS. There are 2 OUTPOSTS, 1 on either end of the FIELD connecting the guardrail to the ALLIANCE WALL. Each OUTPOST has a 31.8in (80.8cm) wide by 7.0in (17.8cm) tall opening through which FUEL passes to the FIELD. The bottom of the opening is 28.1in (71.4cm) off the floor.
 
@@ -199,13 +202,13 @@ The CHUTE and CORRAL each feature an ALLIANCE-colored tape line that indicates w
 >
 > This stool is available at all events within the US & Canada and equivalents are available at international events. For questions, please connect with the local [Program Delivery Partner](https://www.firstinspires.org/find-local-support).
 
-## 5.10 SCORING ELEMENTS
+## 5.9 SCORING ELEMENTS
 
 SCORING ELEMENTS are items that teams use to score points. There is one type of SCORING ELEMENT used in REBUILT: FUEL.
 
 > In REBUILT, a ROBOT may CONTROL any number of SCORING ELEMENTS after the start of the MATCH.
 
-### 5.10.1 FUEL
+### 5.9.1 FUEL
 
 A FUEL is a 5.91in (15.0cm) diameter, high density foam ball. FUEL is a custom made SCORING ELEMENT available for purchase on the AndyMark website, [am-5801](https://andymark.com/am-5801).
 
@@ -215,7 +218,7 @@ FUEL undergoes wear and tear during a competition. Generally, a FUEL that still 
 
 > Most new FUEL will have small impressions due to being pressed against other FUEL or the sides of the packaging during shipping. These impressions are purely cosmetic and do not affect the function of the FUEL. Most impressions will gradually disappear as the FUEL is used.
 
-## 5.11 AprilTags
+## 5.10 AprilTags
 
 AprilTags are 8.125in (20.64cm) square targets located on the HUB, TOWER WALL, OUTPOST, and TRENCHES. There are 32 unique markers on the FIELD.
 
@@ -231,7 +234,7 @@ TRENCH AprilTags (IDs 1, 6, 7, 12, 17, 22, 23, 28) are attached to mounting brac
 
 For further marker locating information please refer to the [2026 Field Dimension Drawings](https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/2026-field-dimension-dwgs.pdf). Printable copies of the field AprilTags can be found on the [Playing FIELD webpage](https://www.firstinspires.org/resources/library/frc/playing-field).
 
-## 5.12 The FIELD Management System
+## 5.11 The FIELD Management System
 
 The FIELD Management System (FMS) is all the electronics responsible for sensing and controlling the FIRST Robotics Competition FIELD. The FMS encompasses all FIELD electronics, including computers, REFEREE touchscreens, the wireless access point, sensors, stack lights, A-Stops and E-Stops, etc.
 
@@ -253,7 +256,7 @@ The FMS alerts participants to milestones in the MATCH using audio cues detailed
 | MATCH end | 0:00 | "Buzzer" |
 | MATCH stopped | n/a | "Foghorn" |
 
-## 5.13 FIELD STAFF
+## 5.12 FIELD STAFF
 
 FIELD STAFF are responsible for making sure the MATCHES are cycled through efficiently, fairly, safely, and with a spirit of cooperation, Gracious Professionalism, and generosity of spirit. FIELD STAFF roles are filled by volunteers from the community who prepare for the event with thorough training and certification. There are 3 FIELD-side key volunteer roles with whom teams should be familiar and are encouraged to use as resources to make their event experience valuable.
 
