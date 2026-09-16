@@ -145,7 +145,7 @@ Each RAIN INDICATOR is a 6in by 30in white LED panel which indicates the current
 
 ## 5.6 SEEDING STATIONS
 
-SEEDING STATIONS are 120in by 72in structures that allow HUMAN PLAYERS to enter SEEDS into the FIELD down ramps and through 72in by 14in openings.
+SEEDING STATIONS are 120in by 72in structures that allow HUMAN PLAYERS to enter SEEDS into the FIELD down ramps and through 72in by 14in openings. A 55° sloped tunnel, called the CHUTE, leads to the opening in the SEEDING STATION.
 
 The SEEDING STATIONS of each ALLIANCE extend along the FIELD PERIMETER from the corner of the ALLIANCE WALL of that ALLIANCE towards the center of the FIELD.
 
@@ -171,15 +171,15 @@ At the top of each VINE is a 6in tall by 12in diameter switch with a 5in travel 
 
 ## 5.8 ALLIANCE WALL
 
-The ALLIANCE WALL separates ROBOTS from DRIVE TEAM members in the ALLIANCE AREA. It consists of 3 DRIVER STATIONS, an OUTPOST, and a TOWER WALL.
+The ALLIANCE WALL separates ROBOTS from DRIVE TEAM members in the ALLIANCE AREA. It consists of a TREE and a SKY. Each TREE contains 2 DRIVER STATIONS and each SKY contains 1 DRIVER STATION.
 
 ### 5.8.1 DRIVER STATIONS
 
-A DRIVER STATION is 1 of 3 assemblies within an ALLIANCE WALL behind which a DRIVE TEAM operates their ROBOT. Each DRIVER STATION is made from a 36.8in (93.5cm) tall diamond plate base topped with a 42in (1.07m) tall transparent plastic sheet and a top rail.
+A DRIVER STATION is 1 of 3 assemblies built into a TREE or SKY, making up an ALLIANCE WALL behind which a DRIVE TEAM operates their ROBOT. Each DRIVER STATION contains a transparent plastic sheet 48in by 42in with its bottom edge 36in from the carpet.
 
-An aluminum shelf is attached to each DRIVER STATION to support an OPERATOR CONSOLE. The shelf is 69in (1.75m) wide and 12.25in (31.1cm) deep. There is a 54.0in (1.372m) long by 2.0in (nominal) wide strip of hook-and-loop tape ("loop" side) along the center of the support shelf that may be used to secure the OPERATOR CONSOLE to the shelf. The shelf also includes two clips to hold the shelf in place with a 1.0in (2.5cm) wide by 2.0in (5.1cm) deep tab that sits on the top surface of the shelf.
+An aluminum shelf is attached to each DRIVER STATION to support an OPERATOR CONSOLE. The shelf is 69in wide and 12.25in deep. There is a 54.0in long by 2.0in (nominal) wide strip of hook-and-loop tape ("loop" side) along the center of the support shelf that may be used to secure the OPERATOR CONSOLE to the shelf. The shelf also includes two clips to hold the shelf in place with a 1.0in wide by 2.0in deep tab that sits on the top surface of the shelf.
 
-There is a 6.0in (15.2cm) tall sponsor panel in each DRIVER STATION. The top of this panel is 42.9in (1.09m) from the carpet.
+There is a 6.0in tall sponsor panel in each DRIVER STATION. The top of this panel is 42.1in from the carpet.
 
 > There may be a ramp available at events for DRIVE TEAMS with limited mobility. It is designed to allow an individual using a wheelchair to access the DRIVER STATION shelf and/or see onto the FIELD; however, this accommodation is available to anyone who has a wheelchair or other physical disability that obstructs their view of the FIELD. Teams should speak to the FTA before MATCHES begin to ensure that it is available for each of the team's MATCHES.
 >
@@ -202,24 +202,6 @@ Each DRIVER STATION contains the following elements for DRIVE TEAMS:
   - ROBOT status LEDs: **Solid** — the ROBOT is connected and enabled (only happens during a MATCH). **Blinking** — either the FMS is preset for the MATCH and the ROBOT is not connected yet, or it's during a MATCH and the corresponding ROBOT has lost connectivity, or the E-stop was pressed. **Off** — the ROBOT is linked and DISABLED prior to the start of the MATCH, or the ROBOT is BYPASSED; also off after the MATCH has concluded.
   - A-Stop/E-stop LED: **Solid** — the ROBOT is DISABLED due to a press of the team E-stop button, the FIELD E-stop button, or by the scorekeeper via the FMS. **Blinking** — the ROBOT is DISABLED for the remainder of AUTO due to a press of the team A-Stop button. **Off** — the ROBOT is not DISABLED by the FIELD.
 - FMS hardware and wiring: mostly located below shelves in the 2 DRIVER STATIONS closer to the scoring table.
-
-### 5.8.2 OUTPOST
-
-An OUTPOST is an assembly through which HUMAN PLAYERS feed FUEL into the FIELD and ROBOTS can deliver FUEL to their HUMAN PLAYERS. There are 2 OUTPOSTS, 1 on either end of the FIELD connecting the guardrail to the ALLIANCE WALL. Each OUTPOST has a 31.8in (80.8cm) wide by 7.0in (17.8cm) tall opening through which FUEL passes to the FIELD. The bottom of the opening is 28.1in (71.4cm) off the floor.
-
-A 15.0° sloped tunnel, called the CHUTE, leads to the upper opening in the OUTPOST. The CHUTE can hold approximately 25 FUEL at a time retained by the CHUTE DOOR. The CHUTE DOOR is an HDPE arm on a pivot that can be rotated approximately 90 degrees by the HUMAN PLAYER to open or close the CHUTE.
-
-At the base of the OUTPOST is an opening 32.0in (81.3cm) wide by 7.0in (17.8cm) tall where ROBOTS can push FUEL into the CORRAL. The bottom of the opening is 1.88in (4.77cm) off the ground. The opening is divided in the center by a vertical 1-1/4in Sch 40 (1.66in (4.216cm) OD) pipe. The CORRAL is made up of 8.13in (20.6cm) tall polycarbonate panels that create a 35.8in (90.8cm) wide, 37.6in (95.5cm) deep area on the floor in which FUEL can be stored.
-
-The CHUTE and CORRAL each feature an ALLIANCE-colored tape line that indicates where DRIVE TEAMS may be restricted from reaching. The near edge of the CORRAL tape is 12.7in (32.3cm) from the FIELD-facing wall of the OUTPOST. The near edge of the CHUTE tape line is 12.9in (32.8cm) from the FIELD-facing wall of the OUTPOST.
-
-> There are 2 stools available at events for DRIVE TEAMS to use. Each stool is 23.0in (58.42cm) wide by 13.5in (34.29cm) deep, 6.25in (15.88cm) tall, and rated for 300lb (136.0kg).
->
-> It is specially intended to allow individuals who are shorter, better sightlines onto the FIELD; however, this accommodation is available to anyone who has another physical disability that obstructs their view of the FIELD.
->
-> Only 2 stools are available, and priority will be given to those with the biggest need. Teams should speak to the FTA before MATCHES begin to request that it is available for each of the team's MATCHES. Teams may also purchase their own ([Item Number: 779ac01stpm](https://www.webstaurantstore.com/ozark-river-manufacturing-lil-step-booster-6-1-4-maple-wood-childrens-non-slip-step-stool/779AC01STPM.html)) or bring an equivalent (e.g. not foldable and similar dimensions) version to the event to guarantee use for every match.
->
-> This stool is available at all events within the US & Canada and equivalents are available at international events. For questions, please connect with the local [Program Delivery Partner](https://www.firstinspires.org/find-local-support).
 
 ## 5.9 SCORING ELEMENTS
 
