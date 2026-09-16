@@ -36,7 +36,7 @@ There are no official models for the TREELIFE FIELD. This section typicall reads
 
 ## 5.2 FIELD
 
-Each FIELD for TREELIFE is an approximately 317.7in (~8.07m) by 651.2in (~16.54m) carpeted area bounded by inward facing surfaces of the ALLIANCE WALLS, TREES, SKIES, SEEDING STATIONS, and guardrails.
+Each FIELD for TREELIFE is an approximately 317.7in (~8.07m) by 651.2in (~16.54m) carpeted area bounded by inward facing surfaces of the ALLIANCE WALLS (made up of TREES and SKIES), SEEDING STATIONS, and guardrails.
 
 The FIELD is populated with and surrounded by the following elements:
 
@@ -101,54 +101,73 @@ FIELD areas, zones, and markings of consequence are described below. Unless othe
 
 ## 5.4 TREE
 
-// TODO
+// TODO update figure #
 
-A HUB is one of two 47in by 47in (~1.19m by 1.19m) rectangular prism structures with an extended opening at the top surface. Each ALLIANCE has a dedicated HUB centered between two BUMPS located 158.6in (~4.03m) away from their ALLIANCE WALL. Each HUB has a set of exits that randomly distributes FUEL into the NEUTRAL ZONE. A net structure located in the back of the HUB prevents FUEL launched from most prohibited areas from entering the opening.
+A TREE is one of two 252in by 108in rectangular structures with 12 BRANCHES which have 12in by 12in BRANCH OPENINGS and 3 6inx6in WEATHER INDICATOR lights. Each ALLIANCE has a dedicated TREE that makes up the opposing ALLIANCE WALL along with the SKY. Each TREE has two exits that distributes SEEDS into the opposite ALLIANCE AREA.
 
-The top of each HUB has a 41.7in (~1.06m) hexagonal opening into which ROBOTS can deliver FUEL. The front edge of the opening is 72in (~1.83m) off the carpet.
+The location of each BRANCH OPENING and WEATHER INDICATOR is defined in Figure 5-X (~1.06m).
 
-HUBS have a series of exits at the base of the HUB facing towards the NEUTRAL ZONE. FUEL processed through the HUB are distributed into the NEUTRAL ZONE via one of four exits. Examples of FUEL distribution from the HUB can be found on the [Playing FIELD webpage](https://www.firstinspires.org/resources/library/frc/playing-field).
 
-The top angles of the HUB are lit by DMX light bars that indicate if the HUB is active. See the table below for more details about the various light states in the HUB.
+### 5.4.1 BRANCH
 
-*Table 5-3: HUB Lighting*
+Each BRANCH is a 12in by 12in by 15in tall box, where the top of the BRANCH aligns with the BRANCH OPENING. Sensors built into each BRANCH detect if a BRANCH contains a SEED.
 
-| Color | Pre-MATCH | MATCH | Post-Match |
-|---|---|---|---|
-| ALLIANCE color at 100% brightness | N/A | HUB active | N/A |
-| ALLIANCE color pulsing | N/A | HUB deactivation warning. Starts 3 seconds before and continues until deactivation. | N/A |
-| ALLIANCE color with white chase | N/A | During the TRANSITION SHIFT, indicates the ALLIANCE HUB that will be inactive in ALLIANCE SHIFT 1. HUB is active. | N/A |
-| Purple | N/A | N/A | FIELD is safe for FIELD STAFF. |
-| Green | N/A | N/A | FIELD is safe for all. |
-| Off | MATCH ready to start. | HUB is not active. | N/A |
+The bottom face of each BRANCH is a powered conveyor belt which allows TREES to release SEEDS at appropriate times. The back face of each BRANCH is actuated to enable this.
+
+### 5.4.2 WEATHER INDICATOR
+
+Each WEATHER INDICATOR is a 6in by 6in LED panel which indicates the current WEATHER. 
+
+*Table 5-3: WEATHER INDICATOR Lighting*
+
+| WEATHER INDICATOR | Color | Pre-Match | MATCH | Post-Match |
+|---|---|---|---|---|
+| DROUGHT | Orange | N/A | DROUGHT active | N/A |
+| TEMPERATE | Green | | TEMPERATE active | FIELD is safe for all. |
+| FLOOD | Purple | N/A | FLOOD active | FIELD is safe for FIELD STAFF. |
+| All | Off | MATCH ready to start. | N/A | N/A |
 
 ## 5.5 SKY
 
 // TODO
 
-BUMPS are 73.0in (1.854m) wide, 44.4in (1.128m) deep, and 6.513in (16.54cm) tall structures on either side of the HUB that ROBOTS drive over. The top surface of each BUMP is made up of 0.5in (1.27cm) thick, ALLIANCE colored, Orange Peel textured, HDPE ramps at a 15-degree angle with one ramp sloping down towards the NEUTRAL ZONE and the other ramp sloping down towards the ALLIANCE ZONE.
+A SKY is one of two 65.7in by 108in rectangular structures with 2 CLOUDS which are 36in diameter openings has and 2 6in by 30in RAIN INDICATOR light panels. Each ALLIANCE has a dedicated SKY that makes up the opposing ALLIANCE WALL along with the TREE.
+
+The positions of the CLOUDS and RAIN INDICATORS are shown in Figure 5-X.
+
+### 5.5.1 CLOUD
+
+A CLOUD is a 36in diameter circular opening in the SKY, with a chain mesh placed 8in behind the opening that guides SEEDS into a bin below. Each CLOUD is outfitted with sensors that determine when a SEED has passed completely through the CLOUD into the opposing ALLIANCE AREA. 
+
+### 5.4.2 RAIN INDICATOR
+
+Each RAIN INDICATOR is a 6in by 30in white LED panel which indicates the current RAIN LEVEL. There are 40 individually distributed segments separated into 4 groups of 10 which are each 6in tall. A gap of 2in separates each group. 
 
 ## 5.6 SEEDING STATIONS
 
-// TODO
+SEEDING STATIONS are 120in by 72in structures that allow HUMAN PLAYERS to enter SEEDS into the FIELD down ramps and through 72in by 14in openings.
+
+The SEEDING STATIONS of each ALLIANCE extend along the FIELD PERIMETER from the corner of the ALLIANCE WALL of that ALLIANCE towards the center of the FIELD.
 
 ### 5.6.1 LOW SEEDING STATION
 
-// TODO
+The bottom of the opening of a LOW SEEDING STATION is 0.5in from the floor.
 
 ### 5.6.2 HIGH SEEDING STATION
 
-// TODO
-
-TRENCHES are a 65.65in (1.668m) wide, 47.0in (1.194m) deep, and 40.25in (1.022m) tall structure that ROBOTS drive underneath. The TRENCH extends from the guardrail to the BUMP on both sides of the FIELD. The space underneath each TRENCH arm is 50.34in (1.279m) wide, 22.25in (56.52cm) tall.
-
-TRENCHES along the guardrail closest to the scoring table contain additional electronics to reach the HUB. The TRENCHES along the guardrail furthest from the scoring table have a pivot arm that allows the horizontal portion of the TRENCH to rotate into a vertical position for post-MATCH ROBOT retrieval and to let FIELD staff reset the field between matches. The pivot arm will be locked in the horizontal position during the MATCH.
+The bottom of the opening of a HIGH SEEDING STATION is 42in from the floor.
 
 ## 5.7 CANOPY
 
-// TODO, includes VINES
+The CANOPY is a 341.7in by 12in by 108in tall structure made from 12in by 12in truss components centered on and spanning the width of the FIELD. The CANOPY contains 6 VINES, 3 for each ALLIANCE.
 
-A DEPOT is a 42.0in (1.07m) wide, 27.0in (68.6cm) deep structure located along the ALLIANCE WALL. There is 1 DEPOT per ALLIANCE. DEPOTS are made up of 3.0in (7.62cm) wide, 1.0in (2.54) tall steel barriers. The DEPOT is secured to the carpet using hook fastener which increases the height to approximately 1.125in (2.86cm).
+The truss structure abuts the outer edge of the guardrails and extends into the field 48in from the inner face of the guardrails with a gap between the bottom face of the truss and the carpet of 48in. The truss structure then extends upward and across the remainder of the field with a gap of 96in between the bottom face and the carpet.
+
+### 5.7.1 VINE
+
+A VINE is a length of ¼-in. Grade 43 zinc plated chain. Six VINES are located in various locations on the CANOPY, as shown in Figure 5-X. Each alliance has a LOW VINE, LONG VINE, and SHORT VINE. The LOW VINE extends approximately 24in from the bottom face of the truss section that is 48in above the carpet. The LONG and SHORT VINES extend approximately 72in and 24in, respectively, from the bottom face of the truss section that is 96in from the carpet. The LOW, LONG, and SHORT VINES are attached to the truss at points 24in, 72in, and 120in, respecitvely, from the inner edge of the closest guardrail. This leaves a 77.7in gap betwen the SHORT VINE of the RED ALLIANCE and the SHORT VINE of the BLUE ALLIANCE.
+
+At the top of each VINE is a 6in tall by 12in diameter switch with a 5in travel range which is triggered when it is depressed 2in. The VINE extends through these switches, so the LOW VINE extends approximately 18in below its undepressed switch.
 
 ## 5.8 ALLIANCE WALL
 
