@@ -209,21 +209,21 @@ SCORING ELEMENTS are items that teams use to score points. There is one type of 
 
 > In REBUILT, a ROBOT may CONTROL any number of SCORING ELEMENTS after the start of the MATCH.
 
-### 5.9.1 FUEL
+### 5.9.1 SEEDS
 
-A FUEL is a 5.91in (15.0cm) diameter, high density foam ball. FUEL is a custom made SCORING ELEMENT available for purchase on the AndyMark website, [am-5801](https://andymark.com/am-5801).
+A SEED is a high density foam ball. SEEDS are shaped similarly to NCAA American Football balls. A cross-section perpendicular to its long direction is a circle with diameter of 17cm (~6.7 in) and its cross-section parallel to the long direction is an ellipse with a major axis of 28cm (~11in) and a minor axis of 17cm (~6.7in). SEEDS are a custom made SCORING ELEMENT available for purchase on the AndyMark website.
 
-FUEL has a weight of between 0.448-0.500lb (~0.203-0.227kg).
+SEEDS have a weight of ~1lb (~0.454kg).
 
-FUEL undergoes wear and tear during a competition. Generally, a FUEL that still appears to look approximately like a FUEL is considered a FUEL for the purposes of rule evaluation and scoring, whether damaged or not. Small chunks of a FUEL are not considered a FUEL.
-
-> Most new FUEL will have small impressions due to being pressed against other FUEL or the sides of the packaging during shipping. These impressions are purely cosmetic and do not affect the function of the FUEL. Most impressions will gradually disappear as the FUEL is used.
+SEEDS undergo wear and tear during a competition. Generally, a SEED that still appears to look approximately like a SEED is considered a SEED for the purposes of rule evaluation and scoring, whether damaged or not. Small chunks of a SEED are not considered a SEED and will not trigger sensors in the TREE or SKY.
 
 ## 5.10 AprilTags
 
-AprilTags are 8.125in (20.64cm) square targets located on the HUB, TOWER WALL, OUTPOST, and TRENCHES. There are 32 unique markers on the FIELD.
+// TODO: locations of apriltags
 
-All markers are from the 36h11 tag family, IDs 1-32. All AprilTags are mounted to and centered on a 10.5in (26.67cm) square polycarbonate panel. Each marker has an identifying text label. If AprilTags experience wear and marking during MATCHES they are repaired with gaffers tape.
+AprilTags are 8.125in (20.64cm) square targets located on the TREES, SKIES, SEEDING STATIONS, and CANOPY. There are XX unique markers on the FIELD.
+
+All markers are from the 36h11 tag family, IDs 1-XX. All AprilTags are mounted to and centered on a 10.5in (26.67cm) square polycarbonate panel. Each marker has an identifying text label. If AprilTags experience wear and marking during MATCHES they are repaired with gaffers tape.
 
 HUB AprilTags (IDs 2, 3, 4, 5, 8, 9, 10, 11, 18, 19, 20, 21, 24, 25, 26, 27) are located on all four faces of the HUB. Each face has two AprilTags with centers located 44.25in (1.124m) off the floor. One AprilTag per face is centered and the other AprilTag is horizontally offset.
 
@@ -249,12 +249,11 @@ The FMS alerts participants to milestones in the MATCH using audio cues detailed
 
 | Event | Timer Value(s) | Audio Cue |
 |---|---|---|
-| MATCH start | 0:20 (for AUTO) | "Cavalry Charge" |
-| AUTO ends | 0:00 (for AUTO) | "Buzzer" |
-| TELEOP & TRANSITION begins | 2:20 | "3 Bells" |
-| ALLIANCE SHIFT starts | 2:10, 1:45, 1:20, 0:55 | "POWER UP – Linear Popping" |
-| END GAME begins | 0:30 | "Steam Whistle" |
-| MATCH end | 0:00 | "Buzzer" |
+| MATCH start | 0:20 (for AUTO) | "Bird Call 1" |
+| AUTO ends | 0:00 (for AUTO) | "Elephant Trumpet" |
+| TELEOP begins | 2:20 | "Bird Call 2" |
+| END GAME begins | 0:30 | "Bees Buzz" |
+| MATCH end | 0:00 | "Elephant Trumpet" |
 | MATCH stopped | n/a | "Foghorn" |
 
 ## 5.12 FIELD STAFF
