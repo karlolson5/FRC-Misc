@@ -16,34 +16,34 @@ The ARENA includes all elements of the game infrastructure that are required to 
 
 ## 5.1 Dimensions and Accuracy
 
-All official models for the REBUILT FIELD were created in Onshape.
+There are no official models for the TREELIFE FIELD. This section typicall reads as follows:
 
-The specification for the REBUILT FIELD can be retrieved from a few locations:
+*All official models for the REBUILT FIELD were created in Onshape.*
 
-- The 3D CAD model is the official representation of the REBUILT FIELD and how it is constructed.
-- Illustrations included in this section are for a general visual understanding of the REBUILT ARENA, and dimensions included in the manual are nominal and no tolerances are implied. Please refer to the official drawings for exact dimensions, tolerances, and construction details.
-- The [Field Dimension Drawings](https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/2026-field-dimension-dwgs.pdf) package has critical dimensions for each FIELD element.
-- The [FIELD Manual](https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/field-manual.pdf) includes instructions on how to build the FIELD along with showing the ways construction type will influence the field tolerances. It also includes many of the key dimensions which are listed in the Official FIELD Drawings.
-- The FIELD Acceptance Checklist (coming soon) includes the controlled dimensions (with relevant tolerances) which will be checked by event staff a few times throughout the event. The FIELD is expected to change during MATCH play. Teams can ask the FTA to re-check specific measurements if they believe something is out of spec prior to a MATCH beginning.
+*The specification for the REBUILT FIELD can be retrieved from a few locations:*
 
-The official drawings, CAD models, and drawings for low-cost versions of important elements of the REBUILT FIELD are posted on [the Playing FIELD webpage](https://www.firstinspires.org/robotics/frc/playing-field).
+- *The 3D CAD model is the official representation of the REBUILT FIELD and how it is constructed.*
+- *Illustrations included in this section are for a general visual understanding of the REBUILT ARENA, and dimensions included in the manual are nominal and no tolerances are implied. Please refer to the official drawings for exact dimensions, tolerances, and construction details.*
+- *The [Field Dimension Drawings](https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/2026-field-dimension-dwgs.pdf) package has critical dimensions for each FIELD element.*
+- *The [FIELD Manual](https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/field-manual.pdf) includes instructions on how to build the FIELD along with showing the ways construction type will influence the field tolerances. It also includes many of the key dimensions which are listed in the Official FIELD Drawings.*
+- *The FIELD Acceptance Checklist (coming soon) includes the controlled dimensions (with relevant tolerances) which will be checked by event staff a few times throughout the event. The FIELD is expected to change during MATCH play. Teams can ask the FTA to re-check specific measurements if they believe something is out of spec prior to a MATCH beginning.*
 
-> The ARENA is modular and assembled, used, disassembled, and shipped many times during the competition season. It undergoes wear and tear. The ARENA is designed to withstand rigorous play and frequent shipping. Every effort is made to ensure that ARENAS are consistent from event to event.
+*The official drawings, CAD models, and drawings for low-cost versions of important elements of the REBUILT FIELD are posted on [the Playing FIELD webpage](https://www.firstinspires.org/robotics/frc/playing-field).*
+
+> *The ARENA is modular and assembled, used, disassembled, and shipped many times during the competition season. It undergoes wear and tear. The ARENA is designed to withstand rigorous play and frequent shipping. Every effort is made to ensure that ARENAS are consistent from event to event.*
 >
-> However, ARENAS are assembled in different venues by different event staff and some small variations occur. Successful teams will design ROBOTS that are insensitive to these variations.
+> *However, ARENAS are assembled in different venues by different event staff and some small variations occur. Successful teams will design ROBOTS that are insensitive to these variations.*
 
 ## 5.2 FIELD
 
-Each FIELD for REBUILT is an approximately 317.7in (~8.07m) by 651.2in (~16.54m) carpeted area bounded by inward facing surfaces of the ALLIANCE WALLS, OUTPOSTS, TOWER WALLS, and guardrails.
+Each FIELD for TREELIFE is an approximately 317.7in (~8.07m) by 651.2in (~16.54m) carpeted area bounded by inward facing surfaces of the ALLIANCE WALLS, TREES, SKIES, and guardrails.
 
 The FIELD is populated with and surrounded by the following elements:
 
-- 1 OUTPOST per ALLIANCE,
-- 1 HUB per ALLIANCE,
-- 1 TOWER per ALLIANCE,
-- 2 DEPOTS,
-- 4 BUMPS, and
-- 4 TRENCHES.
+- 1 TREE per ALLIANCE,
+- 1 SKY per ALLIANCE,
+- 3 VINES per ALLIANCE, and
+- 1 CANOPY.
 
 The surface of the FIELD is low pile carpet, Shaw Floors, Philadelphia Commercial, Neyland II 20, "66561 Medallion." Neyland II carpet is not available for purchase at this time, and the closest equivalent is [Shaw, Philadelphia Brand, Profusion 20, Style 54933](https://philadelphiacommercial.com/products/carpet/details/profusion-20/54933/plethora/00520); see results from evaluation in [this blog post](https://community.firstinspires.org/2023-carpet-at-2024-events).
 
@@ -87,6 +87,8 @@ There are 2 versions of guardrails and DRIVER STATIONS used for competitions. On
 ## 5.3 Areas, Zones, & Markings
 
 FIELD areas, zones, and markings of consequence are described below. Unless otherwise specified, the tape used to mark lines and zones throughout the FIELD is 2.0in (5.1cm) [3M™ Premium Matte Cloth (Gaffers) Tape (GT2)](http://multimedia.3m.com/mws/media/1217295O/gaffers-tape.pdf), [ProGaff® Premium Professional Grade Gaffer Tape](https://www.protapes.com/products/pro-gaff-tape-premium-professional-grade-gaffer-tape), or comparable gaffers tape.
+
+// TODO: Continue from here
 
 - **ALLIANCE AREA**: an approximately 360in wide by 134in deep (~9.14m by 3.4m) infinitely tall volume formed by, and including the ALLIANCE WALL, OUTPOST, TOWER WALL, the edge of the carpet, and ALLIANCE colored tape perpendicular to the DRIVER STATIONS.
 - **ALLIANCE ZONE**: A 158.6in deep by 317.7in long (~4.03m by 8.07m), infinitely tall volume formed by an ALLIANCE WALL, TOWER WALL, and guardrails. It surrounds an ALLIANCE TOWER and a DEPOT. It is bounded by and includes the ROBOT STARTING LINE.
