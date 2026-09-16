@@ -266,15 +266,15 @@ FIELD STAFF are responsible for making sure the MATCHES are cycled through effic
 
 # 6 Game Details
 
-In REBUILT, 2 ALLIANCES (an ALLIANCE is a cooperative of up to 4 FIRST Robotics Competition teams) play MATCHES, set up and implemented per the details described below.
+In TREELIFE, 2 ALLIANCES (an ALLIANCE is a cooperative of up to 4 FIRST Robotics Competition teams) play MATCHES, set up and implemented per the details described below.
 
 ## 6.1 MATCH Overview
 
 MATCHES run on 7–10-minute cycles, which consist of pre-MATCH setup, the 2-minute and 40-second MATCH, and the post-MATCH reset.
 
-During the MATCH, ROBOTS collect FUEL and score in their HUB. HUMAN PLAYERS can deliver FUEL to ROBOTS or score them in their HUB.
+During the MATCH, ROBOTS collect SEEDS and score in their TREE and SKY. HUMAN PLAYERS can deliver SEEDS to ROBOTS.
 
-ROBOTS conclude the MATCH climbing on their TOWER.
+ROBOTS conclude the MATCH climbing their VINES.
 
 ## 6.2 DRIVE TEAM
 
@@ -313,7 +313,7 @@ DRIVE TEAMS prepare for a MATCH by staging in the appropriate areas, according t
 
 - A. only DRIVE TEAM members assigned to the upcoming MATCH are present,
 - B. for Qualification MATCHES only DRIVE TEAM members whose ROBOTS have passed initial, complete Inspection are present,
-- C. any number of HUMAN PLAYERS are staged in their OUTPOST AREAS,
+- C. any number of HUMAN PLAYERS are staged in their SEEDING AREAS,
 - D. HUMAN PLAYERS not included in C, DRIVERS, and DRIVE COACHES are in their ALLIANCE AREA and behind the HUMAN STARTING LINE,
 - E. TECHNICIANS are in the event-designated area near the FIELD,
 - F. DRIVE TEAM members clearly display their designated buttons above their waists (DRIVE COACH - "Drive Coach", DRIVERS and HUMAN PLAYERS - "Drive Team", and TECHNICIAN - "Technician"), and
@@ -339,42 +339,21 @@ In an intra-Division Playoff MATCH, the same pattern is applied, but instead of 
 
 Before each MATCH begins, FIELD STAFF stage SCORING ELEMENTS.
 
-504 FUEL are staged for each MATCH as follows:
+50 SEEDS are staged for each MATCH as follows:
 
-- A. 24 FUEL are staged in each DEPOT (FUEL may not be in a uniform layout),
-- B. 24 FUEL are staged in each OUTPOST CHUTE,
-- C. 8 FUEL may be preloaded in each ROBOT by the ROBOT's DRIVE TEAM, such that each FUEL is fully supported by the ROBOT (up to 48 total; a FUEL not pre-loaded in a ROBOT is staged in the NEUTRAL ZONE), and
-- D. remaining FUEL are arranged in the NEUTRAL ZONE through a process listed below (360 to 408, depending on how many are preloaded in ROBOTS).
+- A. 8 SEEDS are staged on each SEED STARTING LINE, in contact or above marks on the center of the SEED STARTING LINE and 32in apart center-to-center from each other, with the long axis of the SEED paralell to the SEED STARTING LINE. The pattern is centered on the field, so that the outermost mark centers are ~46.9in from the guardrail inner faces.
+- C. 2 SEEDS may be preloaded in each ROBOT by the ROBOT's DRIVE TEAM, such that each SEED is in contact with their ROBOT (up to 6 per ALLIANCE total; a SEEDS not pre-loaded in a ROBOT are moved to the SEEDING STATION of that ALLIANCE), and
+- D. the remaining 11 SEEDS per ALLIANCE are distributed as desired by that ALLIANCE between two SEEDING STATIONS (note that each SEEDING STATION can hold a maximum of 8 SEEDS).
 
-> Due to the high number of SCORING ELEMENTS in REBUILT, FIELD STAFF may not be able to perfectly count all FUEL put into the NEUTRAL ZONE. The number of FUEL staged in the NEUTRAL ZONE for any given match may fluctuate around +/- 24 FUEL.
+> FIELD STAFF will attempt to center and align SEEDS on the SEED STARTING LINE marks, but offsets of ≤3in and ≤30° should be expected and will be considered part of normal gameplay.
 
-For District Championship and/or FIRST Championship events, the quantity of FUEL staged in a MATCH may increase up to 600. If this happens, the additional FUEL will be included as part of an updated FUEL arrangement in the NEUTRAL ZONE.
-
-#### 6.3.4.1 NEUTRAL ZONE FUEL Arrangement
-
-The NEUTRAL ZONE is staged by the FIELD crew by corralling all FUEL within a bounding box that is approximately 206.0in (5.23m) wide and 72.0in (1.83m) deep. The bounding box has a solid divider in the middle that is 2.0in (5.08cm) wide that will result in a small gap in FUEL. The dividers will be removed prior to the start of the MATCH.
-
-The expected result of the dispersal is a roughly equal split of FUEL on both sides of the CENTER LINE. The dispersal between the scoring table side and non-scoring table side of the field is expected to vary match to match.
-
-> The placement of FUEL in the NEUTRAL ZONE is not intended to be in a perfect grid. Teams should expect variances in the placement of FUEL in the NEUTRAL ZONE at the start of the MATCH.
+> If no SEEDS are pre-loaded in any ALLIANCE ROBOT, 8 SEEDS are placed at each SEEDING STATION and a DRIVE TEAM member holds the one remaining SEED.
 
 ## 6.4 MATCH Periods
 
-The first period of each MATCH is 20 seconds long and called the Autonomous Period (AUTO). During AUTO, ROBOTS operate without any DRIVE TEAM control or input. ROBOTS score SCORING ELEMENTS, may leave their ROBOT STARTING LINE and retrieve additional SCORING ELEMENTS, and may climb their TOWER. There is a 3-second delay between AUTO and TELEOP for scoring purposes as described in section 6.5 Scoring.
+The first period of each MATCH is 20 seconds long and called the Autonomous Period (AUTO). During AUTO, ROBOTS operate without any DRIVE TEAM control or input. ROBOTS score SCORING ELEMENTS, may leave their ROBOT STARTING LINE and retrieve additional SCORING ELEMENTS. There is a 3-second delay between AUTO and TELEOP for scoring purposes as described in section 6.5 Scoring.
 
-The second period of each MATCH is the remaining 2 minutes and 20 seconds (2:20) and called the Teleoperated Period (TELEOP). During TELEOP, DRIVERS remotely operate ROBOTS to retrieve and score SCORING ELEMENTS and climb their TOWER. TELEOP is split into further segments: the TRANSITION SHIFT, the ALLIANCE SHIFTS, and END GAME. There are four ALLIANCE SHIFTS named SHIFT 1, SHIFT 2, SHIFT 3, and SHIFT 4.
-
-*Table 6-2: MATCH SHIFTS*
-
-| MATCH Period | MATCH Timeframe | Duration | Timer Values |
-|---|---|---|---|
-| AUTO | AUTO | 20 Seconds | 0:20 – 0:00 |
-| TELEOP | TRANSITION SHIFT | 10 Seconds | 2:20 – 2:10 |
-| TELEOP | SHIFT 1 | 25 Seconds | 2:10 – 1:45 |
-| TELEOP | SHIFT 2 | 25 Seconds | 1:45 – 1:20 |
-| TELEOP | SHIFT 3 | 25 Seconds | 1:20 – 0:55 |
-| TELEOP | SHIFT 4 | 25 Seconds | 0:55 – 0:30 |
-| TELEOP | END GAME | 30 Seconds | 0:30 – 0:00 |
+The second period of each MATCH is the remaining 2 minutes and 20 seconds (2:20) and called the Teleoperated Period (TELEOP). During TELEOP, DRIVERS remotely operate ROBOTS to retrieve and score SCORING ELEMENTS and climb their VINES. The final 30 seconds of the TELEOP period is the END GAME period.
 
 ### 6.4.1 HUB Status
 
