@@ -1,18 +1,18 @@
 # 4 Game Overview
 
-In REBUILT™ presented by Haas, two competing alliances are invited to score fuel, cross obstacles, and climb the tower before time runs out. Alliances earn additional rewards for meeting specific scoring thresholds.
+In TREELIFE™ presented by Code Orange, two competing alliances are invited to place and score seeds and climb the vines before time runs out. Alliances earn additional rewards for meeting specific objectives.
 
-During the first 20 seconds of the match, robots are autonomous. Without guidance from their drivers, robots score fuel into their hub. Fuel can be pre-loaded into a robot, obtained from the human player, collected at the depot, or picked up throughout the center of the field. Some robots may also climb the tower to obtain additional points.
+During the first 20 seconds of the match, robots are autonomous. Without guidance from their drivers, robots grow seeds in their trees and seed clouds to manage the weather. Seeds can be pre-loaded into a robot, obtained from the human player, or picked up throughout the field.
 
-During the remaining 2 minutes and 20 seconds, drivers control their robots. Based on the result of autonomous play, alliance hubs will alternate between active and inactive, shifting gameplay between both sides of the field. Robots can collect fuel at any point in the match and may control any amount of fuel at a time. Drivers control their robots to score fuel into their hub while it is active and may perform defensive strategies or collect more fuel while their hub is inactive.
+During the remaining 2 minutes and 20 seconds, drivers control their robots. Robots will collect seeds, manage the weather, and play defense. Drivers control their robots and coordinate with teammates to grow seeds in their tree when the weather is good, seed rain when the weather becomes dry, navigate the canopy, and earn bonuses for growing many seeds at once.
 
-As time runs out, all hubs become active, allowing all robots to score. Robots can climb to the tower's highest heights to score additional points and claim match bonuses to increase their position in the rankings.
+As time runs out, robots can climb vines to score additional points and, with well-managed weather, claim match bonuses to increase their position in the rankings.
 
 The alliance that earns the most points wins the match!
 
 # 5 ARENA
 
-The ARENA includes all elements of the game infrastructure that are required to play REBUILT™ presented by Haas: the FIELD, SCORING ELEMENTS, queue area, team media area (when available), designated TECHNICIAN area, and all equipment needed for FIELD control, ROBOT control, and scorekeeping.
+The ARENA includes all elements of the game infrastructure that are required to play TREELIFE™ presented by Code Orange: the FIELD, SCORING ELEMENTS, queue area, team media area (when available), designated TECHNICIAN area, and all equipment needed for FIELD control, ROBOT control, and scorekeeping.
 
 ## 5.1 Dimensions and Accuracy
 
