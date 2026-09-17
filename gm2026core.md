@@ -574,7 +574,7 @@ A team member is prohibited from the following actions with regards to interacti
 
 > ⚠ Violation: VERBAL WARNING. YELLOW CARD if subsequent violations during the event.
 
-> The REBUILT FIELD has obstacles, and caution should be applied when navigating the FIELD. Teams should avoid carrying their ROBOT over the BUMP. Walking over the BUMP is not considered climbing on.
+> The TREELIFE FIELD has obstacles, and caution should be applied when navigating the FIELD. Teams should take caution when carrying their ROBOT near the CANOPY.
 
 **G104 \*Teams may not enable their ROBOTS on the FIELD.**
 Teams may not tether to the ROBOT while on the FIELD except in special circumstances (e.g. after Opening Ceremonies, before an immediate MATCH replay, etc.) and with the express permission from the FTA or a REFEREE.
@@ -629,7 +629,7 @@ A team or ALLIANCE may not collude with another team to each purposefully violat
 
 > ⚠ Violation: YELLOW CARD and the ALLIANCE is ineligible for the BONUS RPs.
 
-> For example, if Team A on the blue ALLIANCE agrees with Team F on the red ALLIANCE to contact each other while each ROBOT is climbing the TOWER resulting in both ALLIANCES being awarded the TRAVERSAL RP.
+> For example, if Team A on the blue ALLIANCE agrees with Team F on the red ALLIANCE to contact each other while each ROBOT is climbing the VINE resulting in both ALLIANCES being awarded progress towards the RAINFOREST RP.
 
 **G207 \*Don't abuse ARENA access.**
 A team member (except DRIVERS, HUMAN PLAYERS, and DRIVE COACHES) granted access to restricted areas in and around the ARENA may not assist or use signaling devices during the MATCH. Exceptions will be granted for inconsequential infractions and in cases concerning safety.
@@ -655,7 +655,7 @@ A strategy not consistent with standard gameplay and clearly aimed at forcing th
 
 > ⚠ Violation: MAJOR FOUL. YELLOW CARD if REPEATED.
 
-> This rule does not apply for strategies consistent with standard gameplay, e.g. a red ALLIANCE ROBOT attempting to climb their TOWER in the final 30 seconds contacts a blue ALLIANCE ROBOT, or a blue ALLIANCE ROBOT playing defense pushes a red ALLIANCE ROBOT out of their ALLIANCE ZONE while it's scoring. This rule requires an intentional act with limited or no opportunity for the team being acted on to avoid the penalty, such as forcing an opponent ROBOT to catch FUEL by pushing them far from the HUB exit (violating G408), or pushing a ROBOT far from a TOWER into another ROBOT in contact with the TOWER to force a G420 violation.
+> This rule does not apply for strategies consistent with standard gameplay, e.g. a red ALLIANCE ROBOT attempting to climb their VINE in the final 30 seconds contacts a blue ALLIANCE ROBOT, or a blue ALLIANCE ROBOT playing attempting to score in the TREE pushes a red ALLIANCE ROBOT into the blue ALLIANCE ZONE while it's scoring. This rule requires an intentional act with limited or no opportunity for the team being acted on to avoid the penalty, such as forcing an opponent ROBOT to hold more than two SEEDS by intentionally ejecting seeds into their ROBOT, or pushing a ROBOT far from the CANOPY into another ROBOT in contact with the VINE.
 
 **G211 \*Egregious or exceptional violations.**
 Egregious behavior beyond what is listed in the rules or subsequent violations of any rule or procedure during the event is prohibited.
@@ -664,7 +664,7 @@ In addition to rule violations explicitly listed in this manual and witnessed by
 
 > ⚠ Violation: YELLOW or RED CARD.
 
-> Behaviors that put the FIRST community or integrity of the game at risk are not allowed, including but not limited to: A. inappropriate behavior as outlined in the blue box of G201, B. jumping over the guardrail, C. pushing past the FIELD reset person blocking an open gate, D. reaching into the FIELD and grabbing a ROBOT during a MATCH, E. a single PIN in excess of 15 seconds, F. exploiting the 3-second window after a MATCH to avoid rule violations, G. triggering scoring sensors or otherwise interfering with FMS or FIELD operation, H. intentionally crossing the CENTER LINE in AUTO and contacting an opponent ROBOT to interfere with their AUTO, I. intentionally ejecting a large quantity of FUEL out of the FIELD, J. intentionally exceeding the expansion limits for strategic benefit, K. a HUMAN PLAYER hoarding a large quantity of FUEL outside designated locations, and L. intentionally scoring a large quantity of FUEL into the HUB from the NEUTRAL ZONE.
+> Behaviors that put the FIRST community or integrity of the game at risk are not allowed, including but not limited to: A. inappropriate behavior as outlined in the blue box of G201, B. jumping over the guardrail, C. pushing past the FIELD reset person blocking an open gate, D. reaching into the FIELD and grabbing a ROBOT during a MATCH, E. a single PIN in excess of 15 seconds, F. triggering scoring sensors or otherwise interfering with FMS or FIELD operation, G. intentionally ejecting a large quantity of SEEDS out of the FIELD, H. intentionally exceeding the expansion limits for strategic benefit, I. a HUMAN PLAYER hoarding a large quantity of SEEDS outside designated locations, and J. intentionally  CONTROLLING a large quantity of SEEDS such that another ROBOT cannot access them.
 
 **G212 \*All teams can play.**
 A team may not encourage another team to exclude their ROBOT or be BYPASSED from a qualification MATCH for any reason.
@@ -687,14 +687,14 @@ A DRIVE TEAM member may not cause significant delays to the start of their MATCH
 **G302 \*Limit what you use during a MATCH.**
 Items used during a match must fit on your team's DRIVER STATION shelf, be worn or held by DRIVE TEAM members, or be an accommodation item (e.g. stools, crutches). Regardless, it may not: A. introduce a safety hazard, B. extend more than 78.0in (1.981m) above the floor, C. communicate with anything outside the ARENA (except medically required equipment), D. block visibility for FIELD STAFF or audience members, or E. jam or interfere with remote sensing capabilities.
 
-Exceptions to part B are granted for momentary extensions above 78.0in and for individuals above that height wearing PPE or decorative apparel.
+Exceptions to part B are granted for momentary extensions above 78.0in and for individuals wearing PPE or decorative apparel.
 
 > ⚠ Violation: MATCH will not start until the situation is remedied. If discovered or used inappropriately during a MATCH, YELLOW CARD.
 
 > Examples of safety hazards include a folding step stool, ladder, or large signaling device. Using an item with wireless communications disabled complies with C. Examples of jamming/interfering include mimicking FIELD AprilTags and shining bright lights or lasers onto the FIELD.
 
 **G303 \*Start your ROBOTS.**
-A ROBOT must meet all following MATCH-start requirements: A. it does not pose a hazard, B. has passed initial, complete inspection, C. if modified after initial Inspection, it's compliant with I104, D. its BUMPERS overlap their ROBOT STARTING LINE, E. it's not contacting the BUMP, F. it's the only team-provided item left on the FIELD, G. it's not attached to, entangled with, or suspended from any FIELD element, H. it's confined to its STARTING CONFIGURATION, and I. it fully and solely supports not more than 8 FUEL.
+A ROBOT must meet all following MATCH-start requirements: A. it does not pose a hazard, B. has passed initial, complete inspection, C. if modified after initial Inspection, it's compliant with I104, D. its BUMPERS overlap their ROBOT STARTING LINE, E. it's the only team-provided item left on the FIELD, F. it's not attached to, entangled with, or suspended from any FIELD element, and G. it's confined to its STARTING CONFIGURATION.
 
 > ⚠ Violation: If fix is a quick remedy, the MATCH won't start until all requirements are met. If not, DISABLED and, at the Head REFEREE's discretion, must be re-inspected. If a ROBOT not compliant with part B or C participates, its team receives a RED CARD.
 
@@ -716,12 +716,12 @@ In AUTO, each DRIVE TEAM member must remain in their staged areas. A DRIVE TEAM 
 > Pointing, gesturing, or otherwise extending across the HUMAN STARTING LINE such that contact is not made with carpet or other ARENA elements is not a violation. An example of an equipment-safety exception is catching a falling OPERATOR CONSOLE.
 
 **G402 \*Let the ROBOT do its thing.**
-In AUTO, a DRIVE TEAM member may not directly or indirectly interact with a ROBOT or an OPERATOR CONSOLE unless for personal safety, OPERATOR CONSOLE safety, or pressing an E-Stop or A-Stop. A HUMAN PLAYER entering FUEL onto the FIELD is an exception to this rule.
+In AUTO, a DRIVE TEAM member may not directly or indirectly interact with a ROBOT or an OPERATOR CONSOLE unless for personal safety, OPERATOR CONSOLE safety, or pressing an E-Stop or A-Stop. A HUMAN PLAYER entering SEEDS onto the FIELD is an exception to this rule.
 
 > ⚠ Violation: MINOR FOUL and YELLOW CARD.
 
 **G403 Limited AUTO opponent interaction.**
-In AUTO, a ROBOT whose BUMPERS are completely across the CENTER LINE (i.e. to the opposite side from its ROBOT STARTING LINE) may not contact an opponent ROBOT.
+In AUTO, a ROBOT whose BUMPERS overlap or are completely across the CENTER LINE (i.e. to the opposite side from its ROBOT STARTING LINE) may not contact an opponent ROBOT.
 
 > ⚠ Violation: MAJOR FOUL.
 
@@ -732,10 +732,10 @@ A ROBOT may not deliberately use a SCORING ELEMENT in an attempt to ease or ampl
 
 > ⚠ Violation: MAJOR FOUL.
 
-> Examples include: A. launching SCORING ELEMENTS at opponent ROBOTS, B. using SCORING ELEMENTS to elevate ROBOTS in an attempt to climb the TOWER, C. positioning SCORING ELEMENTS to impede opponent access to their TOWER.
+> Examples include: A. launching SCORING ELEMENTS at opponent ROBOTS, B. using SCORING ELEMENTS to elevate ROBOTS in an attempt to climb a VINE, C. positioning SCORING ELEMENTS to impede opponent access to their VINE.
 
 **G405 \*Keep SCORING ELEMENTS in bounds.**
-A ROBOT may not intentionally eject SCORING ELEMENTS from the FIELD (directly or by bouncing off a FIELD element or other ROBOT) except through the opening at the base of the OUTPOST.
+A ROBOT may not intentionally eject SCORING ELEMENTS from the FIELD (directly or by bouncing off a FIELD element or other ROBOT) except through BRANCHES or CLOUDS.
 
 > ⚠ Violation: MINOR FOUL. If REPEATED, MAJOR FOUL.
 
@@ -745,6 +745,8 @@ Neither a ROBOT nor a HUMAN PLAYER may damage a SCORING ELEMENT.
 > ⚠ Violation: VERBAL WARNING. MAJOR FOUL if REPEATED in any subsequent MATCHES during the event. If via a ROBOT and the Head REFEREE determines further damage is likely, DISABLED. Corrective action may be required before further competition.
 
 > SCORING ELEMENTS are expected to undergo a reasonable amount of wear and tear, such as scratching or marking. Routinely gouging, tearing off pieces, or marking SCORING ELEMENTS are violations of this rule.
+
+// TODO: from here
 
 **G407 Only score while in your ALLIANCE ZONE.**
 A ROBOT may not launch a SCORING ELEMENT into their HUB unless their BUMPERS are partially or fully within their ALLIANCE ZONE.
