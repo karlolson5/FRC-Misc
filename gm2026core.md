@@ -129,8 +129,6 @@ Each WEATHER INDICATOR is a 6in by 6in LED panel which indicates the current WEA
 
 ## 5.5 SKY
 
-// TODO
-
 A SKY is one of two 65.7in by 108in rectangular structures with 2 CLOUDS, 1 LOW CLOUD and 1 HIGH CLOUD, which are 36in diameter openings has and 2 6in by 30in RAIN INDICATOR  light panels, 1 LOW RAIN INDICATOR and 1 HIGH RAIN INDICATOR. Each ALLIANCE has a dedicated SKY that makes up the opposing ALLIANCE WALL along with the TREE.
 
 The positions of the CLOUDS and RAIN INDICATORS are shown in Figure 5-X.
@@ -197,8 +195,8 @@ Each DRIVER STATION contains the following elements for DRIVE TEAMS:
 - 1 Autonomous Stop (A-Stop) button: located on the right side of the DRIVER STATION shelf and is used to DISABLE a ROBOT during AUTO.
 - 1 team sign: located at the top of each DRIVER STATION. The FIELD facing side of the sign displays the team number in the ALLIANCE color. The ALLIANCE AREA side of the sign displays the following information in red:
   - Pre-MATCH: team number and ROBOT connection state
-  - During Qualification MATCHES: current SHIFT and time remaining in that period (A for AUTO, T for TRANSITION SHIFT, R for Red ALLIANCE's HUB active, B for Blue ALLIANCE's HUB active, E for END GAME), progress towards the FUEL Ranking Points, AUTO TOWER points, and remaining MATCH period time
-  - During Playoff MATCHES: which MATCH period is active and time remaining in that period, MATCH scores, and remaining MATCH period time
+  - During Qualification MATCHES: current WEATHER, current TREE scoring countdown (9.9 to 0.0), current RAIN LEVEL for each CLOUD, progress toward the GOOD WEATHER and PLANT EXPLOSION Ranking Points, and remaining MATCH period time
+  - During Playoff MATCHES: current WEATHER, current TREE scoring countdown (9.9 to 0.0), current RAIN LEVEL for each CLOUD, progress toward the GOOD WEATHER bonus, and remaining MATCH period time
 - 1 timer (in DRIVER STATION 2 only): displays the official time remaining in the MATCH period on the FIELD-facing side (in white) and on the team facing side, remaining MATCH period time and MATCH scores in red.
 - 1 team LED stack: indicates ALLIANCE color, ROBOT status, E-Stop and A-Stop status, and is centered at the top of each DRIVER STATION. The stack includes 2 identical ALLIANCE-colored ROBOT status LEDs above a third amber A-stop/E-stop LED.
   - ROBOT status LEDs: **Solid** — the ROBOT is connected and enabled (only happens during a MATCH). **Blinking** — either the FMS is preset for the MATCH and the ROBOT is not connected yet, or it's during a MATCH and the corresponding ROBOT has lost connectivity, or the E-stop was pressed. **Off** — the ROBOT is linked and DISABLED prior to the start of the MATCH, or the ROBOT is BYPASSED; also off after the MATCH has concluded.
@@ -207,9 +205,9 @@ Each DRIVER STATION contains the following elements for DRIVE TEAMS:
 
 ## 5.9 SCORING ELEMENTS
 
-SCORING ELEMENTS are items that teams use to score points. There is one type of SCORING ELEMENT used in REBUILT: FUEL.
+SCORING ELEMENTS are items that teams use to score points. There is one type of SCORING ELEMENT used in TREELIFE: SEEDS.
 
-> In REBUILT, a ROBOT may CONTROL any number of SCORING ELEMENTS after the start of the MATCH.
+> In TREELIFE, a ROBOT may CONTROL up to two SEEDS simultaneously.
 
 ### 5.9.1 SEEDS
 
@@ -367,8 +365,6 @@ All scores are assessed and updated throughout the MATCH, except that the assess
 
 A SEED is registered in the TREE once it passes completely through the BRANCH OPENING and no ROBOT parts are inside the BRANCH, as determined by the sensor array. It remains registered as long as it remains inside the BRANCH and is not scored. It is scored as discussed in section 6.5.2 TREE Scoring. A SEED is scored in the SKY once it passes completely through the CLOUD opening.
 
-// TODO game rule: no robot parts inside the CLOUD.
-
 ### 6.5.2 TREE Scoring
 
 A SEED is registered in the TREE as described in section 6.5.1 SCORING ELEMENT Scoring Criteria. Note that the TREE starts the MATCH empty. When a TREE is empty and a SEED is registered, the TREE will score all registered SEEDS when any of the following conditions are met:
@@ -404,13 +400,11 @@ To qualify for VINE points for a given VINE, a ROBOT must depress the VINE switc
 
 Additionally, a ROBOT must be contacting the VINE, and may only be in contact with the following elements: A. the FIELD guardrails, B. the CANOPY, C. SEEDS, and/or D. another ROBOT.
 
-> Whether a ROBOT is not touching the carpet (or other ineliible elements) and therefore not eleigible for VINE points is evaluated by human volunteers. Teams are encouraged to make sure that it is obvious and unambiguous that the criteria are met.
-
-// TODO: grasping/grabbing exception only for VINE, not the rest of the CANOPY
+> Whether a ROBOT is not touching the carpet (or other ineligible elements) and therefore not eligible for VINE points is evaluated by human volunteers. Teams are encouraged to make sure that it is obvious and unambiguous that the criteria are met.
 
 ### 6.5.5 Point Values
 
-*Table 6-4: REBUILT point values*
+*Table 6-4: TREELIFE point values*
 
 | Task | AUTO points | TELEOP points | Ranking Points | PLAYOFF-only bonus points |
 |---|---|---|---|---|
@@ -426,7 +420,7 @@ Additionally, a ROBOT must be contacting the VINE, and may only be in contact wi
 
 \*See the thresholds table below. For District Championship and/or FIRST Championship events, the BONUS RP requirement thresholds may increase.
 
-*Table 6-5: REBUILT BONUS RP thresholds*
+*Table 6-5: TREELIFE BONUS RP thresholds*
 
 | BONUS RP Type | Regional/District Events | District Championships | FIRST Championship |
 |---|---|---|---|
@@ -746,8 +740,6 @@ Neither a ROBOT nor a HUMAN PLAYER may damage a SCORING ELEMENT.
 
 > SCORING ELEMENTS are expected to undergo a reasonable amount of wear and tear, such as scratching or marking. Routinely gouging, tearing off pieces, or marking SCORING ELEMENTS are violations of this rule.
 
-// TODO: finish this section
-
 **G407 Only score in BRANCHES while in your ALLIANCE ZONE.**
 A ROBOT may not launch a SCORING ELEMENT into a BRANCH unless their BUMPERS are partially or fully within their ALLIANCE ZONE.
 
@@ -843,6 +835,13 @@ A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINN
 
 > Examples include shutting down access to all SCORING ELEMENTS, quarantining all opponents to a small area, and completely preventing access to both of the opponent's SEEDING STATIONS at the same time. A single ROBOT's actions never violates this rule.
 
+**G420 Don't contact the CLOUD mesh.**
+A ROBOT may not contact the chain mesh behind the CLOUD opening.
+
+> ⚠ Violation: MAJOR FOUL.
+
+> A ROBOT that MOMENTARILY contacts the chain mesh beind the CLOUD opening is not in violation of G409. If the contact extends beyond MOMENTARY a G409 violation is likely and results in the ROBOT being DISABLED.
+
 **G420 ALLIANCE ZONE protection.**
 A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT partially inside the opponent’s ALLIANCE ZONE regardless of who initiates contact.
 
@@ -917,7 +916,7 @@ A DRIVE TEAM member may not cause significant or multiple delays to the start of
 
 # 8 ROBOT Construction Rules (R)
 
-The rules listed below explicitly address legal parts and materials and how those parts and materials may be used on a REBUILT ROBOT. A ROBOT is an electromechanical assembly built by the FIRST Robotics Competition team to play the current season's game and includes all the basic systems required to be an active participant in the game — power, communications, control, BUMPERS, and movement about the FIELD. A BUMPER is a protective assembly designed to attach to the exterior of the ROBOT and constructed as specified in section 8.4 BUMPER Rules.
+The rules listed below explicitly address legal parts and materials and how those parts and materials may be used on a TREELIFE ROBOT. A ROBOT is an electromechanical assembly built by the FIRST Robotics Competition team to play the current season's game and includes all the basic systems required to be an active participant in the game — power, communications, control, BUMPERS, and movement about the FIELD. A BUMPER is a protective assembly designed to attach to the exterior of the ROBOT and constructed as specified in section 8.4 BUMPER Rules.
 
 There are many reasons for the structure of the rules, including safety, reliability, parity, creation of a reasonable design challenge, adherence to professional standards, impact on the competition, and compatibility with the [Kit of Parts (KOP)](https://www.firstinspires.org/resources/library/frc/kit-of-parts). The KOP is the collection of items listed on the current season's Kickoff Kit Checklists, distributed to the team via FIRST Choice in the current season, or paid for completely (except shipping) with a Product Donation Voucher (PDV) from the current season.
 
