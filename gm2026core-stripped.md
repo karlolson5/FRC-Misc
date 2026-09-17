@@ -720,4 +720,4 @@ Throughout an event, compressed air on the ROBOT must be provided by its 1 onboa
 Stored air pressure on the ROBOT must be no greater than 120.0psi (~827kPa, 8.2Bar). No stored air pressure intended for the ROBOT may be located off-board the ROBOT.
 
 **R808 \*Working air pressure limit.**
-Working air pressure (used to actuate devices) on the ROBOT must be no greater than 60.0psi (413.7kPa, 4.137Bar) and must be provided through a single primary adjustable, relieving, pressure regulator. Additional regulators may be located downstream.σ
+Working air pressure (used to actuate devices) on the ROBOT must be no greater than 60.0psi (413.7kPa, 4.137Bar) and must be provided through a single primary adjustable, relieving, pressure regulator. Additional regulators may be located downstream.
