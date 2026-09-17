@@ -1,3 +1,5 @@
+See https://docs.google.com/presentation/d/1wVZ70PO7NIpMVBw74RO0pddmX7IUH35q-2yplISIYeY/edit?slide=id.p#slide=id.p
+
 # 4 Game Overview
 
 In TREELIFE™ presented by Code Orange, two competing alliances are invited to place and score seeds and climb the vines before time runs out. Alliances earn additional rewards for meeting specific objectives.
