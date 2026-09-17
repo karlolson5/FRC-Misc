@@ -149,6 +149,8 @@ SEEDING STATIONS are 120in by 72in structures that allow HUMAN PLAYERS to enter 
 
 The SEEDING STATIONS of each ALLIANCE extend along the FIELD PERIMETER from the corner of the ALLIANCE WALL of that ALLIANCE towards the center of the FIELD.
 
+Each SEEDING STATION has a SEED staging area that can hold up to 8 SEEDS.
+
 ### 5.6.1 LOW SEEDING STATION
 
 The bottom of the opening of a LOW SEEDING STATION is 0.5in from the floor.
@@ -342,12 +344,10 @@ Before each MATCH begins, FIELD STAFF stage SCORING ELEMENTS.
 50 SEEDS are staged for each MATCH as follows:
 
 - A. 8 SEEDS are staged on each SEED STARTING LINE, in contact or above marks on the center of the SEED STARTING LINE and 32in apart center-to-center from each other, with the long axis of the SEED paralell to the SEED STARTING LINE. The pattern is centered on the field, so that the outermost mark centers are ~46.9in from the guardrail inner faces.
-- C. 2 SEEDS may be preloaded in each ROBOT by the ROBOT's DRIVE TEAM, such that each SEED is in contact with their ROBOT (up to 6 per ALLIANCE total; a SEEDS not pre-loaded in a ROBOT are moved to the SEEDING STATION of that ALLIANCE), and
-- D. the remaining 11 SEEDS per ALLIANCE are distributed as desired by that ALLIANCE between two SEEDING STATIONS (note that each SEEDING STATION can hold a maximum of 8 SEEDS).
+- C. 2 SEEDS must be placed by each ROBOT's DRIVE TEAM such that each SEED is in contact with their ROBOT (6 per ALLIANCE total), and
+- D. the remaining 22 SEEDS are split 11 per ALLIANCE and distributed as desired by each ALLIANCE between their two SEEDING STATIONS (note that each SEEDING STATION can hold a maximum of 8 SEEDS).
 
 > FIELD STAFF will attempt to center and align SEEDS on the SEED STARTING LINE marks, but offsets of ≤3in and ≤30° should be expected and will be considered part of normal gameplay.
-
-> If no SEEDS are pre-loaded in any ALLIANCE ROBOT, 8 SEEDS are placed at each SEEDING STATION and a DRIVE TEAM member holds the one remaining SEED.
 
 ## 6.4 MATCH Periods
 
@@ -841,13 +841,13 @@ A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINN
 
 > ⚠ Violation: MAJOR FOUL, and for every 3 seconds in which the situation is not corrected, a MAJOR FOUL is assessed.
 
-> Examples include shutting down access to all SCORING ELEMENTS, quarantining all opponents to a small area, and completely preventing access to both of the opponent's SEEDING STATIONS at the same time. A single ROBOT blocking access, or 2 ROBOTS independently collecting SCORING ELEMENTS in front of a BUMP or TRENCH at the same time, are not violations.
+> Examples include shutting down access to all SCORING ELEMENTS, quarantining all opponents to a small area, and completely preventing access to both of the opponent's SEEDING STATIONS at the same time. A single ROBOT's actions never violates this rule.
 
 **G420 ALLIANCE ZONE protection.**
 A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT partially inside the opponent’s ALLIANCE ZONE regardless of who initiates contact.
 
 **G421 VINE protection.**
-A ROBOT that is not in contact with their own VINE may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT in contact with an opponent VINE during the ENDGAME regardless of who initiates contact.
+A ROBOT that is not in contact with and making a good faith effort to climb their own VINE may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT in contact with an opponent VINE during the ENDGAME regardless of who initiates contact.
 
 > ⚠ Violation: MAJOR FOUL and, if the opponent ROBOT is off the ground, the opponent ROBOT is awarded VINE points.
 
@@ -902,11 +902,11 @@ DRIVE COACHES may not touch SCORING ELEMENTS, unless for safety purposes.
 > ⚠ Violation: MINOR FOUL.
 
 **G429 The ALLAIANCE AREA has a storage limit.**
-During TELEOP, off-FIELD SEEDS may only be stored in the staging areas near the SEEDING STATIONS. Excess SEEDS, defined as the SEEDING STATIONS being full, must immediately be entered onto the FIELD. HUMAN PLAYERS making a good-faith effort to immediately move or enter additional SEEDS is an exception to this rule.
+During TELEOP, off-FIELD SEEDS may only be stored in the staging areas near the SEEDING STATIONS. Excess SEEDS, defined as SEEDS in the ALLIANCE area beyond those that fill the SEEDING STATION staging areas, must immediately be entered onto the FIELD. HUMAN PLAYERS making a good-faith effort to immediately move or enter additional SEEDS is an exception to this rule.
 
-> ⚠ Violation: MINOR FOUL, and if CONTINUOUS, a MAJOR FOUL is assessed.
+> ⚠ Violation: MINOR FOUL, and if REPEATED or CONTINUOUS, a MAJOR FOUL is assessed.
 
-> If no SEEDS were preloaded into ROBOTS by an ALLIANCE, there is one excess SEED. To avoid violating this rule, HUMAN PLAYERS of that alliance must enter at least one SEED into the FIELD before the TELEOP period begins.
+> Although this rule applies only during TELEOP, it is enforced immediately when TELEOP begins. To avoid a violation, HUMAN PLAYERS of an ALLIANCE that has excess SEEDS in its ALLIANCE AREA are required to make a good-faith effort to immediately move or enter additional SEEDS into the FIELD as soon as AUTO ends, including in the 3-second intermediate period.
 
 ## 7.5 Post-MATCH
 
