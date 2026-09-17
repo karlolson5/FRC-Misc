@@ -51,7 +51,7 @@ The surface of the FIELD is low pile carpet, Shaw Floors, Philadelphia Commercia
 
 Carpet edges and seams are secured with [3M™ Premium Matte Cloth (Gaffers) Tape GT2, GT3 or comparable Gaffer's Tape](https://www.3m.com/3M/en_US/p/d/b40065992/). Tears, rips, and damage to the carpet may be repaired with the same styles of tape and ROBOTS must be prepared to operate on surfaces made of carpet, tape, or combinations of both materials as repairs are made through the course of competition.
 
-Guardrails form the long edges of the FIELD. Guardrails are a 20.0in (50.8cm) tall system of transparent polycarbonate supported on the top and bottom by aluminum extrusion. There are 4 gates in the guardrail that allow access to the FIELD for placement and removal of ROBOTS. The gate passthrough, when open, is 38.0in (96.5cm) wide. Gates are closed and shielded during the MATCH.
+Guardrails form the long edges of the FIELD. Guardrails are a 20.0in tall system of transparent polycarbonate supported on the top and bottom by aluminum extrusion. There are 4 gates in the guardrail that allow access to the FIELD for placement and removal of ROBOTS. The gate passthrough, when open, is 38.0in wide. Gates are closed and shielded during the MATCH.
 
 There are 2 versions of guardrails and DRIVER STATIONS used for competitions. One design is the Welded FIELD which is reflected in the [2026 Official FIRST FIELD Drawings & Models](https://www.firstinspires.org/resources/library/frc/playing-field). The other is designed and sold by AndyMark. While the designs are slightly different, the critical dimensions, performance, and expected user experience between them are the same unless otherwise noted. Detailed drawings for the AndyMark design are posted on the [AndyMark website](https://www.andymark.com/products/andymark-field-perimeter). All illustrations in this manual show the traditional Welded FIELD design.
 
@@ -88,7 +88,7 @@ There are 2 versions of guardrails and DRIVER STATIONS used for competitions. On
 
 ## 5.3 Areas, Zones, & Markings
 
-FIELD areas, zones, and markings of consequence are described below. Unless otherwise specified, the tape used to mark lines and zones throughout the FIELD is 2.0in (5.1cm) [3M™ Premium Matte Cloth (Gaffers) Tape (GT2)](http://multimedia.3m.com/mws/media/1217295O/gaffers-tape.pdf), [ProGaff® Premium Professional Grade Gaffer Tape](https://www.protapes.com/products/pro-gaff-tape-premium-professional-grade-gaffer-tape), or comparable gaffers tape.
+FIELD areas, zones, and markings of consequence are described below. Unless otherwise specified, the tape used to mark lines and zones throughout the FIELD is 2.0in [3M™ Premium Matte Cloth (Gaffers) Tape (GT2)](http://multimedia.3m.com/mws/media/1217295O/gaffers-tape.pdf), [ProGaff® Premium Professional Grade Gaffer Tape](https://www.protapes.com/products/pro-gaff-tape-premium-professional-grade-gaffer-tape), or comparable gaffers tape.
 
 // TODO: fix distances from STARTING LINE and after
 
@@ -96,7 +96,7 @@ FIELD areas, zones, and markings of consequence are described below. Unless othe
 - **ALLIANCE ZONE**: A 36in deep by 317.7in long (~0.91m by 8.07m), infinitely tall volume formed by an ALLIANCE WALL, TREE, SKY, guardrails, and an ALLIANCE colored tape line that spans the wedith of the FIELD.
 - **ROBOT STARTING LINE**: an ALLIANCE colored tape line that spans the width of the FIELD that is 72in away from the ALLIANCE WALL.
 - **CENTER LINE**: a white tape line that spans the width of the FIELD that bisects the FIELD in half.
-- **HUMAN STARTING LINE**: a white line spanning the ALLIANCE AREA up to the edges of the FIELD that is parallel to and located 24.0in (61.0cm) from the bottom square tube of the ALLIANCE WALL to the near edge of the tape.
+- **HUMAN STARTING LINE**: a white line spanning the ALLIANCE AREA up to the edges of the FIELD that is parallel to and located 24.0in from the bottom square tube of the ALLIANCE WALL to the near edge of the tape.
 - **SEED STARTING LINE**: an white colored tape line that spans the width of the FIELD that is 108in away from the ALLIANCE WALL.
 
 ## 5.4 TREE
@@ -221,17 +221,17 @@ SEEDS undergo wear and tear during a competition. Generally, a SEED that still a
 
 // TODO: locations of apriltags
 
-AprilTags are 8.125in (20.64cm) square targets located on the TREES, SKIES, SEEDING STATIONS, and CANOPY. There are XX unique markers on the FIELD.
+AprilTags are 8.125in square targets located on the TREES, SKIES, SEEDING STATIONS, and CANOPY. There are XX unique markers on the FIELD.
 
-All markers are from the 36h11 tag family, IDs 1-XX. All AprilTags are mounted to and centered on a 10.5in (26.67cm) square polycarbonate panel. Each marker has an identifying text label. If AprilTags experience wear and marking during MATCHES they are repaired with gaffers tape.
+All markers are from the 36h11 tag family, IDs 1-XX. All AprilTags are mounted to and centered on a 10.5in square polycarbonate panel. Each marker has an identifying text label. If AprilTags experience wear and marking during MATCHES they are repaired with gaffers tape.
 
-HUB AprilTags (IDs 2, 3, 4, 5, 8, 9, 10, 11, 18, 19, 20, 21, 24, 25, 26, 27) are located on all four faces of the HUB. Each face has two AprilTags with centers located 44.25in (1.124m) off the floor. One AprilTag per face is centered and the other AprilTag is horizontally offset.
+HUB AprilTags (IDs 2, 3, 4, 5, 8, 9, 10, 11, 18, 19, 20, 21, 24, 25, 26, 27) are located on all four faces of the HUB. Each face has two AprilTags with centers located 44.25in off the floor. One AprilTag per face is centered and the other AprilTag is horizontally offset.
 
-Two AprilTags (IDs 15, 16, 31, 32) are located on each TOWER WALL with centers 21.75in (55.25cm) off the floor. One AprilTag per TOWER is centered and the other AprilTag is horizontally offset.
+Two AprilTags (IDs 15, 16, 31, 32) are located on each TOWER WALL with centers 21.75in off the floor. One AprilTag per TOWER is centered and the other AprilTag is horizontally offset.
 
-Two AprilTags (IDs 13, 14, 29, 30) are located on each OUTPOST with centers 21.75in (55.25cm) off the floor. One AprilTag per OUTPOST is centered with the CHUTE and CORRAL openings and the other AprilTag is horizontally offset.
+Two AprilTags (IDs 13, 14, 29, 30) are located on each OUTPOST with centers 21.75in off the floor. One AprilTag per OUTPOST is centered with the CHUTE and CORRAL openings and the other AprilTag is horizontally offset.
 
-TRENCH AprilTags (IDs 1, 6, 7, 12, 17, 22, 23, 28) are attached to mounting brackets located on the top surface of the horizontal arm of the TRENCH. Each TRENCH has two AprilTags, one facing the ALLIANCE ZONE and one facing the NEUTRAL ZONE. TRENCH AprilTags are approximately centered on the opening under the TRENCH arm and their centers are located 35in (88.9cm) off the floor.
+TRENCH AprilTags (IDs 1, 6, 7, 12, 17, 22, 23, 28) are attached to mounting brackets located on the top surface of the horizontal arm of the TRENCH. Each TRENCH has two AprilTags, one facing the ALLIANCE ZONE and one facing the NEUTRAL ZONE. TRENCH AprilTags are approximately centered on the opening under the TRENCH arm and their centers are located 35in off the floor.
 
 For further marker locating information please refer to the [2026 Field Dimension Drawings](https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/2026-field-dimension-dwgs.pdf). Printable copies of the field AprilTags can be found on the [Playing FIELD webpage](https://www.firstinspires.org/resources/library/frc/playing-field).
 
@@ -685,7 +685,7 @@ A DRIVE TEAM member may not cause significant delays to the start of their MATCH
 > Being "MATCH ready" requires that the ROBOT is on the FIELD, in its STARTING CONFIGURATION, and turned on, with DRIVE TEAM members in their starting positions. Good faith efforts include walking safely towards the FIELD with a ROBOT that isn't being actively modified, applying quick fixes like tape or cable ties, waiting for an OPERATOR CONSOLE to boot, and working with FIELD STAFF to connect. Not considered good faith: a ROBOT not moving to the FIELD or being actively modified while moving, a DRIVE TEAM member remaining on the FIELD once ready to begin, installing BUMPERS or charging pneumatics on the FIELD, time-consuming use of external alignment devices, and repairs more substantial than quick fixes. There are no rules that prohibit use of hand tools while setting up ROBOTS, provided they do not cause significant delay or safety concerns.
 
 **G302 \*Limit what you use during a MATCH.**
-Items used during a match must fit on your team's DRIVER STATION shelf, be worn or held by DRIVE TEAM members, or be an accommodation item (e.g. stools, crutches). Regardless, it may not: A. introduce a safety hazard, B. extend more than 78.0in (1.981m) above the floor, C. communicate with anything outside the ARENA (except medically required equipment), D. block visibility for FIELD STAFF or audience members, or E. jam or interfere with remote sensing capabilities.
+Items used during a match must fit on your team's DRIVER STATION shelf, be worn or held by DRIVE TEAM members, or be an accommodation item (e.g. stools, crutches). Regardless, it may not: A. introduce a safety hazard, B. extend more than 78.0in above the floor, C. communicate with anything outside the ARENA (except medically required equipment), D. block visibility for FIELD STAFF or audience members, or E. jam or interfere with remote sensing capabilities.
 
 Exceptions to part B are granted for momentary extensions above 78.0in and for individuals wearing PPE or decorative apparel.
 
@@ -721,7 +721,7 @@ In AUTO, a DRIVE TEAM member may not directly or indirectly interact with a ROBO
 > ⚠ Violation: MINOR FOUL and YELLOW CARD.
 
 **G403 Limited AUTO opponent interaction.**
-In AUTO, a ROBOT whose BUMPERS overlap or are completely across the CENTER LINE (i.e. to the opposite side from its ROBOT STARTING LINE) may not contact an opponent ROBOT.
+In AUTO, a ROBOT whose BUMPERS are completely across the CENTER LINE (i.e. to the opposite side of the CENTER LINE from its ROBOT STARTING LINE) may not contact an opponent ROBOT (either directly or transitively through a SCORING ELEMENT CONTROLLED by either ROBOT and regardless of who initiates contact).
 
 > ⚠ Violation: MAJOR FOUL.
 
@@ -763,6 +763,9 @@ A ROBOT whose BUMPERS do not overlap a CENTER LINE not launch SEEDS across the C
 > A SEED is considered launched if it is shot into the air, kicked across the floor, or thrown in a forceful way. This rule is not intended to penalize typical movement of SEEDS around the CENTER LINE which come to rest a short distance from the ROBOT. Examples of such actions could be but are not limited to:\
 >    A. Running an intake in reverse causing a SEED to travel a short distance from the ROBOT\
 >    B. A ROBOT pushing a SEED a short distance away in the process of herding it across the FIELD
+
+**G409 No de-scoring.**
+A ROBOT may not de-score a SEED scored or registered on the opponent’s BRANCHES.
 
 ### 7.4.3 ROBOT
 
@@ -827,7 +830,7 @@ A ROBOT may not deliberately attach to, tip, or entangle with an opponent ROBOT.
 > Examples include using a wedge-like MECHANISM to tip opponents, BUMPER-to-BUMPER contact with a righting ROBOT causing it to fall again, and causing a tip-over by contacting a ROBOT after it starts to tip if the contact could have been avoided. Tipping as an unintended consequence of normal interaction, including single BUMPER-to-BUMPER hits, is not a violation.
 
 **G418 \*There's a 3-count on PINS.**
-A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINNING if it prevents movement of an opponent ROBOT by contact (direct or transitive). A PIN count ends once: A. the ROBOTS have separated by at least 72in (1.83m) for more than 3 seconds, B. either ROBOT has moved 72in from where the PIN initiated for more than 3 seconds, or C. the PINNING ROBOT gets PINNED.
+A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINNING if it prevents movement of an opponent ROBOT by contact (direct or transitive). A PIN count ends once: A. the ROBOTS have separated by at least 72in for more than 3 seconds, B. either ROBOT has moved 72in from where the PIN initiated for more than 3 seconds, or C. the PINNING ROBOT gets PINNED.
 
 > ⚠ Violation: MINOR FOUL, and for every 3 seconds in which the situation is not corrected, a MAJOR FOUL is assessed.
 
@@ -840,14 +843,17 @@ A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINN
 
 > Examples include shutting down access to all SCORING ELEMENTS, quarantining all opponents to a small area, and completely preventing access to both of the opponent's SEEDING STATIONS at the same time. A single ROBOT blocking access, or 2 ROBOTS independently collecting SCORING ELEMENTS in front of a BUMP or TRENCH at the same time, are not violations.
 
-**G420 VINE protection.**
+**G420 ALLIANCE ZONE protection.**
+A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT partially inside the opponent’s ALLIANCE ZONE regardless of who initiates contact.
+
+**G421 VINE protection.**
 A ROBOT that is not in contact with their own VINE may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT in contact with an opponent VINE during the ENDGAME regardless of who initiates contact.
 
 > ⚠ Violation: MAJOR FOUL and, if the opponent ROBOT is off the ground, the opponent ROBOT is awarded VINE points.
 
 > Transitive contact requires that each robot is contacting the same SCORING ELEMENT(S) simultaneously.
 
-**G421 Don't block opponent's CLOUDS.**
+**G422 Don't block opponent's CLOUDS.**
 A ROBOT partially or entirely contained in the opponent's ALLIANCE ZONE may not contact a SEED launched by an opponent ROBOT which had a reasonable chance of entering a CLOUD.
 
 > ⚠ Violation: MAJOR FOUL and, if in ENDGAME, opponent qualifies for the WEATHER portion of the RAINFOREST bonus.
@@ -859,46 +865,48 @@ A ROBOT partially or entirely contained in the opponent's ALLIANCE ZONE may not 
 
 ### 7.4.5 Human
 
-**G421 \*No wandering.**
+**G423 \*No wandering.**
 A DRIVE TEAM member must remain in their designated area: A. DRIVERS and DRIVE COACHES may not contact anything outside their ALLIANCE AREA, B. a DRIVER must use the OPERATOR CONSOLE in their assigned DRIVER STATION, C. a HUMAN PLAYER may not contact anything outside their ALLIANCE AREA, and D. a TECHNICIAN may not contact anything outside their designated area. Exceptions are granted for a HUMAN PLAYER partially outside the ALLIANCE AREA, for safety, and for actions that are inadvertent, MOMENTARY, and inconsequential.
 
 > ⚠ Violation: MINOR FOUL.
 
 > Provided a DRIVE TEAM member is within close proximity of their DRIVER STATION, there will be no repercussions; however, more than approximately half a DRIVER STATION width away while using their OPERATOR CONSOLE is likely a violation.
 
-**G422 \*DRIVE COACHES and other teams: hands off the controls.**
+**G424 \*DRIVE COACHES and other teams: hands off the controls.**
 A ROBOT shall be operated only by the DRIVERS and/or HUMAN PLAYERS of that team. A DRIVE COACH activating their E-Stop or A-Stop is the exception.
 
 > ⚠ Violation: MAJOR FOUL. RED CARD if greater-than-MOMENTARY.
 
 > Exceptions may be made before a MATCH for major conflicts (religious holidays, major testing, transportation issues, etc.).
 
-**G423 \*DRIVE TEAMS, watch your reach.**
-A DRIVE TEAM member may not extend: A. into the CHUTE beyond the ALLIANCE-colored tape line while the CHUTE DOOR is open, or B. into the CORRAL beyond the ALLIANCE-colored tape line.
+**G425 \*DRIVE TEAMS, watch your reach.**
+A DRIVE TEAM member may not extend into the CHUTE.
 
 > ⚠ Violation: MINOR FOUL.
 
-**G424 \*Humans: use SCORING ELEMENTS as directed.**
+**G426 \*Humans: use SCORING ELEMENTS as directed.**
 A DRIVE TEAM member may not deliberately use a SCORING ELEMENT in an attempt to ease or amplify a challenge associated with a FIELD element.
 
 > ⚠ Violation: MAJOR FOUL.
 
-> Example: a HUMAN PLAYER uses a FUEL to disrupt an opponent ROBOT attempting to climb the TOWER.
+> Example: a HUMAN PLAYER uses a SEED to disrupt an opponent ROBOT attempting to climb a VINE.
 
-**G425 \*SCORING ELEMENT delivery.**
-FUEL may only be introduced to the FIELD by a HUMAN PLAYER or DRIVER: A. through the CHUTE, B. through the bottom opening in the OUTPOST, or C. thrown from the OUTPOST AREA.
+**G427 \*SCORING ELEMENT delivery.**
+SEEDS may only be introduced to the FIELD by a HUMAN PLAYER or DRIVER through the CHUTES.
 
 > ⚠ Violation: MAJOR FOUL.
 
-**G426 \*DRIVE COACHES, SCORING ELEMENTS are off limits.**
+**G428 \*DRIVE COACHES, SCORING ELEMENTS are off limits.**
 DRIVE COACHES may not touch SCORING ELEMENTS, unless for safety purposes.
 
 > ⚠ Violation: MINOR FOUL.
 
-**G427 The OUTPOST has a storage limit.**
-Off-FIELD FUEL may only be stored in the CHUTE and the CORRAL. Excess FUEL, defined as the CHUTE & CORRAL being full, must immediately be entered onto the FIELD. HUMAN PLAYERS making a good-faith effort to immediately move or enter additional FUEL is an exception to this rule.
+**G429 The ALLAIANCE AREA has a storage limit.**
+During TELEOP, off-FIELD SEEDS may only be stored in the staging areas near the SEEDING STATIONS. Excess SEEDS, defined as the SEEDING STATIONS being full, must immediately be entered onto the FIELD. HUMAN PLAYERS making a good-faith effort to immediately move or enter additional SEEDS is an exception to this rule.
 
 > ⚠ Violation: MINOR FOUL, and if CONTINUOUS, a MAJOR FOUL is assessed.
+
+> If no SEEDS were preloaded into ROBOTS by an ALLIANCE, there is one excess SEED. To avoid violating this rule, HUMAN PLAYERS of that alliance must enter at least one SEED into the FIELD before the TELEOP period begins.
 
 ## 7.5 Post-MATCH
 
@@ -933,7 +941,7 @@ A FABRICATED ITEM is any COMPONENT or MECHANISM that has been altered, built, ca
 
 > Note it's possible for an item (typically raw materials) to be neither COTS nor a FABRICATED ITEM — e.g. a length of aluminum cut for storage or transport, not to advance it toward its final form on the ROBOT.
 
-Teams may be asked to provide documentation proving the legality of non-REBUILT KOP items during inspection where a rule specifies limits for a legal part. Questions about metric-equivalent part legality or approval for alternate devices should go to [frcparts@firstinspires.org](mailto:frcparts@firstinspires.org).
+Teams may be asked to provide documentation proving the legality of non-TREELIFE KOP items during inspection where a rule specifies limits for a legal part. Questions about metric-equivalent part legality or approval for alternate devices should go to [frcparts@firstinspires.org](mailto:frcparts@firstinspires.org).
 
 Teams should acknowledge the support provided by corporate sponsors and mentors with an appropriate display of school and sponsor names/logos.
 
@@ -942,7 +950,7 @@ FIRST Robotics Competition can be a full-contact competition and may include rig
 ## 8.1 General ROBOT Design
 
 **R101 \*ROBOT PERIMETER must be fixed.**
-The ROBOT (excluding BUMPERS) must have a ROBOT PERIMETER, contained within the BUMPER ZONE and established while in the ROBOT's STARTING CONFIGURATION, that is comprised of fixed, non-articulated structural elements. Minor protrusions no greater than 0.25in (0.64cm) (bolt heads, fastener ends, weld beads, rivets) are not part of the ROBOT PERIMETER.
+The ROBOT (excluding BUMPERS) must have a ROBOT PERIMETER, contained within the BUMPER ZONE and established while in the ROBOT's STARTING CONFIGURATION, that is comprised of fixed, non-articulated structural elements. Minor protrusions no greater than 0.25in (bolt heads, fastener ends, weld beads, rivets) are not part of the ROBOT PERIMETER.
 
 > To determine the ROBOT PERIMETER, wrap a piece of string around the outer most parts of the ROBOT (excluding BUMPERS) at the BUMPER ZONE and pull it taut. Example: a 'U'-shaped chassis with a large gap on the front — the string extends across the gap, resulting in a rectangular PERIMETER with 4 sides.
 
@@ -955,27 +963,19 @@ In the STARTING CONFIGURATION, no part of the ROBOT shall extend outside the ver
 The ROBOT weight must not exceed 115.0lb (52.16kg). The basic ROBOT structure and all elements of all additional MECHANISMS usable in a single configuration must be weighed together. Excluded from the weight limit: A. ROBOT BUMPERS, B. ROBOT battery and its half of the Anderson cable quick connect (wire, lugs, bolts, insulation), and C. tags used for location detection systems if provided by the event.
 
 **R104 STARTING CONFIGURATION – max size.**
-A ROBOT's STARTING CONFIGURATION may not have a ROBOT PERIMETER greater than 110.0in (2.794m) and may not be more than 30in (76.2cm) tall.
+A ROBOT's STARTING CONFIGURATION may not have a ROBOT PERIMETER greater than 120.0in and may not be more than 42in tall.
+
+// TODO: height good?
 
 > Be sure to consider the size of the ROBOT on its cart to make sure it will fit through doors, shipping crates, vehicles, etc. Note that section 8.4 BUMPER Rules may impose additional restrictions.
 
 **R105 ROBOT horizontal extension limit.**
-ROBOTS may not extend more than 12in (30.48cm) beyond the vertical projection of their ROBOT PERIMETER.
+ROBOTS may not extend more than 24in beyond the vertical projection of their ROBOT PERIMETER.
 
 > Teams should expect to have to demonstrate a ROBOT's ability to constrain itself during inspection. Constraints may be implemented with either hardware or software.
 
-**R106 Horizontal extension – one direction at a time.**
-ROBOTS may not extend beyond their ROBOT PERIMETER in more than one direction (i.e. over more than 1 side) at a time; a round or circular section is considered to have an infinite number of sides. Exceptions: A. BUMPERS, B. minor protrusions excluded from the PERIMETER per R101, C. MOMENTARY and inconsequential extensions in multiple directions.
-
-> Example of a momentary/inconsequential action: a wire or cable tie swinging out of the PERIMETER while an extension is deployed out a different side.
-
-**R107 ROBOT vertical extension limit.**
-ROBOTS may not extend such that their total height exceeds 30.0in (76.2cm).
-
-> This measurement is intended as if the ROBOT is resting on a flat floor (not relative to current height above FIELD carpet) — i.e., measured perpendicular to the ROBOT PERIMETER polygon.
-
 **R108 ROBOT extension floor interaction.**
-ROBOT extensions may not interact with the carpet, BUMPS, or TOWER BASE such that the BUMPERS are lifted out of the BUMPER ZONE (see R405).
+ROBOT extensions may not interact with the carpet such that the BUMPERS are lifted out of the BUMPER ZONE (see R405).
 
 ## 8.2 ROBOT Safety & Damage Prevention
 
@@ -1032,33 +1032,33 @@ A BUMPER is a required assembly which attaches to the ROBOT frame. BUMPERS prote
 
 A BUMPER guide with additional information may be found under the Mechanical Resources section of the [Technical Resources page](https://www.firstinspires.org/resources/library/frc/technical-resources). Teams may also reference the [KitBot Instructions](https://www.firstinspires.org/resources/library/frc/kitbot).
 
-All dimensions in this section are nominal, measured during inspection with a tolerance of 0.25in (0.63cm) unless otherwise specified (maximums +0.25in, minimums –0.25in).
+All dimensions in this section are nominal, measured during inspection with a tolerance of 0.25in unless otherwise specified (maximums +0.25in, minimums –0.25in).
 
 **R401 \*BUMPERS almost all around.**
-ROBOTS are required to use BUMPERS to protect the entire ROBOT PERIMETER. Gaps of less than 1.25in (3.17cm) between adjacent segments are permitted as long as all corners are filled per R406. A single gap larger than 1.25in is permitted, as long as at least 5.0in (12.7cm) of ROBOT PERIMETER on each side of each corner is protected by BUMPER.
+ROBOTS are required to use BUMPERS to protect the entire ROBOT PERIMETER. Gaps of less than 1.25in between adjacent segments are permitted as long as all corners are filled per R406. A single gap larger than 1.25in is permitted, as long as at least 5.0in of ROBOT PERIMETER on each side of each corner is protected by BUMPER.
 
 > An arc is considered to have infinite corners and therefore may not have a gap larger than 1.25in.
 
 **R402 \*BUMPER construction.**
-BUMPERS must consist of: **A. Padding** — a minimum of 2.25in (5.72cm) depth of foam padding, at least 4.5in (11.43cm) tall, from solid pool noodles/backer rod, solid polyethylene closed-cell foam (1.5–3.0lb/ft³), solid EVA closed-cell foam (2.0–6.0lb/ft³), or foam floor tiles (multiple types/layers may be combined). **B. Backing** — a backer at least 4.5in tall supporting the padding and facilitating installation/removal (per R410); may include additional strengthening elements. **C. Cover** — cloth (per R411) covering all outward, upward, and downward facing surfaces of padding so none is exposed. **D. Fastening System** — must attach to the ROBOT PERIMETER with a rigid fastening system forming a tight, robust connection (not hook-and-loop tape, tape, or cable ties); designed to withstand vigorous game play. Removable fasteners may be considered part of either the BUMPER or ROBOT for weight determination.
+BUMPERS must consist of: **A. Padding** — a minimum of 2.25in depth of foam padding, at least 4.5in tall, from solid pool noodles/backer rod, solid polyethylene closed-cell foam (1.5–3.0lb/ft³), solid EVA closed-cell foam (2.0–6.0lb/ft³), or foam floor tiles (multiple types/layers may be combined). **B. Backing** — a backer at least 4.5in tall supporting the padding and facilitating installation/removal (per R410); may include additional strengthening elements. **C. Cover** — cloth (per R411) covering all outward, upward, and downward facing surfaces of padding so none is exposed. **D. Fastening System** — must attach to the ROBOT PERIMETER with a rigid fastening system forming a tight, robust connection (not hook-and-loop tape, tape, or cable ties); designed to withstand vigorous game play. Removable fasteners may be considered part of either the BUMPER or ROBOT for weight determination.
 
 > Teams should be prepared to provide information about padding material used but don't need a separate sample or exposed padding for inspection. See the Bumper Guide on the Technical Resources page for a reference design.
 
 **R403 \*BUMPER extension limit.**
-BUMPERS must not extend more than 4.0in (10.16cm) from the ROBOT PERIMETER.
+BUMPERS must not extend more than 4.0in from the ROBOT PERIMETER.
 
 **R404 \*BUMPERS must be soft.**
-Hard parts of BUMPERS must not extend more than 1.25in (3.17cm) out from the ROBOT PERIMETER. Only padding (R402-A), cover (R402-C, including coatings/markings), and soft fasteners securing padding/cover are permitted beyond this limit. Padding must extend at least 2.0in (5.08cm) beyond any hard parts. No limit on how far hard parts may extend inside the ROBOT PERIMETER.
+Hard parts of BUMPERS must not extend more than 1.25in out from the ROBOT PERIMETER. Only padding (R402-A), cover (R402-C, including coatings/markings), and soft fasteners securing padding/cover are permitted beyond this limit. Padding must extend at least 2.0in beyond any hard parts. No limit on how far hard parts may extend inside the ROBOT PERIMETER.
 
 > Hard parts include items likely to cause damage to the cloth or padding of other BUMPERS, such as nuts and bolts, cable ties, hard plastics, etc.
 
 **R405 \*BUMPERS interact with BUMPERS.**
-While navigating the FIELD normally, all BUMPERS must have padding (per R402-A) supported by backing (per R402-B) entirely filling the BUMPER ZONE, a space between 2.5in (6.35cm) and 5.75in (14.61cm) from the floor.
+While navigating the FIELD normally, all BUMPERS must have padding (per R402-A) supported by backing (per R402-B) entirely filling the BUMPER ZONE, a space between 2.5in and 5.75in from the floor.
 
 > This measurement is intended in the ROBOT's expected configuration(s) while navigating the FIELD, relative to whatever surface it's currently driving on. BUMPERS leaving the ZONE due to inadvertent tipping is not a violation.
 
 **R406 \*Fill BUMPER corners.**
-Corner joints between BUMPERS must be filled with uncompressed padding material extending at least 2.25in (5.72cm) from the corner with no gaps or voids.
+Corner joints between BUMPERS must be filled with uncompressed padding material extending at least 2.25in from the corner with no gaps or voids.
 
 > Separate bumper segments meeting at a miter in the corner are not considered to "fill" the corner due to the cloth covering and do not meet this rule.
 
@@ -1081,17 +1081,17 @@ BUMPERS must be designed for installation and removal to facilitate inspection a
 > As a guideline, BUMPERS should be able to be installed or removed by 2 people in fewer than 5 minutes.
 
 **R411 \*BUMPERS indicate your ALLIANCE.**
-Each ROBOT must be able to display red or blue BUMPER covers to reflect their ALLIANCE color, as assigned in the MATCH schedule. Contrasting markings on outward, upward, or downward facing surfaces of the BUMPER cover are prohibited, except: A. those required per R412, B. hook-and-loop tape, snap fasteners, or functional equivalents backed by hard parts, C. solid white FIRST logos between 4.75in (12.06cm) and 5.25in (13.33cm) wide, and D. narrow areas of underlying cloth exposed at seams, corners, or folds.
+Each ROBOT must be able to display red or blue BUMPER covers to reflect their ALLIANCE color, as assigned in the MATCH schedule. Contrasting markings on outward, upward, or downward facing surfaces of the BUMPER cover are prohibited, except: A. those required per R412, B. hook-and-loop tape, snap fasteners, or functional equivalents backed by hard parts, C. solid white FIRST logos between 4.75in and 5.25in wide, and D. narrow areas of underlying cloth exposed at seams, corners, or folds.
 
 **R412 \*Team number on BUMPERS.**
-Team numbers must be displayed and positioned on the BUMPER cover in at least 3 locations approximately 90 degrees apart such that an observer walking around the ROBOT can unambiguously tell the team's number from most points of view, from as far as approximately 720.0in (18.29m). Requirements: A. only white Arabic numerals at least 3.75in (9.53cm) high, at least 0.5in (1.27cm) stroke width, B. must not wrap around sharp corners (less than 135.0°) of the ROBOT PERIMETER, C. must not split individual digits such that the number is ambiguous, and D. may not substitute logos or icons for numerals.
+Team numbers must be displayed and positioned on the BUMPER cover in at least 3 locations approximately 90 degrees apart such that an observer walking around the ROBOT can unambiguously tell the team's number from most points of view, from as far as approximately 720.0in. Requirements: A. only white Arabic numerals at least 3.75in high, at least 0.5in stroke width, B. must not wrap around sharp corners (less than 135.0°) of the ROBOT PERIMETER, C. must not split individual digits such that the number is ambiguous, and D. may not substitute logos or icons for numerals.
 
-> The 0.5in stroke-width requirement applies to the majority of the stroke; small font elements (serifs, rounded edges, hairlines) are permitted if the majority meets the requirement and the numbers remain unambiguous. As a guideline, digit/group spacing exceeding ~4.0in (10.16cm) may be ambiguous. There's no prohibition against splitting a team number onto different BUMPER sections — the intent is that it's clearly visible and unambiguous. Excessive material used for team number marking will invite close scrutiny.
+> The 0.5in stroke-width requirement applies to the majority of the stroke; small font elements (serifs, rounded edges, hairlines) are permitted if the majority meets the requirement and the numbers remain unambiguous. As a guideline, digit/group spacing exceeding ~4.0in may be ambiguous. There's no prohibition against splitting a team number onto different BUMPER sections — the intent is that it's clearly visible and unambiguous. Excessive material used for team number marking will invite close scrutiny.
 
 ## 8.5 Motors & Actuators
 
 **R501 \*Allowable motors.**
-The only motors and actuators permitted include (in any quantity) a defined list of named parts, summarized in the table below.
+A ROBOT may not have more than 18 motors or actuators. The only motors and actuators permitted include (in any quantity) a defined list of named parts, summarized in the table below.
 
 *Table 8-1: Motor allowances (selected)*
 
@@ -1103,10 +1103,10 @@ The only motors and actuators permitted include (in any quantity) a defined list
 | AndyMark RedLine Motor | am-3775, am-3775a |
 | AndyMark Snow Blower Motor | am-2235, am-2235a |
 | Banebots | am-3830, M7-RS775-18, M5-RS550-12, and related |
-| CIM | Multiple legacy part numbers, e.g. FR801-001, am-0255 |
+| CIM | FR801-001, M4-R0062-12, AM802-001A, 217-2000, PM25R-44F-1005,	PM25R-45F-1004, PM25R-45F-1003, PMR25R-45F-1003, PMR25R-44F-1005, am-0255 |
 | CTR Electronics Minion | 24-777378, WCP-1691 |
 | CTR/VEX Falcon 500 | 217-6515, am-6515, 19-708850, am-6515_Short |
-| Current/former KOP automotive motors | Denso and Bosch/Johnson Electric part numbers |
+| Current/former KOP automotive motors | Denso AE235100-0160, Denso 5-163800-RC1, Denso 262100-3030, Denso 262100-3040, Bosch 6 004 RA3 194-06, Johnson Electric JE-PLG-149, Johnson Electric JE-PLG-410 |
 | Playing with Fusion Venom | BDC-10001 |
 | REV Robotics HD Hex | REV-41-1291 |
 | REV Robotics NEO Brushless | REV-21-1650/1653, am-4258/4258a |
@@ -1119,7 +1119,7 @@ The only motors and actuators permitted include (in any quantity) a defined list
 | WCP Kraken x60 | WCP-0940, am-5274 |
 | WCP RS775 Pro | 217-4347 |
 
-Also permitted: fans no greater than 120mm size rated ≤10W continuous at 12VDC; hard-drive motors integral to a legal COTS computing device; factory-installed vibration/autofocus motors in COTS computing devices; PWM COTS rotational servos (stall current ≤4A, mechanical output ≤8W at 6V) and linear servos (stall current ≤1A at 6V); motors integral to a COTS sensor (unmodified except for mounting); 1 compressor compliant with R806; and COTS brushed motors, linear actuators, electrical solenoid actuators, or electromagnets rated for 12V wired to an approved power regulating device downstream of a ≤20A breaker (24V-rated versions if used at 24V).
+Also permitted (not included in the 18 motor limit): fans no greater than 120mm size rated ≤10W continuous at 12VDC; hard-drive motors integral to a legal COTS computing device; factory-installed vibration/autofocus motors in COTS computing devices; PWM COTS rotational servos (stall current ≤4A, mechanical output ≤8W at 6V) and linear servos (stall current ≤1A at 6V); motors integral to a COTS sensor (unmodified except for mounting); 1 compressor compliant with R806; and COTS brushed motors, linear actuators, electrical solenoid actuators, or electromagnets rated for 12V wired to an approved power regulating device downstream of a ≤20A breaker (24V-rated versions if used at 24V).
 
 > Servos: the roboRIO is limited to 2.2A max on the 6V rail (12.4W); keep total servo power usage below this at all times. Servo mechanical output power ≈ 0.25 × (Stall Torque N·m) × (No Load Speed rad/s), using 6V manufacturer data. Teams are encouraged to consider total power available from the battery, since drawing large current from many motors at once can trip the main breaker or trigger roboRIO brownout protection. AndyMark PG Gearmotors labeled am-3651 through am-3656 contain legal motors and may be used with or without the provided gearbox.
 
@@ -1179,7 +1179,7 @@ Each electrical terminal on the ROBOT battery, main breaker, and their connectio
 Non-electrical sources of energy used by the ROBOT (stored at the start of a MATCH) shall come only from: A. compressed air stored in the pneumatic system charged compliant with R806/R807, B. a change in the altitude of the ROBOT center of gravity, C. storage achieved by deformation of ROBOT parts, D. closed-loop COTS pneumatic (gas) shocks, or E. air-filled (pneumatic) wheels.
 
 **R609 \*Connect main power safely.**
-The following devices shall be connected with 6 AWG (7 SWG or 16 mm²) copper wire or larger: A. 1 ROBOT battery, B. a single pair of Anderson Power Products 2-pole SB type connectors, C. a single main 120A surface mount circuit breaker (specific Cooper Bussman or Optifuse part numbers), D. a single main power distribution device (PD) — CTR PDP, PDP 2.0, REV PDH, or AndyMark AMPD. No additional devices/modifications are permitted except: E. monitoring circuitry per R625, F. SB-50 to SB-120 adapters presented for inspection, and G. termination of wires with appropriate cable lugs.
+The following devices shall be connected with 6 AWG (7 SWG or 16 mm²) copper wire or larger: A. 1 ROBOT battery, B. a single pair of Anderson Power Products 2-pole SB type connectors, C. a single main 120A surface mount circuit breaker (Cooper Bussman P/N CB185-120, CB185F-120, CB285-120 CB285F-120, CB285120F or Optifuse P/N 153120, 253120), D. a single main power distribution device (PD) — CTR PDP, PDP 2.0, REV PDH, or AndyMark AMPD. No additional devices/modifications are permitted except: E. monitoring circuitry per R625, F. SB-50 to SB-120 adapters presented for inspection, and G. termination of wires with appropriate cable lugs.
 
 > "SB type" refers to SB type only (e.g. SB-50, SB-120), not SBS or other SB-prefixed part types. FIRST-supplied batteries have a red/pink SB50 connector that may not be removed; KOP pink connectors mate with the red SB50 connector. Copper-clad aluminum wire is considered copper wire.
 
@@ -1229,7 +1229,7 @@ The only fuses permitted in the PD are automotive blade fuses: A. for the PDP, A
 > These fuses must be pressed very firmly to seat properly — improper seating can cause a device to reboot upon impact.
 
 **R621 \*Protect circuits with appropriate circuit breakers.**
-Each branch circuit must be protected by 1 and only 1 circuit breaker or fuse on the PD, per Table 8-3, with an exception for devices downstream of a permitted motor power adapter board between the PD and a motor controller (specific WCP/RF part numbers).
+Each branch circuit must be protected by 1 and only 1 circuit breaker or fuse on the PD, per Table 8-3, with an exception for devices downstream of a permitted motor power adapter board between the PD and a motor controller (WCP-1380, RF-4003).
 
 *Table 8-3: Branch circuit protection requirements (summary)*
 
@@ -1306,7 +1306,7 @@ The wireless bridge must be mounted such that the diagnostic lights are visible 
 > Teams are encouraged to mount it away from noise-generating devices such as motors, PCM(s)/PH(s), and VRM(s)/RPM(s).
 
 **R709 \*ROBOTS must have a signal light.**
-ROBOTS must use at least 1, but no more than 2, diagnostic ROBOT Signal Light (RSL) (P/N 855PB-B12ME522 and/or am-3583). Any RSL must be: A. mounted such that it's easily visible while standing 36.0in (91.44cm) from at least one side, B. connected to the "RSL" supply terminals on the roboRIO, and C. if using the 855PB-B12ME522, wired for solid light operation via a jumper between the "La" and "Lb" terminals.
+ROBOTS must use at least 1, but no more than 2, diagnostic ROBOT Signal Light (RSL) (P/N 855PB-B12ME522 and/or am-3583). Any RSL must be: A. mounted such that it's easily visible while standing 36.0in from at least one side, B. connected to the "RSL" supply terminals on the roboRIO, and C. if using the 855PB-B12ME522, wired for solid light operation via a jumper between the "La" and "Lb" terminals.
 
 **R710 \*Only specified modifications to control system devices permitted.**
 The Driver Station Software, roboRIO, PD, PCM(s)/PH(s), VRM(s)/RPM(s), RSL, 120A breaker, motor controllers, MXP devices used to control actuators per R713-C, relay modules (per R504-B), wireless bridge, PD breakers and fuses, Servo Power Module, Servo Hub, motor power adapter boards, and batteries shall not be tampered with, modified, or adjusted in any way, with listed exceptions covering: user-programmable roboRIO code, motor controller calibration, attaching fans to motor controllers, replacing the Spike H-Bridge fuse with a specific breaker when powering a compressor, standard connection points, fasteners/adhesives to attach devices, thermal interface material, labeling, changed jumper positions, Jaguar limit switch jumper substitution, manufacturer firmware updates, cutting/stripping/connectorizing integral motor controller wires, cover removal from Talon SRX/FX data ports, repairs matching original performance, omitting the PDP input terminal cover, replacing the roboRIO 2.0 SD card, adding insulating material, replacing control system power terminal blocks with functional equivalents, applying debris-protection tape, and upgrading VH-109 v1.0 to v1.5 with manufacturer materials.
@@ -1420,9 +1420,9 @@ Devices hosting the Driver Station Software must only interface with the FMS via
 > Teams are strongly encouraged to use pigtails on the FMS-connecting Ethernet port to reduce port wear and, with strain relief, protect against accidental damage.
 
 **R904 \*OPERATOR CONSOLE physical requirements.**
-The OPERATOR CONSOLE must not: A. be longer than 60.0in (1.524m), B. be deeper than 16.0in (40.64cm) (excluding items held/worn by DRIVERS during the MATCH), C. extend more than 78.0in (1.981m) above the floor, or D. attach to the ARENA except via the loop tape described in section 5.9.1 or clamping to the DRIVER STATION support shelf (without damaging it).
+The OPERATOR CONSOLE must not: A. be longer than 60.0in, B. be deeper than 16.0in (excluding items held/worn by DRIVERS during the MATCH), C. extend more than 78.0in above the floor, or D. attach to the ARENA except via the loop tape described in section 5.9.1 or clamping to the DRIVER STATION support shelf (without damaging it).
 
-> There is a 54.0in (1.372m) long by 2.0in (nominal, 5.08cm) wide strip of hook-and-loop tape ("loop" side) on the DRIVER STATION shelf intended for securing the OPERATOR CONSOLE. While there's no hard weight limit, OPERATOR CONSOLES over 30lb (13.61kg) will invite extra scrutiny as likely unsafe.
+> There is a 54.0in long by 2.0in (nominal, 5.08cm) wide strip of hook-and-loop tape ("loop" side) on the DRIVER STATION shelf intended for securing the OPERATOR CONSOLE. While there's no hard weight limit, OPERATOR CONSOLES over 30lb (13.61kg) will invite extra scrutiny as likely unsafe.
 
 **R905 \*FIELD wireless only.**
 Other than the system provided by the FIELD, no other form of wireless communications shall be used to communicate to, from, or within the OPERATOR CONSOLE.
