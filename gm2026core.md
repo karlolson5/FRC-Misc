@@ -131,7 +131,7 @@ Each WEATHER INDICATOR is a 6in by 6in LED panel which indicates the current WEA
 
 // TODO
 
-A SKY is one of two 65.7in by 108in rectangular structures with 2 CLOUDS which are 36in diameter openings has and 2 6in by 30in RAIN INDICATOR light panels. Each ALLIANCE has a dedicated SKY that makes up the opposing ALLIANCE WALL along with the TREE.
+A SKY is one of two 65.7in by 108in rectangular structures with 2 CLOUDS, 1 LOW CLOUD and 1 HIGH CLOUD, which are 36in diameter openings has and 2 6in by 30in RAIN INDICATOR  light panels, 1 LOW RAIN INDICATOR and 1 HIGH RAIN INDICATOR. Each ALLIANCE has a dedicated SKY that makes up the opposing ALLIANCE WALL along with the TREE.
 
 The positions of the CLOUDS and RAIN INDICATORS are shown in Figure 5-X.
 
@@ -297,7 +297,7 @@ A DRIVE TEAM is a set of up to 5 people from the same FIRST Robotics Competition
 
 A STUDENT is a person who has not completed high-school, secondary school, or the comparable level as of September 1 prior to Kickoff.
 
-The TECHNICIAN provides teams with a technical resource for pre-MATCH setup, ROBOT connectivity, OPERATOR CONSOLE troubleshooting, and post-MATCH removal of the ROBOT. Some pre-MATCH responsibilities for the TECHNICIAN may include, but are not limited to: locating the ROBOT radio and understanding its indicator lights; locating the roboRIO and understanding its indicator lights; the username and password for the OPERATOR CONSOLE; restarting the Driver Station and Dashboard software; changing bandwidth utilization; changing a battery; and charging pneumatics.
+The TECHNICIAN provides teams with a technical resource for pre-MATCH setup, ROBOT connectivity, OPERATOR CONSOLE troubleshooting, and post-MATCH removal of the ROBOT. Some pre-MATCH responsibilities for the TECHNICIAN may include, but are not limited to: locating the ROBOT radio and understanding its indicator lights; locating the SystemCore and understanding its indicator lights; the username and password for the OPERATOR CONSOLE; restarting the Driver Station and Dashboard software; changing bandwidth utilization; changing a battery; and charging pneumatics.
 
 > While the TECHNICIAN may be the primary technical member of the DRIVE TEAM, all members of the DRIVE TEAM are encouraged to have knowledge of the basic functionality of the ROBOT, such as the location and operation of the main circuit breaker, connecting and resetting joysticks or gamepads, and removing the ROBOT from the FIELD.
 
@@ -355,75 +355,74 @@ The first period of each MATCH is 20 seconds long and called the Autonomous Peri
 
 The second period of each MATCH is the remaining 2 minutes and 20 seconds (2:20) and called the Teleoperated Period (TELEOP). During TELEOP, DRIVERS remotely operate ROBOTS to retrieve and score SCORING ELEMENTS and climb their VINES. The final 30 seconds of the TELEOP period is the END GAME period.
 
-### 6.4.1 HUB Status
-
-During the MATCH, the status of a HUB can be either active or inactive. FUEL scored in an active HUB is worth MATCH points but FUEL scored in an inactive HUB will not earn any points. Both ALLIANCE HUBS are active during AUTO, the TRANSITION SHIFT, and END GAME. During the ALLIANCE SHIFTS, only one ALLIANCE HUB will be active while the other ALLIANCE's HUB becomes inactive.
-
-The status of both HUBS during the ALLIANCE SHIFTS is based on the results of AUTO. The ALLIANCE that scores the most FUEL during AUTO will have their HUB set to inactive for SHIFT 1 while their opponent's HUB will be active. HUB statuses will then alternate at the start of each following ALLIANCE SHIFT, until the start of END GAME where both HUBS return to active. If both ALLIANCES score the same number of FUEL during AUTO, the FMS will randomly select an ALLIANCE and use its HUB status order for the ALLIANCE SHIFTS during the MATCH.
-
-> FMS Game Data relays the ALLIANCE who scored more FUEL during AUTO, or the ALLIANCE selected by FMS, to all OPERATOR CONSOLES simultaneously at the start of TELEOP. Lights on the HUB will also indicate the ALLIANCE HUB that will be inactive in ALLIANCE SHIFT 1. Specific details on the format of the data can be found on the [2026 FRC Control System website](https://frc-docs.readthedocs.io/en/stable/docs/yearly-overview/2026-Game-Data.html).
-
-*Table 6-3: HUB Status during MATCH Timeframes*
-
-| MATCH Timeframe | If RED scores more FUEL in AUTO (or selected): RED HUB | BLUE HUB | If BLUE scores more FUEL in AUTO (or selected): RED HUB | BLUE HUB |
-|---|---|---|---|---|
-| AUTO (0:20–0:00) | Active | Active | Active | Active |
-| TRANSITION SHIFT (2:20–2:10) | Active | Active | Active | Active |
-| SHIFT 1 (2:10–1:45) | Inactive | Active | Active | Inactive |
-| SHIFT 2 (1:45–1:20) | Active | Inactive | Inactive | Active |
-| SHIFT 3 (1:20–0:55) | Inactive | Active | Active | Inactive |
-| SHIFT 4 (0:55–0:30) | Active | Inactive | Inactive | Active |
-| END GAME (0:30–0:00) | Active | Active | Active | Active |
-
 ## 6.5 Scoring
 
-ALLIANCES are rewarded for accomplishing various actions throughout a MATCH, including scoring FUEL, climbing their TOWER, and winning or tying MATCHES.
+ALLIANCES are rewarded for accomplishing various actions throughout a MATCH, including scoring SEEDS, climbing their VINES, and winning or tying MATCHES.
 
 Rewards are granted either via MATCH points or Ranking Points (often abbreviated to RP, which increase the measure used to rank teams in the Qualification Tournament).
 
-All scores are assessed and updated throughout the MATCH, except as follows:
-
-- A. assessment of FUEL scored in the HUB continues for up to 3 seconds after the ARENA timer displays 0:00 following AUTO.
-- B. assessment of FUEL scored in the HUB continues for up to 3 seconds after the ARENA timer displays 0:00 following TELEOP.
-- C. assessment of AUTO TOWER points is made after the ARENA timer displays 0:00 following AUTO.
-- D. assessment of TELEOP TOWER points is made 3 seconds after the ARENA timer displays 0:00 following TELEOP, or when all ROBOTS have come to rest following the conclusion of the MATCH, whichever happens first.
-
-Assessment of FUEL scored in the HUB continues for 3 seconds after the HUB deactivates to account for FUEL processing time.
-
-> TOWER points are evaluated and scored by human volunteers. Teams are encouraged to make sure that it is obvious and unambiguous that the criteria are met.
+All scores are assessed and updated throughout the MATCH, except that the assessment of VINE points is made immediately after the ARENA timer displays 0:00 following TELEOP.
 
 ### 6.5.1 SCORING ELEMENT Scoring Criteria
 
-A FUEL is scored in the HUB once it passes through the top opening of the HUB and through the sensor array.
+A SEED is registered in the TREE once it passes completely through the BRANCH OPENING and no ROBOT parts are inside the BRANCH, as determined by the sensor array. It remains registered as long as it remains inside the BRANCH and is not scored. It is scored as discussed in section 6.5.2 TREE Scoring. A SEED is scored in the SKY once it passes completely through the CLOUD opening.
 
-### 6.5.2 ROBOT Scoring Criteria
+// TODO game rule: no robot parts inside the CLOUD.
 
-To qualify for TOWER points for a given LEVEL, a ROBOT must meet the following conditions:
+### 6.5.2 TREE Scoring
 
-- For LEVEL 1 – a ROBOT must no longer be touching the CARPET or the TOWER BASE, or
-- For LEVEL 2 – a ROBOT must be positioned such that its BUMPER covers are completely above the LOW RUNG, or
-- For LEVEL 3 – a ROBOT must be positioned such that its BUMPER covers are completely above the MID RUNG.
+A SEED is registered in the TREE as described in section 6.5.1 SCORING ELEMENT Scoring Criteria. Note that the TREE starts the MATCH empty. When a TREE is empty and a SEED is registered, the TREE will score all registered SEEDS when any of the following conditions are met:
 
-Additionally, a ROBOT must be contacting at least one RUNG and/or UPRIGHT and may additionally only contact the following elements: A. the TOWER WALL, B. support structure, C. FUEL, and/or D. another ROBOT.
+- A. 10 seconds has passed.
+- B. the AUTO period ends.
+- C. the TELEOP period ends.
 
-A ROBOT may only earn TOWER points for LEVEL 1 during AUTO. A ROBOT may only earn TOWER points for a single LEVEL during TELEOP. A ROBOT that earns TOWER points in AUTO is eligible to earn additional TOWER points during TELEOP.
+Registering additional SEEDS in the TREE does not reset the timer in A.
 
-### 6.5.3 Point Values
+At the moment the TREE scores SEEDS, all SEEDS that were registered are no longer registered. All scored SEEDS are immediately ejected by the BRANCHES into the opposing ALLIANCE AREA. After scoring, the TREE is considered empty, and the next registered SEED will restart the process.
+
+When 4 or more SEEDS are scored at once, that scoring instance is BOUNTIFUL.
+
+### 6.5.3 SKY Scoring
+
+A SEED scored in the HIGH CLOUD resets the HIGH RAIN INDICATOR to 40s. A SEED scored in the LOW CLOUD resets the LOW RAIN INDICATOR to 40s.
+
+When a RAIN INDICATOR has a value between 40s and 30s, the highest group of RAIN INDICATOR LED segments will smoothly transition from fully lit at 40s to unlit at 30s. For example, from 34.0 to 33.0s, the four bottom segments of the top group and all of the three lower groups will be lit. Likewise, the second, third, and lowest panels will progressively decay over 40 seconds, so that the RAIN INDICATOR is completely unlit at the end of 40s.
+
+The RAIN LEVEL is indicated by how many groups have any members lit. Therefore, the RAIN LEVEL can range from 0 to 8. The WEATHER is defined by the RAIN LEVEL as follows:
+| WEATHER | RAIN LEVEL |
+| -- | -- |
+| FLOOD | 7-8 |
+| TEMPERATE | 2-6 |
+| DROUGHT | 0-1 |
+
+SEEDS scored in the SKY do not directly score points. The WEATHER acts as a modifier for other game objectives. 
+
+### 6.5.4 ROBOT Scoring Criteria
+
+To qualify for VINE points for a given VINE, a ROBOT must depress the VINE switch described in section 5.7.1 VINE.
+
+Additionally, a ROBOT must be contacting the VINE, and may only be in contact with the following elements: A. the FIELD guardrails, B. the CANOPY, C. SEEDS, and/or D. another ROBOT.
+
+> Whether a ROBOT is not touching the carpet (or other ineliible elements) and therefore not eleigible for VINE points is evaluated by human volunteers. Teams are encouraged to make sure that it is obvious and unambiguous that the criteria are met.
+
+// TODO: grasping/grabbing exception only for VINE, not the rest of the CANOPY
+
+### 6.5.5 Point Values
 
 *Table 6-4: REBUILT point values*
 
-| Task | AUTO points | TELEOP points | Ranking Points |
-|---|---|---|---|
-| FUEL scored in an active HUB | 1 | 1 | — |
-| FUEL scored in an inactive HUB | — | — | — |
-| Each ROBOT at LEVEL 1 (2 ROBOTS max in AUTO) | 15 | 10 | — |
-| Each ROBOT at LEVEL 2 | — | 20 | — |
-| Each ROBOT at LEVEL 3 | — | 30 | — |
-| ENERGIZED RP — FUEL scored in an active HUB is at or above threshold* | — | — | 1 |
-| SUPERCHARGED RP — FUEL scored in an active HUB is at or above threshold* | — | — | 1 |
-| TRAVERSAL RP — TOWER points scored during the MATCH is at or above threshold* | — | — | 1 |
-| Win — completing a MATCH with more MATCH points than your opponent | — | — | 3 |
-| Tie — completing a MATCH with the same number of MATCH points as your opponent | — | — | 1 |
+| Task | AUTO points | TELEOP points | Ranking Points | PLAYOFF-only bonus points |
+|---|---|---|---|---|
+| SEED scored in TREE, not BOUNTIFUL | 3 | 2 | — | - |
+| SEED scored in TREE, BOUNTIFUL bonus | +1 | +1 | — | - |
+| SEED scored in TREE, TEMPERATE bonus | +2 | +1 | - | - |
+| Each ROBOT eligible for VINE points | - | 15 | — | - |
+| GOOD WEATHER RP — TEMPERATE WEATHER is maintained for a duration at or above the threshold* | — | — | 1 | 25 |
+| PLANT EXPLOSION RP — the number of BOUNTIFUL TREE scoring events at or above the threshold* | — | — | 1 | 0 |
+| RAINFOREST RP — WEATHER is FLOOD at end of TELEOP and number of ROBOTS qualified for VINE points is at or above threshold* | — | — | 1 | 25 |
+| Win — completing a MATCH with more MATCH points than your opponent | — | — | 3 | - |
+| Tie — completing a MATCH with the same number of MATCH points as your opponent | — | — | 1 | - |
 
 \*See the thresholds table below. For District Championship and/or FIRST Championship events, the BONUS RP requirement thresholds may increase.
 
@@ -431,9 +430,9 @@ A ROBOT may only earn TOWER points for LEVEL 1 during AUTO. A ROBOT may only ear
 
 | BONUS RP Type | Regional/District Events | District Championships | FIRST Championship |
 |---|---|---|---|
-| ENERGIZED RP | 100 | TBA | TBA |
-| SUPERCHARGED RP | 360 | TBA | TBA |
-| TRAVERSAL RP | 50 | TBA | TBA |
+| GOOD WEATHER RP | 140s | TBA | TBA |
+| PLANT EXPLOSION RP | 6 | TBA | TBA |
+| RAINFOREST RP | 2 | TBA | TBA |
 
 > BONUS RP thresholds for District Championships and FIRST Championship will be announced in Team Updates.
 
@@ -534,11 +533,11 @@ While FMS tracks quantities of MINOR and MAJOR FOULS, FIRST instructs REFEREES t
 
 ## 6.8 Other Logistics
 
-SCORING ELEMENTS that leave the FIELD (other than through the opening at the base of the OUTPOST) are placed back into the FIELD approximately at the point of exit by FIELD STAFF at the earliest safe opportunity.
+SCORING ELEMENTS that leave the FIELD (other than through the TREE or SKY) are placed back into the FIELD approximately at the point of exit by FIELD STAFF at the earliest safe opportunity.
 
 > Note that ROBOTS and HUMAN PLAYERS may not deliberately cause SCORING ELEMENTS to leave the FIELD (see G405).
 
-An ARENA FAULT (an error in ARENA operation described in section 10.2 MATCH Replays) is not called for MATCHES that accidentally begin with damaged SCORING ELEMENTS. Damaged SCORING ELEMENTS are not replaced until the next ARENA reset period. DRIVE TEAMS should alert the FIELD STAFF to any missing or damaged SCORING ELEMENTS prior to the start of the MATCH but the exact number of FUEL in the NEUTRAL ZONE may vary.
+An ARENA FAULT (an error in ARENA operation described in section 10.2 MATCH Replays) is not called for MATCHES that accidentally begin with damaged SCORING ELEMENTS. Damaged SCORING ELEMENTS are not replaced until the next ARENA reset period. DRIVE TEAMS should alert the FIELD STAFF to any missing or damaged SCORING ELEMENTS prior to the start of the MATCH.
 
 Once the MATCH is over and the Head REFEREE determines that the FIELD is safe for FIELD STAFF and DRIVE TEAMS, they or their designee change the FIELD lights to green and DRIVE TEAMS may retrieve their ROBOT. Some MATCHES may include a short period afterward to allow FIELD staff to begin to clean the field. This period is indicated with purple lights on the team signs and the word "clean" displayed. Teams are not allowed on the field during this time.
 
