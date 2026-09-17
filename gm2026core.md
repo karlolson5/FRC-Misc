@@ -746,33 +746,35 @@ Neither a ROBOT nor a HUMAN PLAYER may damage a SCORING ELEMENT.
 
 > SCORING ELEMENTS are expected to undergo a reasonable amount of wear and tear, such as scratching or marking. Routinely gouging, tearing off pieces, or marking SCORING ELEMENTS are violations of this rule.
 
-// TODO: from here
+// TODO: finish this section
 
-**G407 Only score while in your ALLIANCE ZONE.**
-A ROBOT may not launch a SCORING ELEMENT into their HUB unless their BUMPERS are partially or fully within their ALLIANCE ZONE.
+**G407 Only score in BRANCHES while in your ALLIANCE ZONE.**
+A ROBOT may not launch a SCORING ELEMENT into a BRANCH unless their BUMPERS are partially or fully within their ALLIANCE ZONE.
 
 > ⚠ Violation: MAJOR FOUL.
 
-**G408 Don't catch FUEL.**
-A ROBOT may not do either of the following with FUEL released by the HUB unless and until that FUEL contacts anything else besides that ROBOT or FUEL CONTROLLED by that ROBOT: A. gain greater than MOMENTARY CONTROL of FUEL, or B. push or redirect FUEL to a desired location or in a preferred direction.
+> Launching SCORING ELEMENTS towards the TREE is not a violation. Launching SCORING ELEMENTS which contact another ROBOT, the carpet, any part of the CANOPY, or any part of the SKY before entering a BRANCH is not a violation.
 
-A ROBOT is in CONTROL of a SCORING ELEMENT if the SCORING ELEMENT is fully supported by or stuck in, on, or under the ROBOT.
+**G408 Don't launch SEEDS across the CENTER LINE.**
+A ROBOT whose BUMPERS do not overlap a CENTER LINE not launch SEEDS across the CENTER LINE.
 
 > ⚠ Violation: MINOR FOUL. If strategic, MAJOR FOUL and YELLOW CARD.
 
-> "Bulldozing" (inadvertent contact while in the path of a moving ROBOT) and "deflecting" (being hit by a SCORING ELEMENT that bounces off and moves randomly) are not considered CONTROL. Strategic interaction examples include intentionally sitting under the HUB to collect a large quantity of FUEL, or to redirect FUEL into your ALLIANCE ZONE.
+> A SEED is considered launched if it is shot into the air, kicked across the floor, or thrown in a forceful way. This rule is not intended to penalize typical movement of SEEDS around the CENTER LINE which come to rest a short distance from the ROBOT. Examples of such actions could be but are not limited to:\
+>    A. Running an intake in reverse causing a SEED to travel a short distance from the ROBOT\
+>    B. A ROBOT pushing a SEED a short distance away in the process of herding it across the FIELD
 
 ### 7.4.3 ROBOT
 
 **G409 \*ROBOTS must be safe.**
-A ROBOT may not pose an undue hazard to a human, an ARENA element, or another ROBOT in the following ways: A. the ROBOT or anything it CONTROLS contacts anything outside the FIELD except for MOMENTARY contact inside the CHUTE and/or CORRAL, B. its BUMPERS fail such that a segment completely detaches, C. a corner of its ROBOT PERIMETER is exposed, D. its team number or ALLIANCE color are indeterminate, E. its BUMPERS leave the BUMPER ZONE REPEATEDLY or for more than a MOMENTARY amount of time, or F. its operation or design is dangerous or unsafe.
+A ROBOT may not pose an undue hazard to a human, an ARENA element, or another ROBOT in the following ways: A. the ROBOT or anything it CONTROLS contacts anything outside the FIELD except for MOMENTARY contact inside the CHUTE, BRANCH and/or CLOUD, B. its BUMPERS fail such that a segment completely detaches, C. a corner of its ROBOT PERIMETER is exposed, D. its team number or ALLIANCE color are indeterminate, E. its BUMPERS leave the BUMPER ZONE REPEATEDLY or for more than a MOMENTARY amount of time, or F. its operation or design is dangerous or unsafe.
 
 > ⚠ Violation: DISABLED. Corrective action may be required before further competition.
 
 > Examples of dangerous operation include: uncontrolled motion that cannot be stopped by the DRIVE TEAM, ROBOT parts "flailing" outside the FIELD, ROBOTS dragging their battery, and ROBOTS that consistently extend outside the FIELD.
 
 **G410 \*Keep your BUMPERS low.**
-ROBOT extensions may not interact with the carpet, BUMPS, or TOWER BASE such that the BUMPERS are lifted out of the BUMPER ZONE.
+ROBOT extensions may not interact with the carpet such that the BUMPERS are lifted out of the BUMPER ZONE.
 
 > ⚠ Violation: MINOR FOUL. Corrective action may be required before further competition.
 
@@ -782,11 +784,12 @@ A ROBOT may not damage FIELD elements.
 > ⚠ Violation: VERBAL WARNING. If further damage is likely, DISABLED. YELLOW CARD for any subsequent damage during the event.
 
 **G412 Watch your FIELD interaction.**
-A ROBOT is prohibited from the following interactions with FIELD elements (except the RUNGS and UPRIGHTS): A. grabbing, B. grasping, C. attaching to (including via vacuum or hook fastener to the carpet), D. becoming entangled with, and E. suspending from.
+A ROBOT is prohibited from the following interactions with FIELD elements (except the VINES): A. grabbing, B. grasping, C. attaching to (including via vacuum or hook fastener to the carpet), D. becoming entangled with, and E. suspending from.
 
 > ⚠ Violation: MAJOR FOUL, plus YELLOW CARD if REPEATED or longer than MOMENTARY. If damage is likely, DISABLED.
 
 **G413 Expansion limits.**
+// TODO: check R10X references
 A ROBOT may not extend beyond any of the horizontal or vertical expansion limits described in R105, R106, and R107. Exceptions are granted if over-expansion is due to visible damage and not used for strategic benefit.
 
 > ⚠ Violation: MINOR FOUL, or MAJOR FOUL if used for strategic benefit, including if it impedes or enables a scoring action.
@@ -794,9 +797,9 @@ A ROBOT may not extend beyond any of the horizontal or vertical expansion limits
 > The intent of the exception is to avoid piling a punitive response on a ROBOT that's already experienced hardship. Exceptions are only given for visible damage as perceived by a REFEREE — not for unobservable damage even if function is affected. Teams designing something to "break" for advantage will not be given an exception and may also violate G211.
 
 **G414 Don't Climb on each other.**
-ROBOTS may not fully support the weight of other ROBOTS on their ALLIANCE to climb the TOWER.
+ROBOTS may not fully support the weight of other ROBOTS on their ALLIANCE to climb the VINES.
 
-> ⚠ Violation: Supported ROBOTS become ineligible for TOWER points for the remainder of the MATCH.
+> ⚠ Violation: Supported ROBOTS become ineligible for CANOPY points for the remainder of the MATCH.
 
 ### 7.4.4 Opponent Interaction
 
@@ -824,7 +827,7 @@ A ROBOT may not deliberately attach to, tip, or entangle with an opponent ROBOT.
 > Examples include using a wedge-like MECHANISM to tip opponents, BUMPER-to-BUMPER contact with a righting ROBOT causing it to fall again, and causing a tip-over by contacting a ROBOT after it starts to tip if the contact could have been avoided. Tipping as an unintended consequence of normal interaction, including single BUMPER-to-BUMPER hits, is not a violation.
 
 **G418 \*There's a 3-count on PINS.**
-A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINNING if it prevents movement of an opponent ROBOT by contact (direct or transitive). A PIN count ends once: A. the ROBOTS have separated by at least 72.0in (1.83m) for more than 3 seconds, B. either ROBOT has moved 72.0in from where the PIN initiated for more than 3 seconds, or C. the PINNING ROBOT gets PINNED.
+A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINNING if it prevents movement of an opponent ROBOT by contact (direct or transitive). A PIN count ends once: A. the ROBOTS have separated by at least 72in (1.83m) for more than 3 seconds, B. either ROBOT has moved 72in from where the PIN initiated for more than 3 seconds, or C. the PINNING ROBOT gets PINNED.
 
 > ⚠ Violation: MINOR FOUL, and for every 3 seconds in which the situation is not corrected, a MAJOR FOUL is assessed.
 
@@ -835,14 +838,24 @@ A ROBOT may not PIN an opponent's ROBOT for more than 3 seconds. A ROBOT is PINN
 
 > ⚠ Violation: MAJOR FOUL, and for every 3 seconds in which the situation is not corrected, a MAJOR FOUL is assessed.
 
-> Examples include shutting down access to all SCORING ELEMENTS, quarantining all opponents to a small area, preventing access to the opponent's TOWER, and preventing traversal between field zones by blocking both TRENCHES or both BUMPS. A single ROBOT blocking access, or 2 ROBOTS independently collecting SCORING ELEMENTS in front of a BUMP or TRENCH at the same time, are not violations.
+> Examples include shutting down access to all SCORING ELEMENTS, quarantining all opponents to a small area, and completely preventing access to both of the opponent's SEEDING STATIONS at the same time. A single ROBOT blocking access, or 2 ROBOTS independently collecting SCORING ELEMENTS in front of a BUMP or TRENCH at the same time, are not violations.
 
-**G420 TOWER protection.**
-A ROBOT may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT in contact with an opponent TOWER during the last 30 seconds of the MATCH regardless of who initiates contact.
+**G420 VINE protection.**
+A ROBOT that is not in contact with their own VINE may not contact, directly or transitively through a SCORING ELEMENT, an opponent ROBOT in contact with an opponent VINE during the ENDGAME regardless of who initiates contact.
 
-> ⚠ Violation: MAJOR FOUL and, if the opponent ROBOT is off the ground, the opponent ROBOT is awarded LEVEL 3 TOWER points.
+> ⚠ Violation: MAJOR FOUL and, if the opponent ROBOT is off the ground, the opponent ROBOT is awarded VINE points.
 
 > Transitive contact requires that each robot is contacting the same SCORING ELEMENT(S) simultaneously.
+
+**G421 Don't block opponent's CLOUDS.**
+A ROBOT partially or entirely contained in the opponent's ALLIANCE ZONE may not contact a SEED launched by an opponent ROBOT which had a reasonable chance of entering a CLOUD.
+
+> ⚠ Violation: MAJOR FOUL and, if in ENDGAME, opponent qualifies for the WEATHER portion of the RAINFOREST bonus.
+
+> REFEREES are not expected to infer the realistic chances of a launched SEED entering a CLOUD. This is intended to prevent ROBOTS launching SEEDS at opponent ROBOTS in their ALLIANCE ZONE which are otherwise violating this rule. Examples of SEEDS without a reasonble chance of entering a CLOUD include those which are:\
+> A. forcefully rolled across the ground.\
+> B. launched toward the FIELD corner opposite the SKY.\
+> C. launched from within the ALLIANCE ZONE in a direction away from the CLOUDS.
 
 ### 7.4.5 Human
 
