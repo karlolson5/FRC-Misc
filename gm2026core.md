@@ -93,7 +93,7 @@ FIELD areas, zones, and markings of consequence are described below. Unless othe
 // TODO: fix distances from STARTING LINE and after
 
 - **ALLIANCE AREA**: an approximately 360in wide by 134in deep (~9.14m by 3.4m) infinitely tall volume formed by, and including the ALLIANCE WALL, TREE, SKY, the edge of the carpet, and ALLIANCE colored tape lines.
-- **ALLIANCE ZONE**: A 36in deep by 317.7in long (~0.91m by 8.07m), infinitely tall volume formed by an ALLIANCE WALL, TREE, SKY, guardrails, and an ALLIANCE colored tape line that spans the wedith of the FIELD.
+- **ALLIANCE ZONE**: A 18in deep by 317.7in long (~0.91m by 8.07m), infinitely tall volume formed by an ALLIANCE WALL, TREE, SKY, guardrails, and an ALLIANCE colored tape line that spans the wedith of the FIELD.
 - **ROBOT STARTING LINE**: an ALLIANCE colored tape line that spans the width of the FIELD that is 72in away from the ALLIANCE WALL.
 - **CENTER LINE**: a white tape line that spans the width of the FIELD that bisects the FIELD in half.
 - **HUMAN STARTING LINE**: a white line spanning the ALLIANCE AREA up to the edges of the FIELD that is parallel to and located 24.0in from the bottom square tube of the ALLIANCE WALL to the near edge of the tape.
