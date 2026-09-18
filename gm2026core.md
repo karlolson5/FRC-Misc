@@ -155,7 +155,7 @@ The bottom of the opening of a LOW SEEDING STATION is 0.5in from the floor.
 
 ### 5.6.2 HIGH SEEDING STATION
 
-The bottom of the opening of a HIGH SEEDING STATION is 42in from the floor.
+The bottom of the opening of a HIGH SEEDING STATION is 36in from the floor.
 
 ## 5.7 CANOPY
 
